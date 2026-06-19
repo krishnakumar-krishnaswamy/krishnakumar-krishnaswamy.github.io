@@ -1,11 +1,9 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BASE */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #ffffff;
@@ -15,7 +13,7 @@ body {
   flex-direction: column;
 }
 
-/* TOP HEADER */
+/* HEADER */
 .top-header {
   height: 60px;
   display: flex;
@@ -26,7 +24,7 @@ body {
   font-weight: 600;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .layout {
   flex: 1;
   display: flex;
@@ -37,28 +35,27 @@ body {
   width: 260px;
   background: #f7f7f8;
   border-right: 1px solid #e5e7eb;
-  padding: 12px;
-
   display: flex;
   flex-direction: column;
+  padding: 18px 12px;
+  height: calc(100vh - 60px);
 }
 
-/* PROJECTS SECTION (push down slightly) */
+/* PROJECTS */
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
-
-  /* KEY FIX: pushes projects slightly down */
-  margin-top: 18px;
 }
 
-/* CONTACT SECTION */
+/* CONTACT BOTTOM */
 .contact-list {
-  margin-top: 18px;
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
 }
 
-/* BUTTON STYLE (shared) */
+/* BUTTONS */
 .nav-btn {
   width: 100%;
   padding: 10px;
@@ -74,14 +71,13 @@ body {
   background: #e5e7eb;
 }
 
-/* MAIN PANEL */
+/* MAIN */
 .main {
   flex: 1;
   padding: 20px;
   overflow-y: auto;
 }
 
-/* OUTPUT */
 #output {
   min-height: 200px;
 }
