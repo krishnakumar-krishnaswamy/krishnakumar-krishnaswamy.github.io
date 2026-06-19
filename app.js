@@ -10,7 +10,7 @@ function loadProject(project) {
 
   if (project === "healthcare") {
 
-    guide.innerText = "Healthcare Project: Upload data and run analysis.";
+    guide.innerText = "Healthcare Project: Upload dataset and run analysis tools.";
 
     output.innerHTML = `
       <h3>Healthcare Research Project</h3>
@@ -23,7 +23,7 @@ function loadProject(project) {
     guide.innerText = "IT Readiness Agent: Evaluate release readiness workflows.";
 
     output.innerHTML = `
-      <h3>Project 2</h3>
+      <h3>Project 2 - IT Readiness Agent</h3>
       <p>Coming soon...</p>
     `;
   }
