@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FN-LN Portfolio</title>
-
   <link rel="stylesheet" href="styles.css"/>
 </head>
 
@@ -15,15 +14,20 @@
   <!-- LEFT SIDEBAR -->
   <div class="sidebar">
 
-    <!-- TOP BRAND -->
     <div class="brand">
       FN-LN
     </div>
 
-    <!-- SPACING -->
+    <div class="subtext">
+      Portfolio Navigation
+    </div>
+
     <div style="height: 30px;"></div>
 
-    <!-- PROJECTS -->
+    <button class="nav-btn" onclick="loadHome()">
+      Home
+    </button>
+
     <button class="nav-btn" onclick="loadProject('project1')">
       Project 1
     </button>
@@ -41,16 +45,14 @@
   <!-- RIGHT PANEL -->
   <div class="main">
 
-    <div class="top-bar" id="guide">
-      Select a project from the left to view details.
+    <div class="top-bar" id="header">
+      FN-LN Portfolio
     </div>
 
     <div class="content">
 
-      <h2>Interactive Output Area</h2>
-
       <div id="output">
-        Welcome! Choose a project to begin.
+        Welcome — select a project from the left.
       </div>
 
     </div>
