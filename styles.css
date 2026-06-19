@@ -98,6 +98,7 @@ body {
 
   background: transparent;
   border: none;
+
   border-radius: 6px;
 
   text-align: left;
@@ -146,15 +147,17 @@ body {
   margin: 0;
 }
 
-/* CONTACT */
+/* CONTACT CENTERING */
 
 .contact-wrapper {
-  flex: 1;
+  height: calc(100vh - 120px);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
+/* CONTACT CARD */
 
 .contact-card {
   width: 420px;
