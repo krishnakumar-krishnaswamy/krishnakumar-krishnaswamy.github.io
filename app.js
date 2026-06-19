@@ -1,29 +1,70 @@
+function clearActiveButtons() {
+
+  document.querySelectorAll(".nav-btn").forEach(button => {
+    button.classList.remove("active");
+  });
+
+}
+
+function setActiveButton(buttonId) {
+
+  clearActiveButtons();
+
+  document
+    .getElementById(buttonId)
+    .classList.add("active");
+}
+
 function loadProject(project) {
 
   const output = document.getElementById("output");
 
   if (project === "project1") {
-    output.innerHTML = `<h3>Project 1</h3><p>Healthcare Research demo.</p>`;
+
+    setActiveButton("btn-project1");
+
+    output.innerHTML = `
+      <div class="project-view">
+        <h2>Project 1: Healthcare Research Demo</h2>
+      </div>
+    `;
   }
 
   else if (project === "project2") {
-    output.innerHTML = `<h3>Project 2</h3><p>IT Release Readiness Agent.</p>`;
+
+    setActiveButton("btn-project2");
+
+    output.innerHTML = `
+      <div class="project-view">
+        <h2>Project 2: IT Release Readiness Agent</h2>
+      </div>
+    `;
   }
 
   else if (project === "project3") {
-    output.innerHTML = `<h3>Project 3</h3><p>AI / LLM experiments.</p>`;
+
+    setActiveButton("btn-project3");
+
+    output.innerHTML = `
+      <div class="project-view">
+        <h2>Project 3: AI / LLM Experiments</h2>
+      </div>
+    `;
   }
 }
 
-/* CONTACT UI */
 function loadContact() {
+
+  setActiveButton("btn-contact");
 
   const output = document.getElementById("output");
 
   output.innerHTML = `
     <div class="contact-card">
 
-      <div class="contact-title">Contact</div>
+      <div class="contact-title">
+        Contact
+      </div>
 
       <div class="contact-email">
         yourgithubemail@example.com
@@ -39,7 +80,6 @@ function loadContact() {
   `;
 }
 
-/* COPY FUNCTION */
 function copyEmail() {
 
   const email = "yourgithubemail@example.com";
