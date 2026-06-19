@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-/* BASE */
+/* BASE THEME (ChatGPT-like clean UI) */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #ffffff;
   color: #111827;
 }
 
-/* LAYOUT */
+/* MAIN LAYOUT */
 .layout {
   display: flex;
   height: 100vh;
@@ -26,11 +26,11 @@ body {
   padding: 16px;
 }
 
-/* BRAND */
+/* BRAND (FN-LN TOP) */
 .brand {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 /* DROPDOWN BUTTON */
@@ -43,15 +43,15 @@ body {
   font-size: 14px;
   font-weight: 500;
   cursor: pointer;
-  color: #111827;
   border-radius: 6px;
+  color: #111827;
 }
 
 .dropdown-btn:hover {
   background: #e5e7eb;
 }
 
-/* DROPDOWN CONTENT */
+/* DROPDOWN CONTAINER */
 .dropdown-content {
   display: none;
   margin-top: 8px;
@@ -86,7 +86,7 @@ body {
   flex-direction: column;
 }
 
-/* TOP BAR */
+/* TOP GUIDE BAR */
 .top-bar {
   height: 50px;
   display: flex;
@@ -97,7 +97,7 @@ body {
   color: #374151;
 }
 
-/* CONTENT */
+/* CONTENT AREA */
 .content {
   padding: 20px;
 }
