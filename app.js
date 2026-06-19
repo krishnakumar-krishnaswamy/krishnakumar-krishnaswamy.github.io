@@ -60,21 +60,25 @@ function loadContact() {
   const output = document.getElementById("output");
 
   output.innerHTML = `
-    <div class="contact-card">
+    <div class="contact-wrapper">
 
-      <div class="contact-title">
-        Contact
+      <div class="contact-card">
+
+        <div class="contact-title">
+          Contact
+        </div>
+
+        <div class="contact-email">
+          yourgithubemail@example.com
+        </div>
+
+        <button class="copy-btn" onclick="copyEmail()">
+          Copy Email
+        </button>
+
+        <div id="copyStatus" class="copied-msg"></div>
+
       </div>
-
-      <div class="contact-email">
-        yourgithubemail@example.com
-      </div>
-
-      <button class="copy-btn" onclick="copyEmail()">
-        Copy Email
-      </button>
-
-      <div id="copyStatus" class="copied-msg"></div>
 
     </div>
   `;
