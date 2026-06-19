@@ -17,4 +17,12 @@ function loadProject(project) {
       <p>IT Release Readiness Agent (coming soon).</p>
     `;
   }
+
+  else if (project === "project3") {
+
+    output.innerHTML = `
+      <h3>Project 3</h3>
+      <p>AI / LLM experiments sandbox.</p>
+    `;
+  }
 }
