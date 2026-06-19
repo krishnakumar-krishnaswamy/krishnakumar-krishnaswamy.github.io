@@ -130,13 +130,20 @@ body {
 
 .project-view {
   width: 100%;
-  text-align: center;
-  padding-top: 10px;
+
+  display: flex;
+  justify-content: center;
+
+  padding-top: 6px;
+
+  transform: translateX(-18px);
 }
 
 .project-view h2 {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: 600;
+  color: #111827;
+  margin: 0;
 }
 
 /* CONTACT CENTERING */
