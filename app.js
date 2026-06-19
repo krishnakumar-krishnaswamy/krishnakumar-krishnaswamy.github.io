@@ -15,51 +15,39 @@ function loadProject(project) {
   }
 }
 
-/* CONTACT FORM */
+/* CONTACT UI */
 function loadContact() {
 
   const output = document.getElementById("output");
 
   output.innerHTML = `
-    <h3>Contact</h3>
+    <div class="contact-card">
 
-    <div class="form-group">
-      <input id="fname" type="text" placeholder="First Name" />
+      <div class="contact-title">Contact</div>
+
+      <div class="contact-email">
+        yourgithubemail@example.com
+      </div>
+
+      <button class="copy-btn" onclick="copyEmail()">
+        Copy Email
+      </button>
+
+      <div id="copyStatus" class="copied-msg"></div>
+
     </div>
-
-    <div class="form-group">
-      <input id="lname" type="text" placeholder="Last Name" />
-    </div>
-
-    <div class="form-group">
-      <input id="email" type="email" placeholder="Email ID" />
-    </div>
-
-    <div class="form-group">
-      <textarea id="message" rows="4" maxlength="100" placeholder="Message (max 100 chars)"></textarea>
-    </div>
-
-    <button class="nav-btn" onclick="submitContact()">Submit</button>
   `;
 }
 
-/* EMAIL SEND (MAILTO) */
-function submitContact() {
+/* COPY FUNCTION */
+function copyEmail() {
 
-  const fname = document.getElementById("fname").value;
-  const lname = document.getElementById("lname").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+  const email = "yourgithubemail@example.com";
 
-  const subject = `Portfolio Contact: ${fname} ${lname}`;
+  navigator.clipboard.writeText(email).then(() => {
 
-  const body =
-`Name: ${fname} ${lname}
-Email: ${email}
+    document.getElementById("copyStatus").innerText =
+      "Email copied to clipboard ✔";
 
-Message:
-${message}`;
-
-  window.location.href =
-    `mailto:yourgithubemail@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  });
 }
