@@ -94,13 +94,10 @@ body {
 
 .nav-btn {
   width: 100%;
-
   padding: 10px;
 
   background: transparent;
-
   border: none;
-
   border-radius: 6px;
 
   text-align: left;
@@ -123,10 +120,13 @@ body {
 
 .main {
   flex: 1;
-  padding: 20px;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
 }
 
-/* PROJECT VIEW */
+/* PROJECT TITLE */
 
 .project-view {
   width: 100%;
@@ -134,9 +134,9 @@ body {
   display: flex;
   justify-content: center;
 
-  padding-top: 6px;
+  padding-top: 18px;
 
-  transform: translateX(-18px);
+  margin-left: -25px;
 }
 
 .project-view h2 {
@@ -146,17 +146,15 @@ body {
   margin: 0;
 }
 
-/* CONTACT CENTERING */
+/* CONTACT */
 
 .contact-wrapper {
-  height: calc(100vh - 180px);
+  flex: 1;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/* CONTACT CARD */
 
 .contact-card {
   width: 420px;
@@ -164,7 +162,6 @@ body {
   padding: 20px;
 
   border: 1px solid #e5e7eb;
-
   border-radius: 12px;
 
   background: #fafafa;
@@ -185,7 +182,6 @@ body {
   background: #ffffff;
 
   border: 1px solid #e5e7eb;
-
   border-radius: 8px;
 
   margin-bottom: 12px;
@@ -197,11 +193,9 @@ body {
   padding: 10px 12px;
 
   background: #111827;
-
   color: #ffffff;
 
   border: none;
-
   border-radius: 8px;
 
   cursor: pointer;
@@ -215,8 +209,6 @@ body {
 
 .copied-msg {
   margin-top: 10px;
-
   font-size: 13px;
-
   color: green;
 }
