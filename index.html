@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FN-LN Portfolio</title>
+
   <link rel="stylesheet" href="styles.css"/>
 </head>
 
@@ -14,37 +15,39 @@
   <!-- LEFT SIDEBAR -->
   <div class="sidebar">
 
+    <!-- BRAND -->
     <div class="brand">
       FN-LN
     </div>
 
-    <div class="section-title">
-      Navigation
+    <!-- PROJECT DROPDOWN -->
+    <div class="dropdown">
+
+      <button class="dropdown-btn" onclick="toggleDropdown()">
+        Projects ▾
+      </button>
+
+      <div class="dropdown-content" id="dropdown">
+
+        <button class="nav-btn" onclick="loadProject('healthcare')">
+          Project 1 - Healthcare
+        </button>
+
+        <button class="nav-btn" onclick="loadProject('project2')">
+          Project 2 - IT Readiness
+        </button>
+
+      </div>
+
     </div>
-
-    <button class="nav-btn active" onclick="setHome()">
-      Home
-    </button>
-
-    <div class="section-title">
-      Projects
-    </div>
-
-    <button class="nav-btn" onclick="loadProject('healthcare')">
-      Project 1 - Healthcare Research
-    </button>
-
-    <button class="nav-btn" onclick="loadProject('project2')">
-      Project 2 - IT Readiness Agent
-    </button>
 
   </div>
 
-  <!-- RIGHT PANEL -->
+  <!-- RIGHT SIDE -->
   <div class="main">
 
     <div class="top-bar" id="guide">
-      Welcome Home: Select a project from the left.
+      Select a project to see usage guide.
     </div>
 
     <div class="content">
@@ -52,7 +55,7 @@
       <h2>Interactive Output Area</h2>
 
       <div id="output">
-        This is the home dashboard. Choose a project to begin.
+        Welcome! Choose a project from the left.
       </div>
 
     </div>
