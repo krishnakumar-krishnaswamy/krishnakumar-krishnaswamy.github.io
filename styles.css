@@ -10,12 +10,15 @@ body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #ffffff;
   color: #111827;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* TOP HEADER */
 .top-header {
   text-align: center;
-  padding: 20px 10px;
+  padding: 18px 10px;
   border-bottom: 1px solid #e5e7eb;
 }
 
@@ -32,16 +35,19 @@ body {
 
 /* MAIN LAYOUT */
 .layout {
+  flex: 1;
   display: flex;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 70px);
 }
 
-/* LEFT SIDE */
+/* LEFT SIDEBAR (FULL HEIGHT LIKE CHATGPT) */
 .sidebar {
-  width: 200px;
+  width: 240px;
   background: #f7f7f8;
   border-right: 1px solid #e5e7eb;
-  padding: 16px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* PROJECT BUTTONS */
@@ -61,20 +67,14 @@ body {
   background: #e5e7eb;
 }
 
-/* RIGHT SIDE */
+/* RIGHT PANEL */
 .main {
   flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  padding: 20px;
+  overflow-y: auto;
 }
 
-/* OUTPUT AREA */
-.content {
-  width: 80%;
-  margin-top: 30px;
-}
-
+/* OUTPUT */
 #output {
   padding: 16px;
   border: 1px solid #e5e7eb;
