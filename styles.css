@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* BASE (ChatGPT-like clean white UI) */
+/* BASE */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #ffffff;
@@ -18,7 +18,7 @@ body {
   height: 100vh;
 }
 
-/* LEFT SIDEBAR */
+/* SIDEBAR */
 .sidebar {
   width: 260px;
   background: #f7f7f8;
@@ -32,7 +32,14 @@ body {
   font-weight: 600;
 }
 
-/* PROJECT BUTTONS */
+/* SUBTEXT */
+.subtext {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+/* BUTTONS */
 .nav-btn {
   width: 100%;
   padding: 10px;
@@ -43,29 +50,27 @@ body {
   text-align: left;
   cursor: pointer;
   font-size: 14px;
-  color: #111827;
 }
 
 .nav-btn:hover {
   background: #e5e7eb;
 }
 
-/* RIGHT PANEL */
+/* MAIN */
 .main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* TOP BAR */
+/* TOP HEADER */
 .top-bar {
   height: 50px;
   display: flex;
   align-items: center;
   padding: 0 16px;
   border-bottom: 1px solid #e5e7eb;
-  font-size: 13px;
-  color: #374151;
+  font-weight: 500;
 }
 
 /* CONTENT */
@@ -73,11 +78,10 @@ body {
   padding: 20px;
 }
 
-/* OUTPUT BOX */
+/* OUTPUT */
 #output {
   margin-top: 20px;
   padding: 16px;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
-  background: #ffffff;
 }
