@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-/* BASE THEME (ChatGPT-like clean UI) */
+/* BASE (ChatGPT-like clean white UI) */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
   background: #ffffff;
   color: #111827;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .layout {
   display: flex;
   height: 100vh;
@@ -26,46 +26,17 @@ body {
   padding: 16px;
 }
 
-/* BRAND (FN-LN TOP) */
+/* BRAND */
 .brand {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 18px;
-}
-
-/* DROPDOWN BUTTON */
-.dropdown-btn {
-  width: 100%;
-  padding: 10px;
-  background: transparent;
-  border: none;
-  text-align: left;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-  border-radius: 6px;
-  color: #111827;
-}
-
-.dropdown-btn:hover {
-  background: #e5e7eb;
-}
-
-/* DROPDOWN CONTAINER */
-.dropdown-content {
-  display: none;
-  margin-top: 8px;
-}
-
-.dropdown-content.show {
-  display: block;
 }
 
 /* PROJECT BUTTONS */
 .nav-btn {
   width: 100%;
   padding: 10px;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   background: transparent;
   border: none;
   border-radius: 6px;
@@ -79,14 +50,14 @@ body {
   background: #e5e7eb;
 }
 
-/* RIGHT SIDE */
+/* RIGHT PANEL */
 .main {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* TOP GUIDE BAR */
+/* TOP BAR */
 .top-bar {
   height: 50px;
   display: flex;
@@ -97,7 +68,7 @@ body {
   color: #374151;
 }
 
-/* CONTENT AREA */
+/* CONTENT */
 .content {
   padding: 20px;
 }
