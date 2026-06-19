@@ -32,26 +32,33 @@ body {
   display: flex;
 }
 
-/* SIDEBAR (CHATGPT STYLE) */
+/* SIDEBAR */
 .sidebar {
   width: 260px;
   background: #f7f7f8;
   border-right: 1px solid #e5e7eb;
+  padding: 12px;
 
   display: flex;
   flex-direction: column;
-  padding: 12px;
-  height: calc(100vh - 60px);
 }
 
-/* PROJECT LIST */
+/* PROJECTS SECTION (push down slightly) */
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  /* KEY FIX: pushes projects slightly down */
+  margin-top: 18px;
 }
 
-/* PROJECT BUTTONS */
+/* CONTACT SECTION */
+.contact-list {
+  margin-top: 18px;
+}
+
+/* BUTTON STYLE (shared) */
 .nav-btn {
   width: 100%;
   padding: 10px;
@@ -65,30 +72,6 @@ body {
 
 .nav-btn:hover {
   background: #e5e7eb;
-}
-
-/* BOTTOM SECTION */
-.sidebar-bottom {
-  margin-top: auto;
-  padding-top: 10px;
-  border-top: 1px solid #e5e7eb;
-}
-
-/* CONTACT BUTTON (CHATGPT ACTION STYLE) */
-.contact-btn {
-  width: 100%;
-  padding: 10px;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  text-align: left;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-.contact-btn:hover {
-  background: #f3f4f6;
 }
 
 /* MAIN PANEL */
