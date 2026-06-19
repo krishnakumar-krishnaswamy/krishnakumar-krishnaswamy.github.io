@@ -114,8 +114,6 @@ body {
   background: #e5e7eb;
 }
 
-/* ACTIVE BUTTON */
-
 .nav-btn.active {
   background: #dcdfe4;
   font-weight: 600;
@@ -137,13 +135,9 @@ body {
 /* PROJECT VIEW */
 
 .project-view {
-  height: calc(100vh - 180px);
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
   text-align: center;
+
+  margin-top: 80px;
 }
 
 .project-view h2 {
