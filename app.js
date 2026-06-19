@@ -16,34 +16,6 @@ function setActiveButton(buttonId) {
 
 }
 
-/* HOME PAGE */
-
-function loadHome() {
-
-  clearActiveButtons();
-
-  const output = document.getElementById("output");
-
-  output.innerHTML = `
-    <div class="home-view">
-
-      <div>
-
-        Welcome, I'm glad you're here.
-        Hope you're having a wonderful day.
-
-        <br><br>
-
-        Explore selected projects and
-        proof-of-concepts using the navigation menu.
-
-      </div>
-
-    </div>
-  `;
-
-}
-
 /* PROJECTS */
 
 function loadProject(project) {
@@ -132,7 +104,3 @@ function copyEmail() {
   });
 
 }
-
-/* DEFAULT HOME PAGE */
-
-loadHome();
