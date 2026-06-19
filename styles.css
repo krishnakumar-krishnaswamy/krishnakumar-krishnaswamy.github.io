@@ -35,9 +35,13 @@ body {
   width: 240px;
   background: #f7f7f8;
   border-right: 1px solid #e5e7eb;
-  padding: 12px;
+
+  /* KEY FIX: push content down slightly */
+  padding: 40px 12px 12px 12px;
+
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 /* BUTTONS */
