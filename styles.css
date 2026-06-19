@@ -1,3 +1,4 @@
+/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -13,7 +14,7 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
+/* TOP HEADER */
 .top-header {
   height: 60px;
   display: flex;
@@ -46,9 +47,10 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin-top: 10px;
 }
 
-/* CONTACT BOTTOM */
+/* CONTACT */
 .contact-list {
   margin-top: auto;
   padding-top: 12px;
@@ -75,21 +77,57 @@ body {
 .main {
   flex: 1;
   padding: 20px;
-  overflow-y: auto;
 }
 
+/* OUTPUT */
 #output {
   min-height: 200px;
 }
 
-/* FORM */
-.form-group {
+/* ========================= */
+/* ✨ CONTACT CARD (NEW UI) */
+/* ========================= */
+
+.contact-card {
+  max-width: 420px;
+  padding: 20px;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background: #fafafa;
+}
+
+.contact-title {
+  font-size: 18px;
+  font-weight: 600;
   margin-bottom: 12px;
 }
 
-input, textarea {
-  width: 100%;
-  padding: 8px;
+.contact-email {
+  font-size: 14px;
+  padding: 10px;
+  background: #ffffff;
   border: 1px solid #e5e7eb;
-  border-radius: 6px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  word-break: break-all;
+}
+
+.copy-btn {
+  padding: 10px 12px;
+  background: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.copy-btn:hover {
+  opacity: 0.9;
+}
+
+.copied-msg {
+  margin-top: 10px;
+  font-size: 13px;
+  color: green;
 }
