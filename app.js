@@ -3,24 +3,15 @@ function loadProject(project) {
   const output = document.getElementById("output");
 
   if (project === "project1") {
-    output.innerHTML = `
-      <h3>Project 1</h3>
-      <p>Healthcare Research interactive demo placeholder.</p>
-    `;
+    output.innerHTML = `<h3>Project 1</h3><p>Healthcare Research demo.</p>`;
   }
 
   else if (project === "project2") {
-    output.innerHTML = `
-      <h3>Project 2</h3>
-      <p>IT Release Readiness Agent (coming soon).</p>
-    `;
+    output.innerHTML = `<h3>Project 2</h3><p>IT Release Readiness Agent.</p>`;
   }
 
   else if (project === "project3") {
-    output.innerHTML = `
-      <h3>Project 3</h3>
-      <p>AI / LLM experiments sandbox.</p>
-    `;
+    output.innerHTML = `<h3>Project 3</h3><p>AI / LLM experiments.</p>`;
   }
 }
 
@@ -48,13 +39,11 @@ function loadContact() {
       <textarea id="message" rows="4" maxlength="100" placeholder="Message (max 100 chars)"></textarea>
     </div>
 
-    <button class="nav-btn" onclick="submitContact()">
-      Submit
-    </button>
+    <button class="nav-btn" onclick="submitContact()">Submit</button>
   `;
 }
 
-/* EMAIL SUBMISSION (GITHUB PAGES SAFE) */
+/* EMAIL SEND (MAILTO) */
 function submitContact() {
 
   const fname = document.getElementById("fname").value;
@@ -62,14 +51,15 @@ function submitContact() {
   const email = document.getElementById("email").value;
   const message = document.getElementById("message").value;
 
-  const subject = `Portfolio Contact from ${fname} ${lname}`;
-  const body = `Name: ${fname} ${lname}
+  const subject = `Portfolio Contact: ${fname} ${lname}`;
+
+  const body =
+`Name: ${fname} ${lname}
 Email: ${email}
 
 Message:
 ${message}`;
 
-  /* Opens user's email client */
   window.location.href =
     `mailto:yourgithubemail@example.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 }
