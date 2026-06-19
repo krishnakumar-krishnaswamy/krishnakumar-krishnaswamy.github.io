@@ -1,41 +1,42 @@
-/* GLOBAL RESET */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* PAGE BASE */
+/* BASE */
 body {
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background-color: #ffffff;
+  background: #ffffff;
   color: #111827;
 }
 
-/* MAIN LAYOUT */
+/* LAYOUT */
 .layout {
   display: flex;
   height: 100vh;
 }
 
-/* LEFT SIDEBAR */
+/* SIDEBAR */
 .sidebar {
-  width: 240px;
+  width: 260px;
   background: #f7f7f8;
   border-right: 1px solid #e5e7eb;
   padding: 16px;
 }
 
-/* BRAND */
+/* BRAND (FN-LN like ChatGPT sidebar title) */
 .brand {
   font-size: 20px;
   font-weight: 600;
-  margin-bottom: 20px;
+  padding: 8px 6px;
+  margin-bottom: 12px;
 }
 
 /* SECTION TITLE */
 .section-title {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 600;
   color: #6b7280;
   margin: 16px 0 8px;
@@ -43,12 +44,12 @@ body {
 }
 
 /* BUTTONS */
-.sidebar button {
+.nav-btn {
   width: 100%;
   padding: 10px;
   margin-bottom: 6px;
   background: transparent;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 6px;
   text-align: left;
   cursor: pointer;
@@ -56,11 +57,18 @@ body {
   color: #111827;
 }
 
-.sidebar button:hover {
+/* HOVER */
+.nav-btn:hover {
   background: #e5e7eb;
 }
 
-/* RIGHT PANEL */
+/* ACTIVE STATE */
+.nav-btn.active {
+  background: #e5e7eb;
+  font-weight: 500;
+}
+
+/* RIGHT SIDE */
 .main {
   flex: 1;
   display: flex;
