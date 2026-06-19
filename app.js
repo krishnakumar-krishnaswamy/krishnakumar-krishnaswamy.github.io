@@ -1,35 +1,45 @@
+function loadHome() {
+  document.getElementById("header").innerText = "FN-LN Portfolio";
+
+  document.getElementById("output").innerHTML =
+    "Welcome — select a project from the left.";
+}
+
 function loadProject(project) {
 
+  const header = document.getElementById("header");
   const output = document.getElementById("output");
-  const guide = document.getElementById("guide");
 
   if (project === "project1") {
 
-    guide.innerText = "Project 1: Healthcare Research Demo";
+    header.innerText = "Project 1 - Healthcare";
 
     output.innerHTML = `
-      <h3>Project 1 - Healthcare</h3>
-      <p>Interactive healthcare analysis demo placeholder.</p>
+      <h3>Healthcare Research</h3>
+      <p>Interactive healthcare analysis workspace.</p>
     `;
   }
 
   else if (project === "project2") {
 
-    guide.innerText = "Project 2: IT Release Readiness Agent";
+    header.innerText = "Project 2 - IT Readiness";
 
     output.innerHTML = `
-      <h3>Project 2</h3>
-      <p>AI-based IT release readiness concept (coming soon).</p>
+      <h3>IT Release Readiness Agent</h3>
+      <p>Workflow evaluation system (concept stage).</p>
     `;
   }
 
   else if (project === "project3") {
 
-    guide.innerText = "Project 3: AI / LLM Experiments";
+    header.innerText = "Project 3 - AI Experiments";
 
     output.innerHTML = `
-      <h3>Project 3</h3>
-      <p>Experimental AI / LLM integration sandbox.</p>
+      <h3>AI / LLM Experiments</h3>
+      <p>Experimental AI integration sandbox.</p>
     `;
   }
 }
+
+/* IMPORTANT: DEFAULT STATE */
+loadHome();
