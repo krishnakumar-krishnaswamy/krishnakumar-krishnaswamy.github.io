@@ -18,7 +18,7 @@ body {
   height: 100vh;
 }
 
-/* SIDEBAR */
+/* LEFT SIDEBAR */
 .sidebar {
   width: 260px;
   background: #f7f7f8;
@@ -26,24 +26,42 @@ body {
   padding: 16px;
 }
 
-/* BRAND (FN-LN like ChatGPT sidebar title) */
+/* BRAND */
 .brand {
   font-size: 20px;
   font-weight: 600;
-  padding: 8px 6px;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
-/* SECTION TITLE */
-.section-title {
-  font-size: 12px;
-  font-weight: 600;
-  color: #6b7280;
-  margin: 16px 0 8px;
-  text-transform: uppercase;
+/* DROPDOWN BUTTON */
+.dropdown-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #111827;
+  border-radius: 6px;
 }
 
-/* BUTTONS */
+.dropdown-btn:hover {
+  background: #e5e7eb;
+}
+
+/* DROPDOWN CONTENT */
+.dropdown-content {
+  display: none;
+  margin-top: 8px;
+}
+
+.dropdown-content.show {
+  display: block;
+}
+
+/* PROJECT BUTTONS */
 .nav-btn {
   width: 100%;
   padding: 10px;
@@ -57,15 +75,8 @@ body {
   color: #111827;
 }
 
-/* HOVER */
 .nav-btn:hover {
   background: #e5e7eb;
-}
-
-/* ACTIVE STATE */
-.nav-btn.active {
-  background: #e5e7eb;
-  font-weight: 500;
 }
 
 /* RIGHT SIDE */
@@ -86,7 +97,7 @@ body {
   color: #374151;
 }
 
-/* CONTENT AREA */
+/* CONTENT */
 .content {
   padding: 20px;
 }
