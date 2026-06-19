@@ -114,8 +114,6 @@ body {
   background: #e5e7eb;
 }
 
-/* ACTIVE BUTTON */
-
 .nav-btn.active {
   background: #dcdfe4;
   font-weight: 600;
@@ -128,21 +126,12 @@ body {
   padding: 20px;
 }
 
-/* OUTPUT */
-
-#output {
-  min-height: 200px;
-}
-
 /* PROJECT VIEW */
 
 .project-view {
   width: 100%;
-
-  display: flex;
-  justify-content: center;
-
-  padding-top: 15px;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .project-view h2 {
