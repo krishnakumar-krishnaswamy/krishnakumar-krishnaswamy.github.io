@@ -23,3 +23,30 @@ function loadProject(project) {
     `;
   }
 }
+
+function loadContact() {
+
+  const output = document.getElementById("output");
+
+  output.innerHTML = `
+    <h3>Contact</h3>
+
+    <div class="form-group">
+      <input type="text" placeholder="First Name" />
+    </div>
+
+    <div class="form-group">
+      <input type="text" placeholder="Last Name" />
+    </div>
+
+    <div class="form-group">
+      <input type="email" placeholder="Email ID" />
+    </div>
+
+    <div class="form-group">
+      <textarea rows="4" maxlength="100" placeholder="Message (max 100 chars)"></textarea>
+    </div>
+
+    <button class="nav-btn">Submit</button>
+  `;
+}
