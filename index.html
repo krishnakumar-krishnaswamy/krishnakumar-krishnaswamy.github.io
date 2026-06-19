@@ -9,54 +9,55 @@
 
 <body>
 
-<div class="top-header">
-  <div class="title">FN LN Portfolio</div>
-</div>
+  <div class="top-header">
+    <div class="title">FN LN Portfolio</div>
+  </div>
 
-<div class="layout">
+  <div class="layout">
 
-  <div class="sidebar">
+    <div class="sidebar">
 
-    <div class="project-list">
+      <div class="project-list">
 
-      <button id="btn-project1"
-              class="nav-btn"
-              onclick="loadProject('project1')">
-        Project 1
-      </button>
+        <button id="btn-project1"
+                class="nav-btn"
+                onclick="loadProject('project1')">
+          Project 1
+        </button>
 
-      <button id="btn-project2"
-              class="nav-btn"
-              onclick="loadProject('project2')">
-        Project 2
-      </button>
+        <button id="btn-project2"
+                class="nav-btn"
+                onclick="loadProject('project2')">
+          Project 2
+        </button>
 
-      <button id="btn-project3"
-              class="nav-btn"
-              onclick="loadProject('project3')">
-        Project 3
-      </button>
+        <button id="btn-project3"
+                class="nav-btn"
+                onclick="loadProject('project3')">
+          Project 3
+        </button>
+
+      </div>
+
+      <div class="contact-list">
+
+        <button id="btn-contact"
+                class="nav-btn"
+                onclick="loadContact()">
+          Contact
+        </button>
+
+      </div>
 
     </div>
 
-    <div class="contact-list">
-
-      <button id="btn-contact"
-              class="nav-btn"
-              onclick="loadContact()">
-        Contact
-      </button>
-
+    <div class="main">
+      <div id="output"></div>
     </div>
 
   </div>
 
-  <div class="main">
-    <div id="output"></div>
-  </div>
+  <script src="app.js"></script>
 
-</div>
-
-<script src="app.js"></script>
 </body>
 </html>
