@@ -1,1 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FN-LN Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
 
+<body>
+
+<div class="layout">
+
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar">
+
+    <div class="brand">
+      FN-LN
+    </div>
+
+    <div class="section-title">
+      Projects
+    </div>
+
+    <button onclick="loadProject('healthcare')">
+      Project 1 - Healthcare Research
+    </button>
+
+    <button onclick="loadProject('project2')">
+      Project 2 - IT Readiness Agent
+    </button>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+  <div class="main">
+
+    <!-- TOP RIGHT GUIDE -->
+    <div class="top-bar" id="guide">
+      Usage Guide: Select a project from the left.
+    </div>
+
+    <!-- OUTPUT -->
+    <div class="content">
+
+      <h2>Interactive Output Area</h2>
+
+      <div id="output">
+        Welcome! Choose a project.
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
