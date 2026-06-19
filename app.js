@@ -13,7 +13,38 @@ function setActiveButton(buttonId) {
   document
     .getElementById(buttonId)
     .classList.add("active");
+
 }
+
+/* HOME PAGE */
+
+function loadHome() {
+
+  clearActiveButtons();
+
+  const output = document.getElementById("output");
+
+  output.innerHTML = `
+    <div class="home-view">
+
+      <div>
+
+        Welcome, I'm glad you're here.
+        Hope you're having a wonderful day.
+
+        <br><br>
+
+        Explore selected projects and
+        proof-of-concepts using the navigation menu.
+
+      </div>
+
+    </div>
+  `;
+
+}
+
+/* PROJECTS */
 
 function loadProject(project) {
 
@@ -25,7 +56,7 @@ function loadProject(project) {
 
     output.innerHTML = `
       <div class="project-view">
-        <h2>Project 1: Healthcare Research Demo</h2>
+        Project 1: Healthcare Research Demo
       </div>
     `;
   }
@@ -36,7 +67,7 @@ function loadProject(project) {
 
     output.innerHTML = `
       <div class="project-view">
-        <h2>Project 2: IT Release Readiness Agent</h2>
+        Project 2: IT Release Readiness Agent
       </div>
     `;
   }
@@ -47,11 +78,14 @@ function loadProject(project) {
 
     output.innerHTML = `
       <div class="project-view">
-        <h2>Project 3: AI / LLM Experiments</h2>
+        Project 3: AI / LLM Experiments
       </div>
     `;
   }
+
 }
+
+/* CONTACT */
 
 function loadContact() {
 
@@ -84,6 +118,8 @@ function loadContact() {
   `;
 }
 
+/* COPY EMAIL */
+
 function copyEmail() {
 
   const email = "yourgithubemail@example.com";
@@ -94,4 +130,9 @@ function copyEmail() {
       "Email copied to clipboard ✔";
 
   });
+
 }
+
+/* DEFAULT HOME PAGE */
+
+loadHome();
