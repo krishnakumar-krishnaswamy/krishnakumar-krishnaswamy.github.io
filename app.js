@@ -1,31 +1,21 @@
 function clearActiveButtons() {
-
-  document.querySelectorAll(".nav-btn").forEach(button => {
-    button.classList.remove("active");
+  document.querySelectorAll(".nav-btn").forEach(btn => {
+    btn.classList.remove("active");
   });
-
 }
 
-function setActiveButton(buttonId) {
-
+function setActiveButton(id) {
   clearActiveButtons();
-
-  document
-    .getElementById(buttonId)
-    .classList.add("active");
-
+  document.getElementById(id).classList.add("active");
 }
 
 /* PROJECTS */
-
 function loadProject(project) {
 
   const output = document.getElementById("output");
 
   if (project === "project1") {
-
     setActiveButton("btn-project1");
-
     output.innerHTML = `
       <div class="project-view">
         Project 1: Healthcare Research Demo
@@ -34,9 +24,7 @@ function loadProject(project) {
   }
 
   else if (project === "project2") {
-
     setActiveButton("btn-project2");
-
     output.innerHTML = `
       <div class="project-view">
         Project 2: IT Release Readiness Agent
@@ -45,20 +33,16 @@ function loadProject(project) {
   }
 
   else if (project === "project3") {
-
     setActiveButton("btn-project3");
-
     output.innerHTML = `
       <div class="project-view">
         Project 3: AI / LLM Experiments
       </div>
     `;
   }
-
 }
 
 /* CONTACT */
-
 function loadContact() {
 
   setActiveButton("btn-contact");
@@ -70,9 +54,7 @@ function loadContact() {
 
       <div class="contact-card">
 
-        <div class="contact-title">
-          Contact
-        </div>
+        <div class="contact-title">Contact</div>
 
         <div class="contact-email">
           yourgithubemail@example.com
@@ -91,16 +73,14 @@ function loadContact() {
 }
 
 /* COPY EMAIL */
-
 function copyEmail() {
-
   const email = "yourgithubemail@example.com";
 
   navigator.clipboard.writeText(email).then(() => {
-
     document.getElementById("copyStatus").innerText =
       "Email copied to clipboard ✔";
-
   });
-
 }
+
+/* DEFAULT LOAD = BLANK */
+document.getElementById("output").innerHTML = "";
