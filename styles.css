@@ -7,14 +7,11 @@
 body {
   font-family: ui-sans-serif, system-ui;
   font-size: 14px;
-  color: #111827;
-  background: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* HEADER */
 .top-header {
   height: 60px;
   display: flex;
@@ -23,7 +20,6 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* LAYOUT */
 .layout {
   display: flex;
   flex: 1;
@@ -34,7 +30,7 @@ body {
   width: 260px;
   background: #f7f7f8;
   padding: 16px;
-  border-right: 1px solid #e5e7eb;
+  overflow-y: auto;
 }
 
 /* MAIN */
@@ -43,43 +39,40 @@ body {
   padding: 24px;
 }
 
-/* GROUP HEADER */
+/* MAIN ITEMS */
+.nav-item {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* SECTION HEADERS */
 .nav-group {
-  margin-top: 12px;
   padding: 8px;
   font-weight: 500;
   cursor: pointer;
 }
 
-/* SUBGROUP */
-.nav-subgroup {
-  padding-left: 10px;
+/* INNER GROUP */
+.nav-group.inner {
+  padding-left: 18px;
+  font-size: 13px;
 }
 
-/* ITEMS */
-.nav-item {
-  padding: 8px;
-  cursor: pointer;
-  border-radius: 6px;
-}
-
-.nav-item:hover {
-  background: #ececec;
-}
-
+/* SUB ITEMS */
 .nav-sub {
-  padding: 6px 14px;
+  padding: 6px 18px;
   cursor: pointer;
-  border-radius: 6px;
 }
 
-.nav-sub:hover {
-  background: #ececec;
-}
-
-/* HIDDEN (PROJECT 3–5 MASKED) */
-.hidden {
+/* GROUP WRAPPER */
+.group {
   display: none;
+  margin-left: 10px;
+}
+
+/* SPACING BETWEEN SECTIONS (3 LINES FEEL) */
+.space {
+  height: 18px;
 }
 
 /* CARD */
@@ -124,6 +117,5 @@ button {
 
 .tick {
   color: green;
-  font-size: 13px;
   height: 18px;
 }
