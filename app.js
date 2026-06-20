@@ -16,27 +16,30 @@ function loadProject(project) {
 
   if (project === "project1") {
     setActiveButton("btn-project1");
+
     output.innerHTML = `
-      <div class="project-view">
-        <h2>Project 1: Healthcare Research Demo</h2>
+      <div class="output-center">
+        Project 1: Healthcare Research Demo
       </div>
     `;
   }
 
   else if (project === "project2") {
     setActiveButton("btn-project2");
+
     output.innerHTML = `
-      <div class="project-view">
-        <h2>Project 2: IT Release Readiness Agent</h2>
+      <div class="output-center">
+        Project 2: IT Release Readiness Agent
       </div>
     `;
   }
 
   else if (project === "project3") {
     setActiveButton("btn-project3");
+
     output.innerHTML = `
-      <div class="project-view">
-        <h2>Project 3: AI / LLM Experiments</h2>
+      <div class="output-center">
+        Project 3: AI / LLM Experiments
       </div>
     `;
   }
@@ -47,7 +50,9 @@ function loadContact() {
 
   setActiveButton("btn-contact");
 
-  document.getElementById("output").innerHTML = `
+  const output = document.getElementById("output");
+
+  output.innerHTML = `
     <div class="contact-wrapper">
 
       <div class="contact-card">
@@ -70,6 +75,7 @@ function loadContact() {
   `;
 }
 
+/* COPY */
 function copyEmail() {
   const email = "yourgithubemail@example.com";
 
