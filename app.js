@@ -1,64 +1,163 @@
-function clearActiveButtons() {
-  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
+// ===============================
+// PORTFOLIO NAVIGATION ENGINE
+// ===============================
+
+// Track current active item
+let currentActive = null;
+
+// ===============================
+// UTIL: CLEAR ACTIVE STATE
+// ===============================
+function clearActive() {
+  document.querySelectorAll(".nav-item").forEach(el => {
+    el.classList.remove("active");
+  });
 }
 
-function setActiveButton(id) {
-  clearActiveButtons();
-  document.getElementById(id).classList.add("active");
+// ===============================
+// UTIL: SET ACTIVE ITEM
+// ===============================
+function setActive(id) {
+  clearActive();
+  const el = document.getElementById(id);
+  if (el) el.classList.add("active");
 }
 
-/* PROJECTS */
-function loadProject(project) {
+// ===============================
+// MAIN RENDER ENGINE
+// ===============================
+function render(contentHTML) {
+  const output = document.getElementById("output");
 
-  setActiveButton("btn-project1");
-
-  let title = "";
-
-  if (project === "project1") {
-    setActiveButton("btn-project1");
-    title = "Project 1: Healthcare Research Demo";
-  }
-
-  if (project === "project2") {
-    setActiveButton("btn-project2");
-    title = "Project 2: IT Release Readiness Agent";
-  }
-
-  if (project === "project3") {
-    setActiveButton("btn-project3");
-    title = "Project 3: AI / LLM Experiments";
-  }
-
-  document.getElementById("projectTitle").innerText = title;
-  document.getElementById("centerContent").innerHTML = "";
+  // Safe replace content
+  output.innerHTML = contentHTML;
 }
 
-/* CONTACT */
-function loadContact() {
+// ===============================
+// HOME
+// ===============================
+function loadHome() {
+  setActive("nav-home");
 
-  setActiveButton("btn-contact");
+  render(`
+    <div class="panel">
+      <div class="card">
+        <div>Welcome</div>
+        <div>Portfolio Overview</div>
+      </div>
+    </div>
+  `);
+}
 
-  document.getElementById("projectTitle").innerText = "";
+// ===============================
+// PROJECT LOADER (FUTURE PYODIDE READY)
+// ===============================
+function loadProject(projectId) {
+  setActive(projectId);
 
-  document.getElementById("centerContent").innerHTML = `
-    <div class="contact-card">
+  render(`
+    <div class="panel" id="project-container">
+      <div class="card">
+        <div>Loading Project...</div>
+      </div>
+    </div>
+  `);
 
-      <div class="contact-title">Contact</div>
+  // Future hook for Pyodide or JS modules
+  console.log("Load project:", projectId);
+}
 
-      <div class="contact-email">yourgithubemail@example.com</div>
+// ===============================
+// PUBLICATION
+// ===============================
+function loadPublication() {
+  setActive("nav-publication");
 
-      <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
+  render(`
+    <div class="panel">
+      <div class="card">
+        <div>Publication Section</div>
+      </div>
+    </div>
+  `);
+}
 
-      <div id="copyStatus" class="copied-msg"></div>
+// ===============================
+// THESIS
+// ===============================
+function loadThesis() {
+  setActive("nav-thesis");
 
+  render(`
+    <div class="panel">
+      <div class="card">
+        <div>MS CS Thesis</div>
+      </div>
+    </div>
+  `);
+}
+
+// ===============================
+// CERTIFICATIONS
+// ===============================
+function loadCert(type) {
+  setActive(type);
+
+  let content = "";
+
+  if (type === "credly") {
+    window.open("YOUR_CREDLY_URL", "_blank");
+    return;
+  }
+
+  content = `
+    <div class="panel">
+      <div class="card">
+        <div>Certification: ${type}</div>
+      </div>
     </div>
   `;
+
+  render(content);
 }
 
+// ===============================
+// ACTIVITIES
+// ===============================
+function loadActivity(type) {
+  setActive(type);
+
+  render(`
+    <div class="panel">
+      <div class="card">
+        <div>Activity: ${type}</div>
+      </div>
+    </div>
+  `);
+}
+
+// ===============================
+// CONTACT (CENTER SPECIAL CASE)
+// ===============================
+function loadContact() {
+  setActive("nav-contact");
+
+  render(`
+    <div class="contact-center">
+      <div class="contact-card">
+        <div>Email</div>
+        <div class="email-box">your@email.com</div>
+        <button onclick="copyEmail()">Copy Email</button>
+      </div>
+    </div>
+  `);
+}
+
+// ===============================
+// COPY EMAIL
+// ===============================
 function copyEmail() {
-  navigator.clipboard.writeText("yourgithubemail@example.com")
-    .then(() => {
-      document.getElementById("copyStatus").innerText =
-        "Email copied to clipboard ✔";
-    });
+  navigator.clipboard.writeText("your@email.com");
+
+  alert("Email copied!");
 }
