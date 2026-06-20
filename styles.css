@@ -6,11 +6,10 @@
 
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-  background: #ffffff;
-  color: #111827;
   height: 100vh;
   display: flex;
   flex-direction: column;
+  color: #111827;
 }
 
 /* HEADER */
@@ -20,8 +19,8 @@ body {
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #e5e7eb;
-  font-size: 16px;
   font-weight: 600;
+  font-size: 16px;
 }
 
 /* LAYOUT */
@@ -40,11 +39,10 @@ body {
   padding: 18px 12px;
 }
 
-/* NAV */
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   margin-top: 20px;
 }
 
@@ -56,14 +54,13 @@ body {
 
 /* BUTTONS */
 .nav-btn {
-  width: 100%;
   padding: 10px;
-  background: transparent;
   border: none;
-  border-radius: 6px;
+  background: transparent;
   text-align: left;
   cursor: pointer;
   font-size: 14px;
+  border-radius: 6px;
 }
 
 .nav-btn:hover {
@@ -74,30 +71,32 @@ body {
   background: #dcdfe4;
 }
 
-/* MAIN AREA (CRITICAL FIX) */
+/* MAIN RIGHT PANEL (CRITICAL FIX) */
 .main {
   flex: 1;
-  display: grid;
-  grid-template-rows: 80px 1fr; /* TOP + CENTER */
+  display: flex;
+  flex-direction: column;
 }
 
-/* TOP AREA (PROJECT TITLE) */
-.project-area {
+/* TOP ZONE = PROJECT TITLE (ALWAYS FIXED POSITION) */
+.top-zone {
+  height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 400; /* IMPORTANT: no bold */
 }
 
-/* CENTER AREA (CONTACT / EMPTY) */
-.center-area {
+/* CENTER ZONE = CONTACT CENTER */
+.center-zone {
+  flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* CONTACT CARD (UNCHANGED VISUAL STYLE) */
+/* CONTACT CARD (UNCHANGED LOOK) */
 .contact-card {
   width: 420px;
   padding: 20px;
@@ -114,16 +113,16 @@ body {
 .contact-email {
   font-size: 14px;
   padding: 10px;
-  background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 12px;
+  background: white;
 }
 
 .copy-btn {
   padding: 10px 12px;
   background: #111827;
-  color: #fff;
+  color: white;
   border: none;
   border-radius: 8px;
 }
