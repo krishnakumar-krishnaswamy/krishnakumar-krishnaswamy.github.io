@@ -13,17 +13,16 @@
 
 <div class="layout">
 
-  <!-- SIDEBAR -->
   <div class="sidebar">
 
-    <div class="nav-item" onclick="renderSection('home')">Home</div>
+    <div class="nav-item" onclick="renderCard('home')">Home</div>
 
     <div class="space"></div>
 
     <!-- PROJECTS -->
     <div class="nav-group" onclick="toggle('projects')">▾ Projects</div>
     <div id="projects" class="group">
-      <div class="nav-sub" onclick="renderSection('project','1')">Project 1</div>
+      <div class="nav-sub" onclick="renderCard('project','1')">Project 1</div>
     </div>
 
     <div class="space"></div>
@@ -31,13 +30,13 @@
     <!-- PUBLICATION -->
     <div class="nav-group" onclick="toggle('publication')">▾ Publication</div>
     <div id="publication" class="group">
-      <div class="nav-sub" onclick="renderSection('publication','1')">Publication 1</div>
+      <div class="nav-sub" onclick="renderCard('publication','1')">Publication 1</div>
     </div>
 
     <div class="space"></div>
 
     <!-- THESIS -->
-    <div class="nav-item" onclick="renderSection('thesis')">
+    <div class="nav-item" onclick="renderCard('thesis')">
       MS CS Thesis
     </div>
 
@@ -47,8 +46,8 @@
     <div class="nav-group" onclick="toggle('profiles')">▾ Profiles</div>
     <div id="profiles" class="group">
 
-      <div class="nav-sub" onclick="openNewTab(LINKS.github)">GitHub</div>
-      <div class="nav-sub" onclick="openNewTab(LINKS.linkedin)">LinkedIn</div>
+      <div class="nav-sub" onclick="openTab(LINKS.github)">GitHub</div>
+      <div class="nav-sub" onclick="openTab(LINKS.linkedin)">LinkedIn</div>
 
     </div>
 
@@ -58,36 +57,41 @@
     <div class="nav-group" onclick="toggle('certs')">▾ Certifications</div>
     <div id="certs" class="group">
 
-      <div class="nav-sub" onclick="openNewTab(LINKS.credly)">Credly</div>
-      <div class="nav-sub">ITIL v3</div>
-      <div class="nav-sub">CSM</div>
-      <div class="nav-sub">SAFe POPM</div>
+      <div class="nav-sub" onclick="openTab(LINKS.credly)">Credly</div>
+      <div class="nav-sub" onclick="renderCard('cert','ITIL v3')">ITIL v3</div>
+      <div class="nav-sub" onclick="renderCard('cert','CSM')">CSM</div>
+      <div class="nav-sub" onclick="renderCard('cert','SAFe POPM')">SAFe POPM</div>
 
     </div>
 
     <div class="space"></div>
 
     <!-- ACTIVITIES -->
-    <div class="nav-group" onclick="toggle('activities')">
-      ▾ Activities & Recognition
-    </div>
+    <div class="nav-group" onclick="toggle('activities')">▾ Activities & Recognition</div>
     <div id="activities" class="group">
 
-      <div class="nav-sub">Programming Contest Recognition</div>
-      <div class="nav-sub">Student STEM Mentorship</div>
-      <div class="nav-sub">Conference Participation</div>
+      <div class="nav-sub" onclick="renderCard('activity','contest')">
+        Programming Contest Recognition
+      </div>
+
+      <div class="nav-sub" onclick="renderCard('activity','mentorship')">
+        Student STEM Mentorship
+      </div>
+
+      <div class="nav-sub" onclick="renderCard('activity','conference')">
+        Conference Participation
+      </div>
 
     </div>
 
     <div class="space"></div>
 
-    <div class="nav-item" onclick="renderSection('contact')">
+    <div class="nav-item" onclick="renderCard('contact')">
       Contact
     </div>
 
   </div>
 
-  <!-- MAIN -->
   <div class="main">
     <div id="output"></div>
   </div>
