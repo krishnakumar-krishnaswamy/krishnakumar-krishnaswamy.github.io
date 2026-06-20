@@ -1,113 +1,94 @@
-/* =========================
-   RESET
-========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* =========================
-   GLOBAL FONT (ChatGPT STYLE)
-========================= */
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
   font-size: 14px;
   color: #111827;
-  background: #ffffff;
+  background: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
-/* =========================
-   HEADER (CENTERED)
-========================= */
+/* HEADER */
 .top-header {
   height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-bottom: 1px solid #e5e7eb;
-  font-weight: 400;
 }
 
-/* =========================
-   MAIN LAYOUT
-========================= */
+/* LAYOUT */
 .layout {
   flex: 1;
   display: flex;
-  overflow: hidden;
 }
 
-/* =========================
-   SIDEBAR
-========================= */
+/* SIDEBAR */
 .sidebar {
   width: 260px;
   background: #f7f7f8;
-  border-right: 1px solid #e5e7eb;
   padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
+  border-right: 1px solid #e5e7eb;
   overflow-y: auto;
+}
+
+/* MAIN */
+.main {
+  flex: 1;
+  padding: 24px;
 }
 
 /* NAV ITEMS */
 .nav-item {
-  padding: 8px 10px;
+  padding: 8px;
   cursor: pointer;
   border-radius: 6px;
-  user-select: none;
-  font-weight: 400;
 }
 
 .nav-item:hover {
   background: #ececec;
 }
 
-.nav-item.active {
-  background: #e0e0e0;
+/* GROUP HEADER */
+.nav-group {
+  margin-top: 14px;
+  font-weight: 500;
+  padding: 8px;
+  color: #374151;
 }
 
-/* =========================
-   RIGHT PANEL
-========================= */
-.main {
-  flex: 1;
-  padding: 24px;
-  overflow-y: auto;
+/* SUB ITEMS (INDENTED) */
+.nav-sub {
+  padding: 6px 18px;
+  cursor: pointer;
+  border-radius: 6px;
 }
 
-/* PANEL WRAPPER */
-.panel {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
+.nav-sub:hover {
+  background: #ececec;
 }
 
-/* CARD STYLE */
+/* CARD */
 .card {
   border: 1px solid #e5e7eb;
-  border-radius: 10px;
   padding: 16px;
-  background: #ffffff;
-  font-weight: 400;
+  border-radius: 10px;
 }
 
-/* =========================
-   CONTACT CENTER (FIXED)
-========================= */
+/* CONTACT */
 .contact-center {
-  height: calc(100vh - 60px);
+  height: 70vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-/* CONTACT CARD */
 .contact-card {
   width: 320px;
   border: 1px solid #e5e7eb;
@@ -116,45 +97,28 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  background: #fafafa;
 }
 
-/* EMAIL BOX (MASK + REVEAL) */
 .email-box {
   border: 1px solid #e5e7eb;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
-  user-select: none;
-  background: #ffffff;
-  word-break: break-word;
+}
+
+/* TICK */
+.tick {
+  font-size: 13px;
+  color: green;
+  height: 18px;
 }
 
 /* BUTTON */
 button {
-  padding: 8px 10px;
+  padding: 8px;
   border: none;
   background: #111827;
   color: white;
   border-radius: 8px;
   cursor: pointer;
-  font-weight: 400;
-}
-
-button:hover {
-  opacity: 0.9;
-}
-
-/* =========================
-   SCROLLBAR CLEANUP (OPTIONAL)
-========================= */
-.sidebar::-webkit-scrollbar,
-.main::-webkit-scrollbar {
-  width: 6px;
-}
-
-.sidebar::-webkit-scrollbar-thumb,
-.main::-webkit-scrollbar-thumb {
-  background: #d1d5db;
-  border-radius: 6px;
 }
