@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
@@ -13,47 +13,74 @@
 
 <div class="layout">
 
+  <!-- SIDEBAR -->
   <div class="sidebar">
 
     <div class="nav-item" onclick="loadHome()">Home</div>
 
-    <!-- PROJECT GROUP (EXPANDABLE) -->
-    <div class="nav-group" onclick="toggleGroup('projects')">
-      ▾ Projects
-    </div>
+    <div class="space"></div>
 
-    <div id="projects-group" class="nav-subgroup">
+    <!-- PROJECTS -->
+    <div class="nav-group" onclick="toggle('projects')">▾ Projects</div>
+    <div id="projects" class="group">
 
-      <div class="nav-sub" onclick="loadProject('project1-healthcare')">Project 1</div>
-      <div class="nav-sub" onclick="loadProject('project2-ai')">Project 2</div>
-
-      <!-- MASKED (NOT SHOWN IN UI) -->
-      <div class="hidden">Project 3</div>
-      <div class="hidden">Project 4</div>
-      <div class="hidden">Project 5</div>
+      <div class="nav-sub" onclick="loadProject('project1')">Project 1</div>
 
     </div>
 
-    <div class="nav-item" onclick="loadPublication()">Publication</div>
+    <div class="space"></div>
+
+    <!-- PUBLICATION -->
+    <div class="nav-group" onclick="toggle('publication')">▾ Publication</div>
+    <div id="publication" class="group">
+      <div class="nav-sub" onclick="loadPublication()">Publication 1</div>
+    </div>
+
+    <div class="space"></div>
+
+    <!-- THESIS -->
     <div class="nav-item" onclick="loadThesis()">MS CS Thesis</div>
 
-    <!-- PROFILES -->
-    <div class="nav-group" onclick="toggleGroup('profiles')">
-      ▾ Profiles
-    </div>
+    <div class="space"></div>
 
-    <div id="profiles-group" class="nav-subgroup">
+    <!-- PROFILES -->
+    <div class="nav-group" onclick="toggle('profiles')">▾ Profiles</div>
+    <div id="profiles" class="group">
 
       <div class="nav-sub" onclick="window.open(LINKS.github,'_blank')">GitHub</div>
       <div class="nav-sub" onclick="window.open(LINKS.linkedin,'_blank')">LinkedIn</div>
-      <div class="nav-sub" onclick="window.open(LINKS.credly,'_blank')">Credly</div>
+
+      <div class="nav-group inner" onclick="toggle('certs')">▾ Certifications</div>
+      <div id="certs" class="group inner">
+
+        <div class="nav-sub" onclick="window.open(LINKS.credly,'_blank')">Credly</div>
+        <div class="nav-sub">ITIL v3</div>
+        <div class="nav-sub">CSM</div>
+        <div class="nav-sub">SAFe POPM</div>
+
+      </div>
 
     </div>
+
+    <div class="space"></div>
+
+    <!-- ACTIVITIES -->
+    <div class="nav-group" onclick="toggle('activities')">▾ Activities & Recognition</div>
+    <div id="activities" class="group">
+
+      <div class="nav-sub">Programming Contest Recognition</div>
+      <div class="nav-sub">Student STEM Mentorship</div>
+      <div class="nav-sub">Conference Participation</div>
+
+    </div>
+
+    <div class="space"></div>
 
     <div class="nav-item" onclick="loadContact()">Contact</div>
 
   </div>
 
+  <!-- MAIN -->
   <div class="main">
     <div id="output"></div>
   </div>
@@ -61,6 +88,5 @@
 </div>
 
 <script src="app.js"></script>
-
 </body>
 </html>
