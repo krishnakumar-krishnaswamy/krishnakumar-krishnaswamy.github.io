@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio</title>
-  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="styles.css?v=3"/>
 </head>
 
 <body>
@@ -19,7 +19,6 @@
 
     <div class="space"></div>
 
-    <!-- PROJECTS -->
     <div class="nav-group" onclick="toggle('projects')">▾ Projects</div>
     <div id="projects" class="group">
       <div class="nav-sub" onclick="renderCard('project','1')">Project 1</div>
@@ -27,7 +26,6 @@
 
     <div class="space"></div>
 
-    <!-- PUBLICATION -->
     <div class="nav-group" onclick="toggle('publication')">▾ Publication</div>
     <div id="publication" class="group">
       <div class="nav-sub" onclick="renderCard('publication','1')">Publication 1</div>
@@ -35,14 +33,10 @@
 
     <div class="space"></div>
 
-    <!-- THESIS -->
-    <div class="nav-item" onclick="renderCard('thesis')">
-      MS CS Thesis
-    </div>
+    <div class="nav-item" onclick="renderCard('thesis')">MS CS Thesis</div>
 
     <div class="space"></div>
 
-    <!-- PROFILES -->
     <div class="nav-group" onclick="toggle('profiles')">▾ Profiles</div>
     <div id="profiles" class="group">
 
@@ -53,7 +47,6 @@
 
     <div class="space"></div>
 
-    <!-- CERTIFICATIONS -->
     <div class="nav-group" onclick="toggle('certs')">▾ Certifications</div>
     <div id="certs" class="group">
 
@@ -66,7 +59,6 @@
 
     <div class="space"></div>
 
-    <!-- ACTIVITIES -->
     <div class="nav-group" onclick="toggle('activities')">▾ Activities & Recognition</div>
     <div id="activities" class="group">
 
@@ -86,9 +78,7 @@
 
     <div class="space"></div>
 
-    <div class="nav-item" onclick="renderCard('contact')">
-      Contact
-    </div>
+    <div class="nav-item" onclick="renderCard('contact')">Contact</div>
 
   </div>
 
@@ -98,6 +88,6 @@
 
 </div>
 
-<script src="app.js"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>
