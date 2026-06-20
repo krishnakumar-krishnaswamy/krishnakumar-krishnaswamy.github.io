@@ -13,41 +13,47 @@
 
 <div class="layout">
 
-  <!-- SIDEBAR -->
   <div class="sidebar">
 
     <div class="nav-item" onclick="loadHome()">Home</div>
 
-    <div class="nav-item" onclick="loadProject('project1-healthcare-research')">Project 1</div>
-    <div class="nav-item" onclick="loadProject('project2-ai-agents')">Project 2</div>
-    <div class="nav-item" onclick="loadProject('project3-it-release-readiness')">Project 3</div>
-    <div class="nav-item">Project 4</div>
-    <div class="nav-item">Project 5</div>
+    <!-- PROJECT GROUP (EXPANDABLE) -->
+    <div class="nav-group" onclick="toggleGroup('projects')">
+      ▾ Projects
+    </div>
+
+    <div id="projects-group" class="nav-subgroup">
+
+      <div class="nav-sub" onclick="loadProject('project1-healthcare')">Project 1</div>
+      <div class="nav-sub" onclick="loadProject('project2-ai')">Project 2</div>
+
+      <!-- MASKED (NOT SHOWN IN UI) -->
+      <div class="hidden">Project 3</div>
+      <div class="hidden">Project 4</div>
+      <div class="hidden">Project 5</div>
+
+    </div>
 
     <div class="nav-item" onclick="loadPublication()">Publication</div>
     <div class="nav-item" onclick="loadThesis()">MS CS Thesis</div>
 
-    <div class="nav-group">Professional Profiles</div>
+    <!-- PROFILES -->
+    <div class="nav-group" onclick="toggleGroup('profiles')">
+      ▾ Profiles
+    </div>
 
-    <div class="nav-sub" onclick="window.open(LINKS.github,'_blank')">GitHub</div>
-    <div class="nav-sub" onclick="window.open(LINKS.linkedin,'_blank')">LinkedIn</div>
-    <div class="nav-sub" onclick="window.open(LINKS.credly,'_blank')">Credly</div>
+    <div id="profiles-group" class="nav-subgroup">
 
-    <div class="nav-group">Certifications</div>
-    <div class="nav-sub" onclick="loadCert('itilv3')">ITIL v3</div>
-    <div class="nav-sub" onclick="loadCert('csm')">CSM</div>
-    <div class="nav-sub" onclick="loadCert('safe-popm')">SAFe POPM</div>
+      <div class="nav-sub" onclick="window.open(LINKS.github,'_blank')">GitHub</div>
+      <div class="nav-sub" onclick="window.open(LINKS.linkedin,'_blank')">LinkedIn</div>
+      <div class="nav-sub" onclick="window.open(LINKS.credly,'_blank')">Credly</div>
 
-    <div class="nav-group">Activities</div>
-    <div class="nav-sub" onclick="loadActivity('programming-contest')">Programming Contest</div>
-    <div class="nav-sub" onclick="loadActivity('mentorship')">STEM Mentorship</div>
-    <div class="nav-sub" onclick="loadActivity('conference')">Conference Participation</div>
+    </div>
 
     <div class="nav-item" onclick="loadContact()">Contact</div>
 
   </div>
 
-  <!-- MAIN -->
   <div class="main">
     <div id="output"></div>
   </div>
