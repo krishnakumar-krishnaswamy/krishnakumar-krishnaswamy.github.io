@@ -4,60 +4,70 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-// TOGGLE FUNCTION (FIXED PROPERLY)
+// TOGGLE
 function toggle(id) {
   const el = document.getElementById(id);
+  el.style.display = (el.style.display === "block") ? "none" : "block";
+}
 
-  if (el.style.display === "none" || el.style.display === "") {
-    el.style.display = "block";
-  } else {
-    el.style.display = "none";
+// MAIN ROUTER
+function renderSection(type, value) {
+
+  const output = document.getElementById("output");
+
+  // HOME
+  if (type === "home") {
+    output.innerHTML = `<div class="card">Home</div>`;
+  }
+
+  // PROJECT
+  else if (type === "project") {
+    output.innerHTML = `<div class="card">Project ${value}</div>`;
+  }
+
+  // PUBLICATION
+  else if (type === "publication") {
+    output.innerHTML = `<div class="card">Publication ${value}</div>`;
+  }
+
+  // THESIS
+  else if (type === "thesis") {
+    output.innerHTML = `<div class="card">MS CS Thesis (2006)</div>`;
+  }
+
+  // CERTIFICATIONS
+  else if (type === "cert") {
+    output.innerHTML = `<div class="card">Certification: ${value}</div>`;
+  }
+
+  // ACTIVITIES
+  else if (type === "activity") {
+    output.innerHTML = `<div class="card">Activity: ${value}</div>`;
+  }
+
+  // CONTACT
+  else if (type === "contact") {
+    output.innerHTML = `
+      <div class="contact-center">
+        <div class="contact-card">
+
+          <div>Email</div>
+
+          <div id="emailBox" class="email-box" onclick="revealEmail()">
+            •••••••••••••••••••
+          </div>
+
+          <button onclick="copyEmail()">Copy Email</button>
+
+          <div id="tick" class="tick"></div>
+
+        </div>
+      </div>
+    `;
   }
 }
 
-// RENDER
-function render(html) {
-  document.getElementById("output").innerHTML = html;
-}
-
-// BASIC PAGES
-function loadHome() {
-  render(`<div class="card">Home</div>`);
-}
-
-function loadProject(id) {
-  render(`<div class="card">Project: ${id}</div>`);
-}
-
-function loadPublication() {
-  render(`<div class="card">Publication 1</div>`);
-}
-
-function loadThesis() {
-  render(`<div class="card">MS CS Thesis</div>`);
-}
-
-// CONTACT
-function loadContact() {
-  render(`
-    <div class="contact-center">
-      <div class="contact-card">
-
-        <div>Email</div>
-
-        <div id="emailBox" class="email-box" onclick="revealEmail()">
-          •••••••••••••••••••
-        </div>
-
-        <button onclick="copyEmail()">Copy Email</button>
-
-        <div id="tick" class="tick"></div>
-
-      </div>
-    </div>
-  `);
-}
-
+// EMAIL
 function revealEmail() {
   document.getElementById("emailBox").innerText =
     "informkrishnakumar@gmail.com";
