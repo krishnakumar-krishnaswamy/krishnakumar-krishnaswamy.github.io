@@ -1,10 +1,12 @@
 const LINKS = {
   github: "https://github.com/krishnakumar-krishnaswamy/krishnakumar-krishnaswamy.github.io",
-  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy-pmp-9a80a3129",
+
+  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy-pmp-9a80a3129?utm_source=portfolio",
+
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-/* OPEN NEW TAB SAFE */
+/* SAFE NEW TAB OPEN */
 function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -15,7 +17,7 @@ function toggle(id) {
   el.style.display = (el.style.display === "block") ? "none" : "block";
 }
 
-/* CENTRAL RENDER ENGINE */
+/* MAIN ENGINE */
 function renderCard(type, value) {
   const out = document.getElementById("output");
 
@@ -64,7 +66,7 @@ function renderCard(type, value) {
   }
 }
 
-/* EMAIL REVEAL */
+/* EMAIL */
 function revealEmail() {
   document.getElementById("emailBox").innerText =
     "informkrishnakumar@gmail.com";
@@ -73,7 +75,6 @@ function revealEmail() {
 /* COPY EMAIL */
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
-
   document.getElementById("tick").innerText = "✔ Copied";
 
   setTimeout(() => {
