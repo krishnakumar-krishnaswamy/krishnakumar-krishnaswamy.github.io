@@ -13,64 +13,81 @@
 
 <div class="layout">
 
+  <!-- SIDEBAR -->
   <div class="sidebar">
 
     <div class="nav-item" onclick="renderSection('home')">Home</div>
 
     <div class="space"></div>
 
+    <!-- PROJECTS -->
     <div class="nav-group" onclick="toggle('projects')">▾ Projects</div>
     <div id="projects" class="group">
-      <div class="nav-sub" onclick="renderSection('project','p1')">Project 1</div>
+      <div class="nav-sub" onclick="renderSection('project','1')">Project 1</div>
     </div>
 
     <div class="space"></div>
 
+    <!-- PUBLICATION -->
     <div class="nav-group" onclick="toggle('publication')">▾ Publication</div>
     <div id="publication" class="group">
-      <div class="nav-sub" onclick="renderSection('publication','p1')">Publication 1</div>
+      <div class="nav-sub" onclick="renderSection('publication','1')">Publication 1</div>
     </div>
 
     <div class="space"></div>
 
-    <div class="nav-item" onclick="renderSection('thesis')">MS CS Thesis</div>
+    <!-- THESIS -->
+    <div class="nav-item" onclick="renderSection('thesis')">
+      MS CS Thesis
+    </div>
 
     <div class="space"></div>
 
-    <div class="nav-group" onclick="toggle('profiles')">▾ Professional Profiles</div>
+    <!-- PROFILES -->
+    <div class="nav-group" onclick="toggle('profiles')">▾ Profiles</div>
     <div id="profiles" class="group">
 
-      <div class="nav-sub" onclick="window.open(LINKS.github,'_blank')">GitHub</div>
-      <div class="nav-sub" onclick="window.open(LINKS.linkedin,'_blank')">LinkedIn</div>
+      <div class="nav-sub" onclick="openNewTab(LINKS.github)">GitHub</div>
+      <div class="nav-sub" onclick="openNewTab(LINKS.linkedin)">LinkedIn</div>
 
-      <div class="nav-group inner" onclick="toggle('certs')">▾ Certifications</div>
-      <div id="certs" class="group inner">
-
-        <div class="nav-sub" onclick="renderSection('cert','credly')">Credly</div>
-        <div class="nav-sub" onclick="renderSection('cert','itil')">ITIL v3</div>
-        <div class="nav-sub" onclick="renderSection('cert','csm')">CSM</div>
-        <div class="nav-sub" onclick="renderSection('cert','safe')">SAFe POPM</div>
-
-      </div>
     </div>
 
     <div class="space"></div>
 
-    <div class="nav-group" onclick="toggle('activities')">▾ Activities & Recognition</div>
+    <!-- CERTIFICATIONS -->
+    <div class="nav-group" onclick="toggle('certs')">▾ Certifications</div>
+    <div id="certs" class="group">
+
+      <div class="nav-sub" onclick="openNewTab(LINKS.credly)">Credly</div>
+      <div class="nav-sub">ITIL v3</div>
+      <div class="nav-sub">CSM</div>
+      <div class="nav-sub">SAFe POPM</div>
+
+    </div>
+
+    <div class="space"></div>
+
+    <!-- ACTIVITIES -->
+    <div class="nav-group" onclick="toggle('activities')">
+      ▾ Activities & Recognition
+    </div>
     <div id="activities" class="group">
 
-      <div class="nav-sub" onclick="renderSection('activity','contest')">Programming Contest</div>
-      <div class="nav-sub" onclick="renderSection('activity','mentorship')">STEM Mentorship</div>
-      <div class="nav-sub" onclick="renderSection('activity','conference')">Conference Participation</div>
+      <div class="nav-sub">Programming Contest Recognition</div>
+      <div class="nav-sub">Student STEM Mentorship</div>
+      <div class="nav-sub">Conference Participation</div>
 
     </div>
 
     <div class="space"></div>
 
-    <div class="nav-item" onclick="renderSection('contact')">Contact</div>
+    <div class="nav-item" onclick="renderSection('contact')">
+      Contact
+    </div>
 
   </div>
 
+  <!-- MAIN -->
   <div class="main">
     <div id="output"></div>
   </div>
