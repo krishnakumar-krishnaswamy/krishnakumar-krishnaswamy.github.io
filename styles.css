@@ -1,121 +1,201 @@
+/* =========================
+   GLOBAL RESET
+========================= */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* =========================
+   BASE FONT (ChatGPT-like)
+========================= */
 body {
-  font-family: ui-sans-serif, system-ui;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
   font-size: 14px;
+  color: #111827;
+  background: #ffffff;
   height: 100vh;
   display: flex;
   flex-direction: column;
 }
 
+/* =========================
+   HEADER
+========================= */
 .top-header {
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-bottom: 1px solid #e5e7eb;
+  font-weight: 400;
 }
 
+/* =========================
+   MAIN LAYOUT
+========================= */
 .layout {
   display: flex;
   flex: 1;
+  overflow: hidden;
 }
 
-/* SIDEBAR */
+/* =========================
+   SIDEBAR
+========================= */
 .sidebar {
-  width: 260px;
+  width: 270px;
   background: #f7f7f8;
   padding: 16px;
   overflow-y: auto;
+  border-right: 1px solid #e5e7eb;
 }
 
-/* MAIN */
+/* =========================
+   MAIN CONTENT
+========================= */
 .main {
   flex: 1;
   padding: 24px;
+  overflow-y: auto;
 }
 
-/* MAIN ITEMS */
+/* =========================
+   NAV ITEMS (TOP LEVEL)
+========================= */
 .nav-item {
-  padding: 8px;
+  padding: 8px 10px;
   cursor: pointer;
+  border-radius: 6px;
+  font-weight: 400;
 }
 
-/* SECTION HEADERS */
+.nav-item:hover {
+  background: #ececec;
+}
+
+/* =========================
+   SECTION HEADERS
+========================= */
 .nav-group {
-  padding: 8px;
+  padding: 8px 10px;
   font-weight: 500;
   cursor: pointer;
+  user-select: none;
 }
 
-/* INNER GROUP */
+/* nested section header */
 .nav-group.inner {
   padding-left: 18px;
   font-size: 13px;
+  font-weight: 500;
 }
 
-/* SUB ITEMS */
+/* =========================
+   SUB ITEMS
+========================= */
 .nav-sub {
   padding: 6px 18px;
   cursor: pointer;
+  border-radius: 6px;
+  font-weight: 400;
 }
 
-/* GROUP WRAPPER */
+.nav-sub:hover {
+  background: #ececec;
+}
+
+/* =========================
+   COLLAPSIBLE GROUPS
+========================= */
 .group {
   display: none;
-  margin-left: 10px;
+  margin-left: 6px;
 }
 
-/* SPACING BETWEEN SECTIONS (3 LINES FEEL) */
+/* =========================
+   SECTION SPACING (VISUAL 3 LINE GAP)
+========================= */
 .space {
   height: 18px;
 }
 
-/* CARD */
+/* =========================
+   RIGHT PANEL CARD
+========================= */
 .card {
   border: 1px solid #e5e7eb;
-  padding: 16px;
   border-radius: 10px;
+  padding: 16px;
+  background: #ffffff;
+  font-weight: 400;
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT CENTER FIX (VERTICAL MIDDLE)
+========================= */
 .contact-center {
-  height: 70vh;
+  height: calc(100vh - 60px);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+/* CONTACT CARD */
 .contact-card {
   width: 320px;
   border: 1px solid #e5e7eb;
-  padding: 18px;
   border-radius: 12px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  background: #fafafa;
 }
 
+/* EMAIL BOX (MASKED STATE) */
 .email-box {
   border: 1px solid #e5e7eb;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
+  user-select: none;
+  background: #ffffff;
 }
 
+/* BUTTON */
 button {
-  padding: 8px;
+  padding: 8px 10px;
+  border: none;
   background: #111827;
   color: white;
-  border: none;
   border-radius: 8px;
+  cursor: pointer;
+  font-weight: 400;
 }
 
+button:hover {
+  opacity: 0.9;
+}
+
+/* COPY SUCCESS INDICATOR */
 .tick {
-  color: green;
+  font-size: 13px;
+  color: #16a34a;
   height: 18px;
+}
+
+/* =========================
+   SCROLLBAR (CLEAN UI)
+========================= */
+.sidebar::-webkit-scrollbar,
+.main::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar::-webkit-scrollbar-thumb,
+.main::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 6px;
 }
