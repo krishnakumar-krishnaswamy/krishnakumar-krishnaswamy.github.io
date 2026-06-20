@@ -3,41 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>FN-LN Portfolio</title>
+  <title>Portfolio</title>
   <link rel="stylesheet" href="styles.css"/>
 </head>
 
 <body>
 
-<div class="top-header">FN LN Portfolio</div>
+<!-- =========================
+     HEADER
+========================= -->
+<div class="top-header">
+  FN LN
+</div>
 
+<!-- =========================
+     MAIN LAYOUT
+========================= -->
 <div class="layout">
 
+  <!-- =========================
+       SIDEBAR
+  ========================== -->
   <div class="sidebar">
 
-    <div class="project-list">
-      <button id="btn-project1" class="nav-btn" onclick="loadProject('project1')">Project 1</button>
-      <button id="btn-project2" class="nav-btn" onclick="loadProject('project2')">Project 2</button>
-      <button id="btn-project3" class="nav-btn" onclick="loadProject('project3')">Project 3</button>
+    <!-- HOME -->
+    <div id="nav-home" class="nav-item active" onclick="loadHome()">
+      Home
     </div>
 
-    <div class="contact-list">
-      <button id="btn-contact" class="nav-btn" onclick="loadContact()">Contact</button>
+    <!-- PROJECTS -->
+    <div class="nav-item" onclick="loadProject('project1-healthcare-research')">
+      Project 1
+    </div>
+
+    <div class="nav-item" onclick="loadProject('project2-ai-agents')">
+      Project 2
+    </div>
+
+    <div class="nav-item" onclick="loadProject('project3-it-release-readiness')">
+      Project 3
+    </div>
+
+    <div class="nav-item">
+      Project 4
+    </div>
+
+    <div class="nav-item">
+      Project 5
+    </div>
+
+    <!-- PUBLICATION -->
+    <div id="nav-publication" class="nav-item" onclick="loadPublication()">
+      Publication
+    </div>
+
+    <!-- MS CS THESIS -->
+    <div id="nav-thesis" class="nav-item" onclick="loadThesis()">
+      MS CS Thesis
+    </div>
+
+    <!-- PROFILES -->
+    <div class="nav-item">
+      Professional Profiles
+    </div>
+
+    <div class="nav-item" onclick="window.open('YOUR_GITHUB_URL','_blank')">
+      GitHub
+    </div>
+
+    <div class="nav-item" onclick="window.open('YOUR_LINKEDIN_URL','_blank')">
+      LinkedIn
+    </div>
+
+    <div class="nav-item" onclick="loadCert('credly')">
+      Credly
+    </div>
+
+    <div class="nav-item" onclick="loadCert('itilv3')">
+      ITIL v3
+    </div>
+
+    <div class="nav-item" onclick="loadCert('csm')">
+      CSM
+    </div>
+
+    <div class="nav-item" onclick="loadCert('safe-popm')">
+      SAFe POPM
+    </div>
+
+    <!-- ACTIVITIES -->
+    <div class="nav-item" onclick="loadActivity('programming-contest')">
+      Programming Contest
+    </div>
+
+    <div class="nav-item" onclick="loadActivity('mentorship')">
+      STEM Mentorship
+    </div>
+
+    <div class="nav-item" onclick="loadActivity('conference')">
+      Conference Participation
+    </div>
+
+    <!-- CONTACT -->
+    <div id="nav-contact" class="nav-item" onclick="loadContact()">
+      Contact
     </div>
 
   </div>
 
-  <!-- IMPORTANT: fixed structure -->
+  <!-- =========================
+       RIGHT PANEL
+  ========================== -->
   <div class="main">
-
-    <div class="top-zone" id="projectTitle"></div>
-
-    <div class="center-zone" id="centerContent"></div>
-
+    <div id="output"></div>
   </div>
 
 </div>
 
+<!-- =========================
+     SCRIPT
+========================= -->
 <script src="app.js"></script>
+
 </body>
 </html>
