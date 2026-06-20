@@ -4,43 +4,40 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-// ======================
-// TOGGLE GROUP (FIXED)
-// ======================
-function toggleGroup(id) {
-  const el = document.getElementById(id + "-group");
+// TOGGLE FUNCTION (FIXED PROPERLY)
+function toggle(id) {
+  const el = document.getElementById(id);
 
-  if (!el) return;
-
-  if (el.style.display === "none") {
+  if (el.style.display === "none" || el.style.display === "") {
     el.style.display = "block";
   } else {
     el.style.display = "none";
   }
 }
 
-// ======================
+// RENDER
 function render(html) {
   document.getElementById("output").innerHTML = html;
 }
 
-// ======================
+// BASIC PAGES
 function loadHome() {
   render(`<div class="card">Home</div>`);
 }
 
 function loadProject(id) {
-  render(`<div class="card">Loading ${id}</div>`);
+  render(`<div class="card">Project: ${id}</div>`);
 }
 
 function loadPublication() {
-  render(`<div class="card">Publication</div>`);
+  render(`<div class="card">Publication 1</div>`);
 }
 
 function loadThesis() {
   render(`<div class="card">MS CS Thesis</div>`);
 }
 
+// CONTACT
 function loadContact() {
   render(`
     <div class="contact-center">
@@ -68,7 +65,6 @@ function revealEmail() {
 
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
-
   document.getElementById("tick").innerText = "✔ Copied";
 
   setTimeout(() => {
