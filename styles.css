@@ -1,13 +1,11 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   background: #ffffff;
   color: #111827;
   height: 100vh;
@@ -42,19 +40,18 @@ body {
   padding: 18px 12px;
 }
 
-/* PROJECT LIST */
+/* NAV */
 .project-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  margin-top: 25px;
+  gap: 18px;
+  margin-top: 20px;
 }
 
-/* CONTACT */
 .contact-list {
   margin-top: auto;
-  padding-top: 12px;
   border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
 }
 
 /* BUTTONS */
@@ -67,7 +64,6 @@ body {
   text-align: left;
   cursor: pointer;
   font-size: 14px;
-  color: #111827;
 }
 
 .nav-btn:hover {
@@ -76,40 +72,32 @@ body {
 
 .nav-btn.active {
   background: #dcdfe4;
-  font-weight: 600;
 }
 
-/* MAIN AREA */
+/* MAIN AREA (CRITICAL FIX) */
 .main {
   flex: 1;
-  position: relative;
+  display: grid;
+  grid-template-rows: 80px 1fr; /* TOP + CENTER */
 }
 
-/* ✅ PROJECT TITLE CENTER (FIXED) */
-.output-center {
-  position: absolute;
-  top: 20px;              /* just below header */
-  left: 0;
-  right: 0;
-
+/* TOP AREA (PROJECT TITLE) */
+.project-area {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-
-  font-size: 14px;        /* same as sidebar */
-  font-weight: 400;       /* IMPORTANT: no bold */
-  color: #111827;
+  font-size: 14px;
+  font-weight: 400;
 }
 
-/* CONTACT CENTER FIX (TRUE MIDDLE) */
-.contact-wrapper {
-  height: 100%;
+/* CENTER AREA (CONTACT / EMPTY) */
+.center-area {
   display: flex;
+  align-items: center;
   justify-content: center;
-  align-items: center;    /* TRUE vertical center */
 }
 
-/* CONTACT CARD (UNCHANGED STYLE) */
+/* CONTACT CARD (UNCHANGED VISUAL STYLE) */
 .contact-card {
   width: 420px;
   padding: 20px;
@@ -120,32 +108,24 @@ body {
 
 .contact-title {
   font-size: 18px;
-  font-weight: 600;
   margin-bottom: 12px;
 }
 
 .contact-email {
   font-size: 14px;
   padding: 10px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 12px;
-  word-break: break-all;
 }
 
 .copy-btn {
   padding: 10px 12px;
   background: #111827;
-  color: #ffffff;
+  color: #fff;
   border: none;
   border-radius: 8px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.copy-btn:hover {
-  opacity: 0.9;
 }
 
 .copied-msg {
