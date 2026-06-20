@@ -1,21 +1,26 @@
 function clearActiveButtons() {
-  document.querySelectorAll(".nav-btn").forEach(btn => {
-    btn.classList.remove("active");
+  document.querySelectorAll(".nav-btn").forEach(button => {
+    button.classList.remove("active");
   });
 }
 
-function setActiveButton(id) {
+function setActiveButton(buttonId) {
   clearActiveButtons();
-  document.getElementById(id).classList.add("active");
+  document.getElementById(buttonId).classList.add("active");
 }
 
-/* PROJECTS */
+/* ========================= */
+/* PROJECT LOADER */
+/* ========================= */
+
 function loadProject(project) {
 
   const output = document.getElementById("output");
 
   if (project === "project1") {
+
     setActiveButton("btn-project1");
+
     output.innerHTML = `
       <div class="project-view">
         Project 1: Healthcare Research Demo
@@ -24,7 +29,9 @@ function loadProject(project) {
   }
 
   else if (project === "project2") {
+
     setActiveButton("btn-project2");
+
     output.innerHTML = `
       <div class="project-view">
         Project 2: IT Release Readiness Agent
@@ -33,7 +40,9 @@ function loadProject(project) {
   }
 
   else if (project === "project3") {
+
     setActiveButton("btn-project3");
+
     output.innerHTML = `
       <div class="project-view">
         Project 3: AI / LLM Experiments
@@ -42,7 +51,10 @@ function loadProject(project) {
   }
 }
 
-/* CONTACT */
+/* ========================= */
+/* CONTACT (UNCHANGED UI) */
+/* ========================= */
+
 function loadContact() {
 
   setActiveButton("btn-contact");
@@ -74,6 +86,7 @@ function loadContact() {
 
 /* COPY EMAIL */
 function copyEmail() {
+
   const email = "yourgithubemail@example.com";
 
   navigator.clipboard.writeText(email).then(() => {
@@ -81,6 +94,3 @@ function copyEmail() {
       "Email copied to clipboard ✔";
   });
 }
-
-/* DEFAULT LOAD = BLANK */
-document.getElementById("output").innerHTML = "";
