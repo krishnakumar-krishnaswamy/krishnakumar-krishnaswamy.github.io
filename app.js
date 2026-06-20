@@ -4,51 +4,43 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-// RESET ACTIVE
-function clearActive() {
-  document.querySelectorAll(".nav-item, .nav-sub").forEach(el => {
-    el.classList.remove("active");
-  });
+// ======================
+// TOGGLE GROUP (FIXED)
+// ======================
+function toggleGroup(id) {
+  const el = document.getElementById(id + "-group");
+
+  if (!el) return;
+
+  if (el.style.display === "none") {
+    el.style.display = "block";
+  } else {
+    el.style.display = "none";
+  }
 }
 
-function setActive() {}
-
-// RENDER
+// ======================
 function render(html) {
   document.getElementById("output").innerHTML = html;
 }
 
-// HOME
+// ======================
 function loadHome() {
   render(`<div class="card">Home</div>`);
 }
 
-// PROJECTS
 function loadProject(id) {
   render(`<div class="card">Loading ${id}</div>`);
 }
 
-// PUBLICATION
 function loadPublication() {
   render(`<div class="card">Publication</div>`);
 }
 
-// THESIS
 function loadThesis() {
   render(`<div class="card">MS CS Thesis</div>`);
 }
 
-// CERTS
-function loadCert(type) {
-  render(`<div class="card">Certification: ${type}</div>`);
-}
-
-// ACTIVITIES
-function loadActivity(type) {
-  render(`<div class="card">Activity: ${type}</div>`);
-}
-
-// CONTACT (FIXED)
 function loadContact() {
   render(`
     <div class="contact-center">
@@ -77,10 +69,9 @@ function revealEmail() {
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
 
-  const tick = document.getElementById("tick");
-  tick.innerText = "✔ Copied";
+  document.getElementById("tick").innerText = "✔ Copied";
 
   setTimeout(() => {
-    tick.innerText = "";
+    document.getElementById("tick").innerText = "";
   }, 2000);
 }
