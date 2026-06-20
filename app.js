@@ -7,18 +7,8 @@ function setActiveButton(id) {
   document.getElementById(id).classList.add("active");
 }
 
-/* INITIAL EMPTY STATE */
-window.onload = () => {
-  document.getElementById("output").innerHTML = `
-    <div class="project-area"></div>
-    <div class="center-area"></div>
-  `;
-};
-
 /* PROJECTS */
 function loadProject(project) {
-
-  const output = document.getElementById("output");
 
   setActiveButton("btn-project1");
 
@@ -39,10 +29,8 @@ function loadProject(project) {
     title = "Project 3: AI / LLM Experiments";
   }
 
-  output.innerHTML = `
-    <div class="project-area">${title}</div>
-    <div class="center-area"></div>
-  `;
+  document.getElementById("projectTitle").innerText = title;
+  document.getElementById("centerContent").innerHTML = "";
 }
 
 /* CONTACT */
@@ -50,30 +38,27 @@ function loadContact() {
 
   setActiveButton("btn-contact");
 
-  document.getElementById("output").innerHTML = `
-    <div class="project-area"></div>
+  document.getElementById("projectTitle").innerText = "";
 
-    <div class="center-area">
+  document.getElementById("centerContent").innerHTML = `
+    <div class="contact-card">
 
-      <div class="contact-card">
+      <div class="contact-title">Contact</div>
 
-        <div class="contact-title">Contact</div>
+      <div class="contact-email">yourgithubemail@example.com</div>
 
-        <div class="contact-email">yourgithubemail@example.com</div>
+      <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
 
-        <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
-
-        <div id="copyStatus" class="copied-msg"></div>
-
-      </div>
+      <div id="copyStatus" class="copied-msg"></div>
 
     </div>
   `;
 }
 
 function copyEmail() {
-  navigator.clipboard.writeText("yourgithubemail@example.com").then(() => {
-    document.getElementById("copyStatus").innerText =
-      "Email copied to clipboard ✔";
-  });
+  navigator.clipboard.writeText("yourgithubemail@example.com")
+    .then(() => {
+      document.getElementById("copyStatus").innerText =
+        "Email copied to clipboard ✔";
+    });
 }
