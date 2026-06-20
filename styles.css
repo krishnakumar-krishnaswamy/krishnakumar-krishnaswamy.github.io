@@ -23,10 +23,11 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* LAYOUT */
+/* MAIN LAYOUT */
 .layout {
   display: flex;
   flex: 1;
+  height: calc(100vh - 60px);
 }
 
 /* SIDEBAR */
@@ -38,14 +39,14 @@ body {
   border-right: 1px solid #e5e7eb;
 }
 
-/* MAIN */
+/* MAIN PANEL */
 .main {
   flex: 1;
   padding: 24px;
   overflow-y: auto;
 }
 
-/* ITEMS */
+/* NAV ITEMS */
 .nav-item {
   padding: 8px 10px;
   cursor: pointer;
@@ -63,7 +64,7 @@ body {
   font-weight: 500;
 }
 
-/* SUB ITEMS */
+/* SUB */
 .nav-sub {
   padding: 6px 18px;
   cursor: pointer;
@@ -74,7 +75,7 @@ body {
   border-radius: 6px;
 }
 
-/* COLLAPSE */
+/* COLLAPSIBLE */
 .group {
   display: none;
   margin-left: 6px;
@@ -92,12 +93,17 @@ body {
   border-radius: 10px;
 }
 
-/* CONTACT FIX (IMPORTANT) */
+/* ✅ TRUE CENTER FIX (FINAL) */
 .contact-center {
+  position: absolute;
+  left: 270px; /* sidebar width */
+  right: 0;
+  top: 60px; /* header height */
+  bottom: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
 }
 
 /* CONTACT CARD */
