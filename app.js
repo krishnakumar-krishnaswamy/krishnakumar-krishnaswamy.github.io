@@ -1,12 +1,14 @@
 // ===============================
-// PORTFOLIO NAVIGATION ENGINE
+// LINKS
 // ===============================
-
-// Track current active item
-let currentActive = null;
+const LINKS = {
+  github: "https://github.com/krishnakumar-krishnaswamy/krishnakumar-krishnaswamy.github.io",
+  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy-pmp-9a80a3129?trk=people-guest_people_search-card",
+  credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
+};
 
 // ===============================
-// UTIL: CLEAR ACTIVE STATE
+// STATE HELPERS
 // ===============================
 function clearActive() {
   document.querySelectorAll(".nav-item").forEach(el => {
@@ -14,9 +16,6 @@ function clearActive() {
   });
 }
 
-// ===============================
-// UTIL: SET ACTIVE ITEM
-// ===============================
 function setActive(id) {
   clearActive();
   const el = document.getElementById(id);
@@ -24,13 +23,10 @@ function setActive(id) {
 }
 
 // ===============================
-// MAIN RENDER ENGINE
+// RENDER
 // ===============================
-function render(contentHTML) {
-  const output = document.getElementById("output");
-
-  // Safe replace content
-  output.innerHTML = contentHTML;
+function render(html) {
+  document.getElementById("output").innerHTML = html;
 }
 
 // ===============================
@@ -41,30 +37,22 @@ function loadHome() {
 
   render(`
     <div class="panel">
-      <div class="card">
-        <div>Welcome</div>
-        <div>Portfolio Overview</div>
-      </div>
+      <div class="card">Portfolio Overview</div>
     </div>
   `);
 }
 
 // ===============================
-// PROJECT LOADER (FUTURE PYODIDE READY)
+// PROJECTS
 // ===============================
-function loadProject(projectId) {
-  setActive(projectId);
+function loadProject(id) {
+  setActive(id);
 
   render(`
-    <div class="panel" id="project-container">
-      <div class="card">
-        <div>Loading Project...</div>
-      </div>
+    <div class="panel">
+      <div class="card">Loading ${id}...</div>
     </div>
   `);
-
-  // Future hook for Pyodide or JS modules
-  console.log("Load project:", projectId);
 }
 
 // ===============================
@@ -75,9 +63,7 @@ function loadPublication() {
 
   render(`
     <div class="panel">
-      <div class="card">
-        <div>Publication Section</div>
-      </div>
+      <div class="card">Publication Section</div>
     </div>
   `);
 }
@@ -90,9 +76,7 @@ function loadThesis() {
 
   render(`
     <div class="panel">
-      <div class="card">
-        <div>MS CS Thesis</div>
-      </div>
+      <div class="card">MS CS Thesis</div>
     </div>
   `);
 }
@@ -103,22 +87,11 @@ function loadThesis() {
 function loadCert(type) {
   setActive(type);
 
-  let content = "";
-
-  if (type === "credly") {
-    window.open("YOUR_CREDLY_URL", "_blank");
-    return;
-  }
-
-  content = `
+  render(`
     <div class="panel">
-      <div class="card">
-        <div>Certification: ${type}</div>
-      </div>
+      <div class="card">Certification: ${type}</div>
     </div>
-  `;
-
-  render(content);
+  `);
 }
 
 // ===============================
@@ -129,15 +102,13 @@ function loadActivity(type) {
 
   render(`
     <div class="panel">
-      <div class="card">
-        <div>Activity: ${type}</div>
-      </div>
+      <div class="card">Activity: ${type}</div>
     </div>
   `);
 }
 
 // ===============================
-// CONTACT (CENTER SPECIAL CASE)
+// CONTACT (MASK + REVEAL + COPY)
 // ===============================
 function loadContact() {
   setActive("nav-contact");
@@ -145,19 +116,31 @@ function loadContact() {
   render(`
     <div class="contact-center">
       <div class="contact-card">
+        
         <div>Email</div>
-        <div class="email-box">your@email.com</div>
+
+        <div id="emailMasked" class="email-box" onclick="revealEmail()">
+          •••••••••••••••••••
+        </div>
+
         <button onclick="copyEmail()">Copy Email</button>
+
       </div>
     </div>
   `);
 }
 
-// ===============================
-// COPY EMAIL
-// ===============================
-function copyEmail() {
-  navigator.clipboard.writeText("your@email.com");
+// Reveal email on click
+function revealEmail() {
+  const el = document.getElementById("emailMasked");
 
+  el.innerText = "informkrishnakumar@gmail.com";
+
+  el.onclick = null; // disable re-click reveal
+}
+
+// Copy email (works even if masked or revealed)
+function copyEmail() {
+  navigator.clipboard.writeText("informkrishnakumar@gmail.com");
   alert("Email copied!");
 }
