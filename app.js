@@ -6,18 +6,18 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-/* SAFE NEW TAB OPEN */
+/* SAFE OPEN */
 function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-/* TOGGLE SIDEBAR */
+/* TOGGLE MENU */
 function toggle(id) {
   const el = document.getElementById(id);
   el.style.display = (el.style.display === "block") ? "none" : "block";
 }
 
-/* MAIN ENGINE */
+/* CENTRAL RENDER ENGINE */
 function renderCard(type, value) {
   const out = document.getElementById("output");
 
@@ -48,6 +48,7 @@ function renderCard(type, value) {
   else if (type === "contact") {
     out.innerHTML = `
       <div class="contact-center">
+
         <div class="contact-card">
 
           <div>Email</div>
@@ -61,12 +62,13 @@ function renderCard(type, value) {
           <div id="tick" class="tick"></div>
 
         </div>
+
       </div>
     `;
   }
 }
 
-/* EMAIL */
+/* EMAIL REVEAL */
 function revealEmail() {
   document.getElementById("emailBox").innerText =
     "informkrishnakumar@gmail.com";
@@ -75,6 +77,7 @@ function revealEmail() {
 /* COPY EMAIL */
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
+
   document.getElementById("tick").innerText = "✔ Copied";
 
   setTimeout(() => {
