@@ -14,7 +14,6 @@ body {
   flex-direction: column;
 }
 
-/* HEADER */
 .top-header {
   height: 60px;
   display: flex;
@@ -23,10 +22,9 @@ body {
   border-bottom: 1px solid #e5e7eb;
 }
 
-/* MAIN LAYOUT */
+/* MAIN LAYOUT FIX */
 .layout {
   display: flex;
-  flex: 1;
   height: calc(100vh - 60px);
 }
 
@@ -39,14 +37,16 @@ body {
   border-right: 1px solid #e5e7eb;
 }
 
-/* MAIN PANEL */
+/* MAIN PANEL FIX (IMPORTANT FOR CENTERING) */
 .main {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 24px;
-  overflow-y: auto;
 }
 
-/* NAV ITEMS */
+/* NAV */
 .nav-item {
   padding: 8px 10px;
   cursor: pointer;
@@ -57,14 +57,12 @@ body {
   border-radius: 6px;
 }
 
-/* GROUP */
 .nav-group {
   padding: 8px 10px;
   cursor: pointer;
   font-weight: 500;
 }
 
-/* SUB */
 .nav-sub {
   padding: 6px 18px;
   cursor: pointer;
@@ -75,13 +73,11 @@ body {
   border-radius: 6px;
 }
 
-/* COLLAPSIBLE */
 .group {
   display: none;
   margin-left: 6px;
 }
 
-/* SPACING */
 .space {
   height: 18px;
 }
@@ -93,14 +89,9 @@ body {
   border-radius: 10px;
 }
 
-/* ✅ TRUE CENTER FIX (FINAL) */
+/* CONTACT CENTER FIXED (TRUE CENTER) */
 .contact-center {
-  position: absolute;
-  left: 270px; /* sidebar width */
-  right: 0;
-  top: 60px; /* header height */
-  bottom: 0;
-
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
