@@ -1,22 +1,22 @@
 const LINKS = {
   github: "https://github.com/krishnakumar-krishnaswamy/krishnakumar-krishnaswamy.github.io",
-  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy-pmp-9a80a3129?trk=people-guest_people_search-card",
+  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy-pmp-9a80a3129",
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-/* SAFE NEW TAB OPEN */
-function openNewTab(url) {
+/* OPEN NEW TAB SAFE */
+function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-/* TOGGLE SIDEBAR GROUPS */
+/* TOGGLE SIDEBAR */
 function toggle(id) {
   const el = document.getElementById(id);
   el.style.display = (el.style.display === "block") ? "none" : "block";
 }
 
-/* MAIN RENDER ENGINE */
-function renderSection(type, value) {
+/* CENTRAL RENDER ENGINE */
+function renderCard(type, value) {
   const out = document.getElementById("output");
 
   if (type === "home") {
@@ -33,6 +33,14 @@ function renderSection(type, value) {
 
   else if (type === "thesis") {
     out.innerHTML = `<div class="card">MS CS Thesis</div>`;
+  }
+
+  else if (type === "cert") {
+    out.innerHTML = `<div class="card">Certification: ${value}</div>`;
+  }
+
+  else if (type === "activity") {
+    out.innerHTML = `<div class="card">Activity: ${value}</div>`;
   }
 
   else if (type === "contact") {
@@ -65,6 +73,7 @@ function revealEmail() {
 /* COPY EMAIL */
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
+
   document.getElementById("tick").innerText = "✔ Copied";
 
   setTimeout(() => {
