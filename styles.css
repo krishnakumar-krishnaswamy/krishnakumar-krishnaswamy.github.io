@@ -7,7 +7,7 @@
 
 /* BODY */
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   background: #ffffff;
   color: #111827;
   height: 100vh;
@@ -15,12 +15,12 @@ body {
   flex-direction: column;
 }
 
-/* HEADER (TRUE CENTER SYSTEM) */
+/* HEADER */
 .top-header {
   height: 60px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   border-bottom: 1px solid #e5e7eb;
   font-size: 16px;
   font-weight: 600;
@@ -53,8 +53,8 @@ body {
 /* CONTACT */
 .contact-list {
   margin-top: auto;
-  border-top: 1px solid #e5e7eb;
   padding-top: 12px;
+  border-top: 1px solid #e5e7eb;
 }
 
 /* BUTTONS */
@@ -67,6 +67,7 @@ body {
   text-align: left;
   cursor: pointer;
   font-size: 14px;
+  color: #111827;
 }
 
 .nav-btn:hover {
@@ -78,32 +79,37 @@ body {
   font-weight: 600;
 }
 
-/* 🔥 CRITICAL FIX: CENTER ALIGNMENT SYSTEM */
+/* MAIN AREA */
 .main {
   flex: 1;
-  display: flex;
-  justify-content: center;   /* horizontal center */
-  align-items: flex-start;   /* keeps title under header */
-  padding-top: 12px;
+  position: relative;
 }
 
-/* PROJECT TITLE (FIXED ALIGNMENT) */
-.project-view {
-  width: 100%;
+/* ✅ PROJECT TITLE CENTER (FIXED) */
+.output-center {
+  position: absolute;
+  top: 20px;              /* just below header */
+  left: 0;
+  right: 0;
+
   display: flex;
   justify-content: center;
-  font-size: 14px;
-  font-weight: 600;
+  align-items: flex-start;
+
+  font-size: 14px;        /* same as sidebar */
+  font-weight: 400;       /* IMPORTANT: no bold */
+  color: #111827;
 }
 
-/* CONTACT (UNCHANGED, CENTERED MIDDLE) */
+/* CONTACT CENTER FIX (TRUE MIDDLE) */
 .contact-wrapper {
   height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;    /* TRUE vertical center */
 }
 
+/* CONTACT CARD (UNCHANGED STYLE) */
 .contact-card {
   width: 420px;
   padding: 20px;
@@ -121,7 +127,7 @@ body {
 .contact-email {
   font-size: 14px;
   padding: 10px;
-  background: #fff;
+  background: #ffffff;
   border: 1px solid #e5e7eb;
   border-radius: 8px;
   margin-bottom: 12px;
@@ -131,10 +137,11 @@ body {
 .copy-btn {
   padding: 10px 12px;
   background: #111827;
-  color: white;
+  color: #ffffff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .copy-btn:hover {
