@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI";
+  font-family: ui-sans-serif, system-ui;
   font-size: 14px;
   color: #111827;
   background: #fff;
@@ -18,15 +18,15 @@ body {
 .top-header {
   height: 60px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   border-bottom: 1px solid #e5e7eb;
 }
 
 /* LAYOUT */
 .layout {
-  flex: 1;
   display: flex;
+  flex: 1;
 }
 
 /* SIDEBAR */
@@ -35,7 +35,6 @@ body {
   background: #f7f7f8;
   padding: 16px;
   border-right: 1px solid #e5e7eb;
-  overflow-y: auto;
 }
 
 /* MAIN */
@@ -44,7 +43,20 @@ body {
   padding: 24px;
 }
 
-/* NAV ITEMS */
+/* GROUP HEADER */
+.nav-group {
+  margin-top: 12px;
+  padding: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* SUBGROUP */
+.nav-subgroup {
+  padding-left: 10px;
+}
+
+/* ITEMS */
 .nav-item {
   padding: 8px;
   cursor: pointer;
@@ -55,23 +67,19 @@ body {
   background: #ececec;
 }
 
-/* GROUP HEADER */
-.nav-group {
-  margin-top: 14px;
-  font-weight: 500;
-  padding: 8px;
-  color: #374151;
-}
-
-/* SUB ITEMS (INDENTED) */
 .nav-sub {
-  padding: 6px 18px;
+  padding: 6px 14px;
   cursor: pointer;
   border-radius: 6px;
 }
 
 .nav-sub:hover {
   background: #ececec;
+}
+
+/* HIDDEN (PROJECT 3–5 MASKED) */
+.hidden {
+  display: none;
 }
 
 /* CARD */
@@ -106,19 +114,16 @@ body {
   cursor: pointer;
 }
 
-/* TICK */
-.tick {
-  font-size: 13px;
-  color: green;
-  height: 18px;
-}
-
-/* BUTTON */
 button {
   padding: 8px;
-  border: none;
   background: #111827;
   color: white;
+  border: none;
   border-radius: 8px;
-  cursor: pointer;
+}
+
+.tick {
+  color: green;
+  font-size: 13px;
+  height: 18px;
 }
