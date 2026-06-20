@@ -1,7 +1,5 @@
 function clearActiveButtons() {
-  document.querySelectorAll(".nav-btn").forEach(btn => {
-    btn.classList.remove("active");
-  });
+  document.querySelectorAll(".nav-btn").forEach(b => b.classList.remove("active"));
 }
 
 function setActiveButton(id) {
@@ -9,40 +7,42 @@ function setActiveButton(id) {
   document.getElementById(id).classList.add("active");
 }
 
+/* INITIAL EMPTY STATE */
+window.onload = () => {
+  document.getElementById("output").innerHTML = `
+    <div class="project-area"></div>
+    <div class="center-area"></div>
+  `;
+};
+
 /* PROJECTS */
 function loadProject(project) {
 
   const output = document.getElementById("output");
 
+  setActiveButton("btn-project1");
+
+  let title = "";
+
   if (project === "project1") {
     setActiveButton("btn-project1");
-
-    output.innerHTML = `
-      <div class="output-center">
-        Project 1: Healthcare Research Demo
-      </div>
-    `;
+    title = "Project 1: Healthcare Research Demo";
   }
 
-  else if (project === "project2") {
+  if (project === "project2") {
     setActiveButton("btn-project2");
-
-    output.innerHTML = `
-      <div class="output-center">
-        Project 2: IT Release Readiness Agent
-      </div>
-    `;
+    title = "Project 2: IT Release Readiness Agent";
   }
 
-  else if (project === "project3") {
+  if (project === "project3") {
     setActiveButton("btn-project3");
-
-    output.innerHTML = `
-      <div class="output-center">
-        Project 3: AI / LLM Experiments
-      </div>
-    `;
+    title = "Project 3: AI / LLM Experiments";
   }
+
+  output.innerHTML = `
+    <div class="project-area">${title}</div>
+    <div class="center-area"></div>
+  `;
 }
 
 /* CONTACT */
@@ -50,22 +50,18 @@ function loadContact() {
 
   setActiveButton("btn-contact");
 
-  const output = document.getElementById("output");
+  document.getElementById("output").innerHTML = `
+    <div class="project-area"></div>
 
-  output.innerHTML = `
-    <div class="contact-wrapper">
+    <div class="center-area">
 
       <div class="contact-card">
 
         <div class="contact-title">Contact</div>
 
-        <div class="contact-email">
-          yourgithubemail@example.com
-        </div>
+        <div class="contact-email">yourgithubemail@example.com</div>
 
-        <button class="copy-btn" onclick="copyEmail()">
-          Copy Email
-        </button>
+        <button class="copy-btn" onclick="copyEmail()">Copy Email</button>
 
         <div id="copyStatus" class="copied-msg"></div>
 
@@ -75,11 +71,8 @@ function loadContact() {
   `;
 }
 
-/* COPY */
 function copyEmail() {
-  const email = "yourgithubemail@example.com";
-
-  navigator.clipboard.writeText(email).then(() => {
+  navigator.clipboard.writeText("yourgithubemail@example.com").then(() => {
     document.getElementById("copyStatus").innerText =
       "Email copied to clipboard ✔";
   });
