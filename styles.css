@@ -7,8 +7,8 @@
 body {
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
   font-size: 14px;
-  background: #fff;
   color: #111827;
+  background: #fff;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -73,7 +73,7 @@ body {
   border-radius: 6px;
 }
 
-/* GROUP COLLAPSE */
+/* COLLAPSIBLE */
 .group {
   display: none;
   margin-left: 6px;
@@ -91,7 +91,7 @@ body {
   border-radius: 10px;
 }
 
-/* CONTACT CENTER FIX */
+/* CONTACT CENTER */
 .contact-center {
   height: calc(100vh - 60px);
   display: flex;
