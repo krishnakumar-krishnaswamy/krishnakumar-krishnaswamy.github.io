@@ -6,18 +6,15 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-/* SAFE OPEN */
 function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
 
-/* TOGGLE MENU */
 function toggle(id) {
   const el = document.getElementById(id);
   el.style.display = (el.style.display === "block") ? "none" : "block";
 }
 
-/* CENTRAL RENDER ENGINE */
 function renderCard(type, value) {
   const out = document.getElementById("output");
 
@@ -68,13 +65,11 @@ function renderCard(type, value) {
   }
 }
 
-/* EMAIL REVEAL */
 function revealEmail() {
   document.getElementById("emailBox").innerText =
     "informkrishnakumar@gmail.com";
 }
 
-/* COPY EMAIL */
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
 
