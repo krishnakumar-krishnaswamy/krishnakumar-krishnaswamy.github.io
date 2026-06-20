@@ -1,13 +1,11 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   background: #ffffff;
   color: #111827;
   height: 100vh;
@@ -40,10 +38,8 @@ body {
   display: flex;
   flex-direction: column;
   padding: 18px 12px;
-  height: calc(100vh - 60px);
 }
 
-/* PROJECT LIST */
 .project-list {
   display: flex;
   flex-direction: column;
@@ -51,11 +47,10 @@ body {
   margin-top: 25px;
 }
 
-/* CONTACT */
 .contact-list {
   margin-top: auto;
-  padding-top: 12px;
   border-top: 1px solid #e5e7eb;
+  padding-top: 12px;
 }
 
 /* BUTTONS */
@@ -79,38 +74,34 @@ body {
   font-weight: 600;
 }
 
-/* MAIN */
+/* MAIN CONTAINER */
 .main {
   flex: 1;
-  padding: 0;
-  position: relative;
-}
-
-/* ========================= */
-/* PROJECT TITLE FIX (CENTER TOP UNDER HEADER) */
-/* ========================= */
-
-.project-view {
-  position: absolute;
-  top: 18px;              /* 🔥 pushes just under header */
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  font-size: 14px;
-  font-weight: 600;
-  color: #111827;
-  width: 100%;
-}
-
-/* ========================= */
-/* CONTACT CENTER FIX (CENTER MIDDLE) */
-/* ========================= */
-
-.contact-wrapper {
-  height: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;   /* true vertical middle */
+  align-items: flex-start;
+  padding-top: 18px;
+}
+
+/* PROJECT VIEW (TOP CENTER UNDER HEADER) */
+.project-view {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* CONTACT MODE OVERRIDE (TRUE CENTER MIDDLE) */
+.main.contact-mode {
+  align-items: center;
+  padding-top: 0;
+}
+
+/* CONTACT WRAPPER */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 /* CONTACT CARD (UNCHANGED UI) */
@@ -141,11 +132,10 @@ body {
 .copy-btn {
   padding: 10px 12px;
   background: #111827;
-  color: #ffffff;
+  color: white;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 14px;
 }
 
 .copy-btn:hover {
