@@ -9,15 +9,14 @@
 
 <body>
 
-<div class="top-header">
-  FN LN
-</div>
+<div class="top-header">FN LN</div>
 
 <div class="layout">
 
+  <!-- SIDEBAR -->
   <div class="sidebar">
 
-    <div id="nav-home" class="nav-item active" onclick="loadHome()">Home</div>
+    <div class="nav-item" onclick="loadHome()">Home</div>
 
     <div class="nav-item" onclick="loadProject('project1-healthcare-research')">Project 1</div>
     <div class="nav-item" onclick="loadProject('project2-ai-agents')">Project 2</div>
@@ -25,27 +24,30 @@
     <div class="nav-item">Project 4</div>
     <div class="nav-item">Project 5</div>
 
-    <div id="nav-publication" class="nav-item" onclick="loadPublication()">Publication</div>
-    <div id="nav-thesis" class="nav-item" onclick="loadThesis()">MS CS Thesis</div>
+    <div class="nav-item" onclick="loadPublication()">Publication</div>
+    <div class="nav-item" onclick="loadThesis()">MS CS Thesis</div>
 
-    <div class="nav-item">Professional Profiles</div>
+    <div class="nav-group">Professional Profiles</div>
 
-    <div class="nav-item" onclick="window.open(LINKS.github,'_blank')">GitHub</div>
-    <div class="nav-item" onclick="window.open(LINKS.linkedin,'_blank')">LinkedIn</div>
-    <div class="nav-item" onclick="window.open(LINKS.credly,'_blank')">Credly</div>
+    <div class="nav-sub" onclick="window.open(LINKS.github,'_blank')">GitHub</div>
+    <div class="nav-sub" onclick="window.open(LINKS.linkedin,'_blank')">LinkedIn</div>
+    <div class="nav-sub" onclick="window.open(LINKS.credly,'_blank')">Credly</div>
 
-    <div class="nav-item" onclick="loadCert('itilv3')">ITIL v3</div>
-    <div class="nav-item" onclick="loadCert('csm')">CSM</div>
-    <div class="nav-item" onclick="loadCert('safe-popm')">SAFe POPM</div>
+    <div class="nav-group">Certifications</div>
+    <div class="nav-sub" onclick="loadCert('itilv3')">ITIL v3</div>
+    <div class="nav-sub" onclick="loadCert('csm')">CSM</div>
+    <div class="nav-sub" onclick="loadCert('safe-popm')">SAFe POPM</div>
 
-    <div class="nav-item" onclick="loadActivity('programming-contest')">Programming Contest</div>
-    <div class="nav-item" onclick="loadActivity('mentorship')">STEM Mentorship</div>
-    <div class="nav-item" onclick="loadActivity('conference')">Conference Participation</div>
+    <div class="nav-group">Activities</div>
+    <div class="nav-sub" onclick="loadActivity('programming-contest')">Programming Contest</div>
+    <div class="nav-sub" onclick="loadActivity('mentorship')">STEM Mentorship</div>
+    <div class="nav-sub" onclick="loadActivity('conference')">Conference Participation</div>
 
-    <div id="nav-contact" class="nav-item" onclick="loadContact()">Contact</div>
+    <div class="nav-item" onclick="loadContact()">Contact</div>
 
   </div>
 
+  <!-- MAIN -->
   <div class="main">
     <div id="output"></div>
   </div>
