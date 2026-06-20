@@ -4,50 +4,39 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
-// TOGGLE
+/* SAFE NEW TAB OPEN */
+function openNewTab(url) {
+  window.open(url, "_blank", "noopener,noreferrer");
+}
+
+/* TOGGLE SIDEBAR GROUPS */
 function toggle(id) {
   const el = document.getElementById(id);
   el.style.display = (el.style.display === "block") ? "none" : "block";
 }
 
-// MAIN ROUTER
+/* MAIN RENDER ENGINE */
 function renderSection(type, value) {
+  const out = document.getElementById("output");
 
-  const output = document.getElementById("output");
-
-  // HOME
   if (type === "home") {
-    output.innerHTML = `<div class="card">Home</div>`;
+    out.innerHTML = `<div class="card">Home</div>`;
   }
 
-  // PROJECT
   else if (type === "project") {
-    output.innerHTML = `<div class="card">Project ${value}</div>`;
+    out.innerHTML = `<div class="card">Project ${value}</div>`;
   }
 
-  // PUBLICATION
   else if (type === "publication") {
-    output.innerHTML = `<div class="card">Publication ${value}</div>`;
+    out.innerHTML = `<div class="card">Publication ${value}</div>`;
   }
 
-  // THESIS
   else if (type === "thesis") {
-    output.innerHTML = `<div class="card">MS CS Thesis (2006)</div>`;
+    out.innerHTML = `<div class="card">MS CS Thesis</div>`;
   }
 
-  // CERTIFICATIONS
-  else if (type === "cert") {
-    output.innerHTML = `<div class="card">Certification: ${value}</div>`;
-  }
-
-  // ACTIVITIES
-  else if (type === "activity") {
-    output.innerHTML = `<div class="card">Activity: ${value}</div>`;
-  }
-
-  // CONTACT
   else if (type === "contact") {
-    output.innerHTML = `
+    out.innerHTML = `
       <div class="contact-center">
         <div class="contact-card">
 
@@ -67,12 +56,13 @@ function renderSection(type, value) {
   }
 }
 
-// EMAIL
+/* EMAIL REVEAL */
 function revealEmail() {
   document.getElementById("emailBox").innerText =
     "informkrishnakumar@gmail.com";
 }
 
+/* COPY EMAIL */
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
   document.getElementById("tick").innerText = "✔ Copied";
