@@ -26,12 +26,7 @@ function renderCard(type, value) {
     out.innerHTML = `<div class="card">Project ${value}</div>`;
   }
 
-    /*
-  else if (type === "publication") {
-    out.innerHTML = `<div class="card">Publication ${value}</div>`;
-  }
-*/
-
+    
 else if (type === "publication") {
 
   const publications = {
@@ -76,11 +71,17 @@ else if (type === "thesis") {
   out.innerHTML = `
     <div class="card">
 
-      Visualization of protein classification 
+      Title:
+
+      <br>
+
+      Visualization of protein classification
 
       <br><br>
 
       Problem Statement:
+
+      <br>
 
       Researchers and Professors navigating large hierarchical
       Structural Classification of Proteins (SCOP) datasets across
@@ -91,6 +92,8 @@ else if (type === "thesis") {
       <br><br>
 
       Solution:
+
+      <br>
 
       Prepared a data entity model and transformed the
       semi-structured hierarchy into an interactive visualization
@@ -105,12 +108,16 @@ else if (type === "thesis") {
 
       Technology:
 
+      <br>
+
       Implemented the solution using Java and JavaScript to improve
       interactive exploration of complex biological data structures.
 
       <br><br>
 
       Result:
+
+      <br>
 
       Successfully demonstrated the approach to the MS CS Thesis
       Committee during the thesis defense for visualization and
@@ -119,6 +126,8 @@ else if (type === "thesis") {
       <br><br>
 
       Skills:
+
+      <br>
 
       Problem Solving, Data Modeling, Semi-Structured Data,
       Data Visualization, Interactive Exploration, Java,
@@ -134,13 +143,7 @@ else if (type === "thesis") {
     </div>
   `;
 }
-
-  /*  
-  else if (type === "thesis") {
-    out.innerHTML = `<div class="card">MS CS Thesis</div>`;
-  }
-*/
-    
+     
 else if (type === "cert") {
 
   if (value === "ITIL v3") {
