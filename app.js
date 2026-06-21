@@ -6,6 +6,17 @@ const LINKS = {
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
 
+function setActive(el) {
+
+  const items = document.querySelectorAll(
+    ".nav-item, .nav-sub, .nav-group"
+  );
+
+  items.forEach(i => i.classList.remove("active"));
+
+  el.classList.add("active");
+}
+
 function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -111,7 +122,7 @@ else if (type === "thesis") {
       <br>
 
       Implemented the solution using Java and JavaScript to improve
-      interactive exploration of complex biological data structures.
+      interactive exploration of complex biological protein data structures.
 
       <br><br>
 
@@ -220,15 +231,3 @@ function copyEmail() {
     "✔ Email Copied";
 }
 
-
-/*
-function copyEmail() {
-  navigator.clipboard.writeText("informkrishnakumar@gmail.com");
-
-  document.getElementById("tick").innerText = "✔ Copied";
-
-  setTimeout(() => {
-    document.getElementById("tick").innerText = "";
-  }, 2000);
-}
-*/
