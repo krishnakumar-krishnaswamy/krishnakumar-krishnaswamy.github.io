@@ -17,15 +17,6 @@ function setActive(el) {
   el.classList.add("active");
 }
 
-  const items = document.querySelectorAll(
-    ".nav-item, .nav-sub, .nav-group"
-  );
-
-  items.forEach(i => i.classList.remove("active"));
-
-  el.classList.add("active");
-}
-
 function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -382,3 +373,9 @@ function copyEmail() {
     "✔ Email Copied";
 }
 
+function handleGroupClick(el, groupId, type, value) {
+
+  setActive(el);       // highlight group header
+  toggle(groupId);     // open/close menu
+  renderCard(type, value); // auto load default content
+}
