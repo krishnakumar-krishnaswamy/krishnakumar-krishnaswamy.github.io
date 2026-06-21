@@ -186,14 +186,87 @@ else if (type === "cert") {
 }
 
     
-  /*
-  else if (type === "cert") {
-    out.innerHTML = `<div class="card">Certification: ${value}</div>`;
-  } 
-*/
-  else if (type === "activity") {
-    out.innerHTML = `<div class="card">Activity: ${value}</div>`;
+else if (type === "activity") {
+
+  if (value === "contest") {
+
+    out.innerHTML = `
+      <div class="card">
+
+        Title:
+
+        <br>
+
+        ACM International Collegiate Programming Contest (ICPC)
+
+        <br><br>
+
+        About ICPC:
+
+        <br>
+
+        The International Collegiate Programming Contest (ICPC)
+        is the oldest, largest and most prestigious algorithmic
+        programming competition for university students. Teams
+        collaborate to solve complex real-world programming
+        challenges under time constraints, fostering problem
+        solving, creativity, innovation and teamwork.
+
+        <br><br>
+
+        Recognition:
+
+        <br>
+
+        Awarded Honorable Mention as a Contestant
+        in the ACM International Collegiate Programming Contest.
+
+        <br><br>
+
+        Skills:
+
+        <br>
+
+        Problem Solving, Algorithms, Competitive Programming,
+        Analytical Thinking, Team Collaboration.
+
+        <br><br>
+
+        <a href="https://icpc.global/"
+           target="_blank">
+           Visit ICPC Website
+        </a>
+
+        <br><br>
+
+        <a href="assets/documents/acm-icpc-certificate.pdf"
+           target="_blank">
+           View My Certificate
+        </a>
+
+      </div>
+    `;
   }
+
+  else if (value === "mentorship") {
+
+    out.innerHTML = `
+      <div class="card">
+        Student STEM Mentorship
+      </div>
+    `;
+  }
+
+  else if (value === "conference") {
+
+    out.innerHTML = `
+      <div class="card">
+        Conference Participation
+      </div>
+    `;
+  }
+}
+  
 
   else if (type === "contact") {
     out.innerHTML = `
