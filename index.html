@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Krishnakumar Krishnaswamy Portfolio</title>
-  <link rel="stylesheet" href="styles.css?v=5"/>
+  <link rel="stylesheet" href="styles.css?v=6"/>
 </head>
 
 <body>
@@ -15,20 +15,29 @@
 
   <div class="sidebar">
 
-    <div class="nav-item" onclick="renderCard('home')">Home</div>
+   <div class="nav-item"
+     onclick="setActive(this); renderCard('home')">
+  Home
+</div>
 
     <div class="space"></div>
 
     <div class="nav-group" onclick="toggle('projects')">▾ Projects</div>
     <div id="projects" class="group">
-      <div class="nav-sub" onclick="renderCard('project','1')">Project 1</div>
+      <div class="nav-sub"
+     onclick="setActive(this); renderCard('project','1')">
+  Project 1
+</div>
     </div>
 
     <div class="space"></div>
 
     <div class="nav-group" onclick="toggle('publication')">▾ Publication</div>
     <div id="publication" class="group">
-      <div class="nav-sub" onclick="renderCard('publication','1')">Publication 1</div>
+     <div class="nav-sub"
+     onclick="setActive(this); renderCard('publication','1')">
+  Publication 1
+</div>
 
     
     <!--
@@ -55,7 +64,10 @@
 
     <div class="space"></div>
 
-    <div class="nav-item" onclick="renderCard('thesis')">MS CS Thesis</div>
+    <div class="nav-item"
+     onclick="setActive(this); renderCard('thesis')">
+  MS CS Thesis
+</div>
 
     <div class="space"></div>
 
@@ -82,25 +94,21 @@
   Google Cloud & AI Leader
 </div>
 
-<div class="nav-sub" onclick="renderCard('cert','ITIL v3')">
+<div class="nav-sub"
+     onclick="setActive(this); renderCard('cert','ITIL v3')">
   ITIL v3
 </div>
 
-<div class="nav-sub" onclick="renderCard('cert','CSM')">
+<div class="nav-sub"
+     onclick="setActive(this); renderCard('cert','CSM')">
   CSM
 </div>
 
-<div class="nav-sub" onclick="renderCard('cert','SAFe POPM')">
+<div class="nav-sub"
+     onclick="setActive(this); renderCard('cert','SAFe POPM')">
   SAFe POPM
 </div>
-      
-      <!-- OLD CERTIFICATION MENU
-      <div class="nav-sub" onclick="openTab(LINKS.credly)">Credly</div>
-      <div class="nav-sub" onclick="renderCard('cert','ITIL v3')">ITIL v3</div>
-      <div class="nav-sub" onclick="renderCard('cert','CSM')">CSM</div>
-      <div class="nav-sub" onclick="renderCard('cert','SAFe POPM')">SAFe POPM</div>
--->
-      
+                
     </div>
       
 
@@ -109,23 +117,29 @@
     <div class="nav-group" onclick="toggle('activities')">▾ Activities & Recognition</div>
     <div id="activities" class="group">
 
-      <div class="nav-sub" onclick="renderCard('activity','contest')">
-        Programming Contest Recognition
-      </div>
+      <div class="nav-sub"
+     onclick="setActive(this); renderCard('activity','contest')">
+  Programming Contest Recognition
+</div>
 
-      <div class="nav-sub" onclick="renderCard('activity','mentorship')">
-        Student STEM Mentorship
-      </div>
+      <div class="nav-sub"
+     onclick="setActive(this); renderCard('activity','mentorship')">
+  Student STEM Mentorship
+</div>
 
-      <div class="nav-sub" onclick="renderCard('activity','conference')">
-        Conference Participation
-      </div>
+     <div class="nav-sub"
+     onclick="setActive(this); renderCard('activity','conference')">
+  Conference Participation
+</div>
 
     </div>
 
     <div class="space"></div>
 
-    <div class="nav-item" onclick="renderCard('contact')">Contact</div>
+    <div class="nav-item"
+     onclick="setActive(this); renderCard('contact')">
+  Contact
+</div>
 
   </div>
 
@@ -135,6 +149,6 @@
 
 </div>
 
-<script src="app.js?v=5"></script>
+<script src="app.js?v=6"></script>
 </body>
 </html>
