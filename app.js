@@ -71,14 +71,75 @@ else if (type === "publication") {
   out.innerHTML = publications[value];
 }
 
+else if (type === "thesis") {
 
+  out.innerHTML = `
+    <div class="card">
 
+      Visualization of protein classification 
 
+      <br><br>
 
-    
+      Problem Statement:
+
+      Researchers and Professors navigating large hierarchical
+      Structural Classification of Proteins (SCOP) datasets across
+      Family, Superfamily and Fold classifications often faced a
+      time-consuming exploration process. Vertical scrolling through
+      large semi-structured datasets added further complexity.
+
+      <br><br>
+
+      Solution:
+
+      Prepared a data entity model and transformed the
+      semi-structured hierarchy into an interactive visualization
+      model that preserved parent-child-grandchild relationships
+      within the dataset. Developed a hyperbolic tree visualization
+      model that enabled Researchers and Professors to click and
+      expand hierarchical relationships while exploring protein
+      classification datasets within a browser-based layout without
+      extensive vertical scrolling.
+
+      <br><br>
+
+      Technology:
+
+      Implemented the solution using Java and JavaScript to improve
+      interactive exploration of complex biological data structures.
+
+      <br><br>
+
+      Result:
+
+      Successfully demonstrated the approach to the MS CS Thesis
+      Committee during the thesis defense for visualization and
+      navigation of large-scale protein hierarchies.
+
+      <br><br>
+
+      Skills:
+
+      Problem Solving, Data Modeling, Semi-Structured Data,
+      Data Visualization, Interactive Exploration, Java,
+      JavaScript.
+
+      <br><br>
+
+      <a href="https://utrgv.primo.exlibrisgroup.com/discovery/fulldisplay?context=L&vid=01UT_RGV_INST:UTRGV&search_scope=Search_All&tab=Search_All&lang=en&docid=alma991011372539704696"
+         target="_blank">
+         View Thesis Record
+      </a>
+
+    </div>
+  `;
+}
+
+  /*  
   else if (type === "thesis") {
     out.innerHTML = `<div class="card">MS CS Thesis</div>`;
   }
+*/
     
 else if (type === "cert") {
 
