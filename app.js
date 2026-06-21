@@ -14,7 +14,10 @@ function setActive(el) {
 
   items.forEach(i => i.classList.remove("active"));
 
-  el.classList.add("active");
+  // prevent multiple active highlights in nested groups
+  if (el) {
+    el.classList.add("active");
+  }
 }
 
 function openTab(url) {
