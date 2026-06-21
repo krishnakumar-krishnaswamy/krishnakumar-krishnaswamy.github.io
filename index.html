@@ -23,7 +23,7 @@
     <div class="space"></div>
 
     <div class="nav-group"
-     onclick="setActive(this); toggle('projects')">
+ onclick="handleGroupClick(this, 'projects', 'home', null)">
   ▾ Projects
 </div>
     <div id="projects" class="group">
@@ -36,7 +36,7 @@
     <div class="space"></div>
 
     <div class="nav-group"
-     onclick="setActive(this); toggle('publication')">
+     onclick="handleGroupClick(this, 'publication', 'publication', '1')">
   ▾ Publication
 </div>
     <div id="publication" class="group">
@@ -95,7 +95,7 @@
     <div class="space"></div>
 
     <div class="nav-group"
-     onclick="setActive(this); toggle('certs')">
+     onclick="handleGroupClick(this, 'certs', 'cert', 'ITIL v3')">
   ▾ Certifications
 </div>
     <div id="certs" class="group">
@@ -126,8 +126,8 @@
 
     <div class="space"></div>
 
-    <div class="nav-group"
-     onclick="setActive(this); toggle('activities')">
+   <div class="nav-group"
+     onclick="handleGroupClick(this, 'activities', 'activity', 'contest')">
   ▾ Activities & Recognition
 </div>
     <div id="activities" class="group">
