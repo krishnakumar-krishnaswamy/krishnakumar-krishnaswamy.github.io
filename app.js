@@ -26,14 +26,60 @@ function renderCard(type, value) {
     out.innerHTML = `<div class="card">Project ${value}</div>`;
   }
 
+    /*
   else if (type === "publication") {
     out.innerHTML = `<div class="card">Publication ${value}</div>`;
   }
+*/
 
+else if (type === "publication") {
+
+  const publications = {
+
+    "1": `
+      <div class="card">
+
+    Title: SEARCH SIMILAR PROTEIN STRUCTURES WITH CLASSIFICATION, SEQUENCE AND 3D ALIGNMENTS <br><br>
+
+    Authors: ZAIXIN LU, ZHIYU ZHAO, SERGIO GARCIA, KRISHNAKUMAR KRISHNASWAMY, and BIN FU<br><br>
+
+    Venue: World Scientific - Journal of Bioinformatics and Computational Biology <br><br>
+
+    <a href="https://www.worldscientific.com/doi/abs/10.1142/S021972000900431X"
+       target="_blank">
+       View Publication
+    </a>
+    
+      </div>
+    `,
+
+    /*
+    "2": `
+      <div class="card">
+        Future publication
+      </div>
+    `,
+
+    "3": `
+      <div class="card">
+        Future publication
+      </div>
+    `
+    */
+  };
+
+  out.innerHTML = publications[value];
+}
+
+
+
+
+
+    
   else if (type === "thesis") {
     out.innerHTML = `<div class="card">MS CS Thesis</div>`;
   }
-
+    
 else if (type === "cert") {
 
   if (value === "ITIL v3") {
