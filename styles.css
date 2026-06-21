@@ -52,7 +52,8 @@ body {
   cursor: pointer;
 }
 
-.nav-item:hover {
+.nav-item:hover,
+.nav-group:hover {
   background: #ececec;
   border-radius: 6px;
 }
@@ -70,6 +71,19 @@ body {
 
 .nav-sub:hover {
   background: #ececec;
+  border-radius: 6px;
+}
+
+.nav-item,
+.nav-sub,
+.nav-group {
+  transition: background 0.15s ease;
+}
+
+.nav-item.active,
+.nav-sub.active,
+.nav-group.active {
+  background: #e5e7eb;
   border-radius: 6px;
 }
 
