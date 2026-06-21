@@ -53,9 +53,12 @@ body {
 }
 
 .nav-item:hover,
+.nav-sub:hover,
 .nav-group:hover {
-  background: #ececec;
+  background: #f3f4f6;
   border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 
 .nav-group {
@@ -83,8 +86,12 @@ body {
 .nav-item.active,
 .nav-sub.active,
 .nav-group.active {
-  background: #e5e7eb;
+  background: #e6f0ff;
   border-radius: 6px;
+  font-weight: 600;
+  color: #1a73e8;
+  padding-left: 8px;
+  transition: all 0.2s ease;
 }
 
 .group {
