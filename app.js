@@ -29,6 +29,10 @@ function toggle(id) {
 function renderCard(type, value) {
   const out = document.getElementById("output");
 
+out.classList.remove("fade");
+void out.offsetWidth;
+out.classList.add("fade");
+  
   if (type === "home") {
     out.innerHTML = `<div class="card">Home</div>`;
   }
