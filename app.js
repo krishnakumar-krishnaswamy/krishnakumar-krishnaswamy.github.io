@@ -1,7 +1,7 @@
 const LINKS = {
   github: "https://github.com/krishnakumar-krishnaswamy/krishnakumar-krishnaswamy.github.io",
 
-  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy-pmp-9a80a3129?utm_source=portfolio",
+  linkedin: "https://www.linkedin.com/in/krishnakumar-krishnaswamy/",
 
   credly: "https://www.credly.com/users/krishnakumar-krishnaswamy.95a45e03/badges/credly"
 };
