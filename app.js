@@ -34,10 +34,42 @@ function renderCard(type, value) {
     out.innerHTML = `<div class="card">MS CS Thesis</div>`;
   }
 
-  else if (type === "cert") {
-    out.innerHTML = `<div class="card">Certification: ${value}</div>`;
+else if (type === "cert") {
+
+  if (value === "ITIL v3") {
+
+    out.innerHTML = `
+      <div class="card">
+        ITIL v3 Foundation certification issued by Axelos on June, 2014
+      </div>
+    `;
   }
 
+  else if (value === "CSM") {
+
+    out.innerHTML = `
+      <div class="card">
+        Certified Scrum Master CSM certification issued by Scrum Alliance on January, 2016
+      </div>
+    `;
+  }
+
+  else if (value === "SAFe POPM") {
+
+    out.innerHTML = `
+      <div class="card">
+        SAFe 5 Certified Product Owner / Product Manager POPM certification issued by Scaled Agile on September, 2020
+      </div>
+    `;
+  }
+}
+
+    
+  /*
+  else if (type === "cert") {
+    out.innerHTML = `<div class="card">Certification: ${value}</div>`;
+  } 
+*/
   else if (type === "activity") {
     out.innerHTML = `<div class="card">Activity: ${value}</div>`;
   }
@@ -70,6 +102,16 @@ function revealEmail() {
     "informkrishnakumar@gmail.com";
 }
 
+
+function copyEmail() {
+  navigator.clipboard.writeText("informkrishnakumar@gmail.com");
+
+  document.getElementById("tick").innerText =
+    "✔ Email Copied";
+}
+
+
+/*
 function copyEmail() {
   navigator.clipboard.writeText("informkrishnakumar@gmail.com");
 
@@ -79,3 +121,4 @@ function copyEmail() {
     document.getElementById("tick").innerText = "";
   }, 2000);
 }
+*/
