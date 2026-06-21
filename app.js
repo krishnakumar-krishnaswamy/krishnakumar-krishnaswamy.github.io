@@ -17,6 +17,15 @@ function setActive(el) {
   el.classList.add("active");
 }
 
+  const items = document.querySelectorAll(
+    ".nav-item, .nav-sub, .nav-group"
+  );
+
+  items.forEach(i => i.classList.remove("active"));
+
+  el.classList.add("active");
+}
+
 function openTab(url) {
   window.open(url, "_blank", "noopener,noreferrer");
 }
@@ -250,12 +259,81 @@ else if (type === "activity") {
 
   else if (value === "mentorship") {
 
-    out.innerHTML = `
-      <div class="card">
-        Student STEM Mentorship
-      </div>
-    `;
-  }
+  out.innerHTML = `
+    <div class="card">
+
+      Title:
+
+      <br>
+
+      Student STEM Mentorship
+
+      <br><br>
+
+      Program:
+
+      <br>
+
+      UTPA / Hidalgo ISD Early College High School (ECHS)
+      Summer Science Academy – First Cohort Initiative
+
+      <br><br>
+
+      About:
+
+      <br>
+
+      Selected as a mentor for the UTPA / Hidalgo ISD Early College
+      High School (ECHS) Summer Science Academy as part of its
+      first cohort initiative.
+
+      Supported high school students in learning foundational STEM
+      concepts and encouraged analytical thinking through guided
+      instruction and interactive learning activities.
+
+      Motivated and inspired students to pursue college and higher
+      education pathways.
+
+      The program is part of Hidalgo Independent School District’s
+      Early College High School initiative focused on preparing
+      students for successful transition to post-secondary education
+      and developing workforce-ready skills for a global economy.
+
+      <br><br>
+
+      Recognition:
+
+      <br>
+
+      Received a formal certificate of appreciation for contributing
+      to mentoring and instructional activities in the program.
+
+      <br><br>
+
+      Skills:
+
+      <br>
+
+      Teaching, Mentorship, Communication,
+      STEM Education, Leadership
+
+      <br><br>
+
+      <a href="https://hechs.hidalgo-isd.org/apps/pages/index.jsp?uREC_ID=2629218&type=d&pREC_ID=2269669"
+         target="_blank">
+         Program Website
+      </a>
+
+      <br><br>
+
+      <a href="assets/documents/hidalgo-science-academy.pdf"
+         target="_blank">
+         View Certificate
+      </a>
+
+    </div>
+  `;
+}
 
   else if (value === "conference") {
 
