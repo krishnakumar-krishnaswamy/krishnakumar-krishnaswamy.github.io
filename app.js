@@ -48,8 +48,55 @@ void out.offsetWidth;
 out.classList.add("fade");
   
   if (type === "home") {
-    out.innerHTML = `<div class="card">Home</div>`;
-  }
+
+  out.innerHTML = `
+    <div class="card">
+
+      <p>
+        Enterprise digital modernization through structured delivery,
+        applying proven practices and continuous learning.
+      </p>
+
+      <br>
+
+      <p>
+        Hands-on pilot initiatives in modern digital transformation,
+        workflow optimization, and applied learning in emerging technologies.
+      </p>
+
+      <div class="skill-container">
+
+        <div class="skill-box">Technical Program Management</div>
+
+        <div class="skill-box">SDLC</div>
+
+        <div class="skill-box">Agile Scrum</div>
+
+        <div class="skill-box">Kanban</div>
+
+        <div class="skill-box">ITSM</div>
+
+        <div class="skill-box">Software Release Governance</div>
+
+        <div class="skill-box">Cross-functional Leadership</div>
+
+        <div class="skill-box">Systems Thinking</div>
+        
+        <div class="skill-box">Problem Solving</div>
+
+        <div class="skill-box">Data Analysis</div>
+        
+        <div class="skill-box">Google Cloud</div>
+
+        <div class="skill-box">Gen AI</div>
+
+        <div class="skill-box">Python</div>
+        
+      </div>
+
+    </div>
+  `;
+}
 
   else if (type === "project") {
     out.innerHTML = `<div class="card">Project ${value}</div>`;
