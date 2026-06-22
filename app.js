@@ -380,9 +380,8 @@ function copyEmail() {
     "✔ Email Copied";
 }
 
-function handleGroupClick(el, groupId, type, value) {
+function handleGroupClick(el, groupId) {
 
-  setActive(el);       // highlight group header
-  toggle(groupId);     // open/close menu
-  renderCard(type, value); // auto load default content
+  setActive(el);
+  toggle(groupId);
 }
