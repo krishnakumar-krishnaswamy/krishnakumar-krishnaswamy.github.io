@@ -326,7 +326,7 @@ else if (type === "activity") {
 
       <a href="assets/documents/hidalgo-science-academy.pdf"
          target="_blank">
-         View Certificate
+         View My Certificate
       </a>
 
     </div>
@@ -335,12 +335,78 @@ else if (type === "activity") {
 
   else if (value === "conference") {
 
-    out.innerHTML = `
-      <div class="card">
-        Conference Participation
-      </div>
-    `;
-  }
+  out.innerHTML = `
+    <div class="card">
+
+      Title:
+
+      <br>
+
+      HENAAC Conference (Now Great Minds in STEM)
+
+      <br><br>
+
+      Event:
+
+      <br>
+
+      College Bowl Competition
+
+      <br><br>
+
+      Participation:
+
+      <br>
+
+      Participated in the HENAAC Conference in Los Angeles, California
+      during graduate studies and actively networked with representatives
+      from multiple STEM organizations and companies participating in the conference.
+
+      Through discussions with industry professionals, I was selected by
+      Boeing representatives to join their College Bowl team. A Boeing
+      mentor coached and guided the team throughout the competition.
+
+      <br><br>
+
+      About the Competition:
+
+      <br>
+
+      The College Bowl is a team-based competition that brings together
+      university students and industry mentors to solve real-world
+      challenges through collaboration, analytical thinking,
+      communication and problem-solving activities.
+
+      <br><br>
+
+      Significance:
+
+      <br>
+
+      Demonstrates active participation in extracurricular STEM activities
+      beyond academic coursework while developing professional networking,
+      teamwork, leadership and communication skills through direct
+      engagement with industry professionals.
+
+      <br><br>
+
+      Skills:
+
+      <br>
+
+      Professional Networking, Teamwork, Problem Solving,
+      Communication, Leadership, Collaboration, Analytical Thinking
+
+      <br><br>
+
+      <a href="https://greatmindsinstem.org/"
+         target="_blank">
+         Great Minds in STEM
+      </a>
+
+    </div>
+  `;
+}
 }
   
 
