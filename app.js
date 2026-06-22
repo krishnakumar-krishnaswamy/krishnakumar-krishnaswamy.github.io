@@ -205,55 +205,59 @@ else if (type === "cert") {
 
   else if (value === "CSM") {
 
-    out.innerHTML = `
-      <div class="card">
-        Certified ScrumMaster® (CSM)
+  out.innerHTML = `
+    <div class="card">
+      Certified ScrumMaster® (CSM)
 
-        <br><br>
+      <br><br>
 
-        Issued by:
-        <br>
-        Scrum Alliance, Inc.
+      Issued by:
+      <br>
+      Scrum Alliance, Inc.
 
-        <br><br>
+      <br><br>
 
-        Earned: January 2016
+      Earned:
+      <br>
+      January 2016
 
-        <br><br>
+      <br><br>
 
-        <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
-           target="_blank">
-          View Credential Record
-        </a>
-      </div>
-    `;
-  }
+      <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
+         target="_blank">
+        View Credential Record
+      </a>
+    </div>
+  `;
+}
 
   else if (value === "SAFe POPM") {
 
-    out.innerHTML = `
-      <div class="card">
-        Certified SAFe® 5 Product Owner/Product Manager
+  out.innerHTML = `
+    <div class="card">
+      Certified SAFe® 5 Product Owner/Product Manager
 
-        <br><br>
+      <br><br>
 
-        Issued by:
-        <br>
-        Scaled Agile, Inc.
+      Issued by:
+      <br>
+      Scaled Agile, Inc.
 
-        <br><br>
+      <br><br>
 
-        Earned: September 2020
+      Earned:
+      <br>
+      September 2020
 
-        <br><br>
+      <br><br>
 
-        <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
-           target="_blank">
-          View Credential Record
-        </a>
-      </div>
-    `;
-  }
+      <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
+         target="_blank">
+        View Credential Record
+      </a>
+    </div>
+  `;
+}
 }
     
 else if (type === "activity") {
