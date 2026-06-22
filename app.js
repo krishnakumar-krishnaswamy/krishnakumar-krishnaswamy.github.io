@@ -14,9 +14,15 @@ function setActive(el) {
 
   items.forEach(i => i.classList.remove("active"));
 
-  // prevent multiple active highlights in nested groups
   if (el) {
     el.classList.add("active");
+
+    // ✅ highlight parent group (fix hierarchy UX)
+    const parent = getParentGroup(el);
+
+    if (parent) {
+      parent.classList.add("active");
+    }
   }
 }
 
@@ -27,6 +33,11 @@ function openTab(url) {
 function toggle(id) {
   const el = document.getElementById(id);
   el.style.display = (el.style.display === "block") ? "none" : "block";
+}
+
+function getParentGroup(el) {
+  if (!el) return null;
+  return el.closest(".group")?.previousElementSibling;
 }
 
 function renderCard(type, value) {
@@ -168,7 +179,26 @@ else if (type === "cert") {
 
     out.innerHTML = `
       <div class="card">
-        ITIL v3 Foundation certification issued by Axelos on June, 2014
+        ITIL v3 Foundation
+
+        <br><br>
+
+        Issued by:
+        <br>
+        <a href="https://www.axelos.com/" target="_blank">
+          Axelos
+        </a>
+
+        <br><br>
+
+        Earned: June 2014
+
+        <br><br>
+
+        <a href="assets/documents/itil-v3-foundation-certificate.pdf"
+           target="_blank">
+          View Certificate
+        </a>
       </div>
     `;
   }
@@ -177,7 +207,24 @@ else if (type === "cert") {
 
     out.innerHTML = `
       <div class="card">
-        Certified Scrum Master CSM certification issued by Scrum Alliance on January, 2016
+        Certified ScrumMaster® (CSM)
+
+        <br><br>
+
+        Issued by:
+        <br>
+        Scrum Alliance, Inc.
+
+        <br><br>
+
+        Earned: January 2016
+
+        <br><br>
+
+        <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
+           target="_blank">
+          View Credential Record
+        </a>
       </div>
     `;
   }
@@ -186,12 +233,28 @@ else if (type === "cert") {
 
     out.innerHTML = `
       <div class="card">
-        SAFe 5 Certified Product Owner / Product Manager POPM certification issued by Scaled Agile on September, 2020
+        Certified SAFe® 5 Product Owner/Product Manager
+
+        <br><br>
+
+        Issued by:
+        <br>
+        Scaled Agile, Inc.
+
+        <br><br>
+
+        Earned: September 2020
+
+        <br><br>
+
+        <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
+           target="_blank">
+          View Credential Record
+        </a>
       </div>
     `;
   }
 }
-
     
 else if (type === "activity") {
 
@@ -359,12 +422,12 @@ else if (type === "activity") {
       <br>
 
       Participated in the HENAAC Conference in Los Angeles, California
-      during graduate studies and actively networked with representatives
+      during graduate studies and actively engaged in networking with representatives
       from multiple STEM organizations and companies participating in the conference.
 
-      Through discussions with industry professionals, I was selected by
-      Boeing representatives to join their College Bowl team. A Boeing
-      mentor coached and guided the team throughout the competition.
+      Through discussions with industry professionals, I was selected by Boeing
+      representatives to join their team in the College Bowl competition. A Boeing
+      mentor guided and coached the team throughout the event.
 
       <br><br>
 
@@ -372,10 +435,10 @@ else if (type === "activity") {
 
       <br>
 
-      The College Bowl is a team-based competition that brings together
-      university students and industry mentors to solve real-world
-      challenges through collaboration, analytical thinking,
-      communication and problem-solving activities.
+      The College Bowl (GMiS Conference – formerly HENAAC Conference) is a
+      team-based competition where students collaborate with industry mentors
+      to solve real-world challenges under time constraints while demonstrating
+      problem-solving, communication, and teamwork skills.
 
       <br><br>
 
@@ -383,10 +446,8 @@ else if (type === "activity") {
 
       <br>
 
-      Demonstrates active participation in extracurricular STEM activities
-      beyond academic coursework while developing professional networking,
-      teamwork, leadership and communication skills through direct
-      engagement with industry professionals.
+      Demonstrates active extracurricular participation during MS studies,
+      professional networking, and collaboration with industry leaders.
 
       <br><br>
 
@@ -394,8 +455,8 @@ else if (type === "activity") {
 
       <br>
 
-      Professional Networking, Teamwork, Problem Solving,
-      Communication, Leadership, Collaboration, Analytical Thinking
+      Networking, Teamwork, Problem Solving, Communication,
+      Leadership, Collaboration
 
       <br><br>
 
@@ -451,3 +512,6 @@ function handleGroupClick(el, groupId) {
   setActive(el);
   toggle(groupId);
 }
+window.addEventListener("DOMContentLoaded", () => {
+  renderCard("home");
+});
