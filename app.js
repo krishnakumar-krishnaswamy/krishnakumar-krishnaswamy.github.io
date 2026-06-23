@@ -52,9 +52,9 @@ out.classList.add("fade");
   out.innerHTML = `
     <div class="card">
 
-   <p>
+  <p>
   Learning, experimenting, and building pilot initiatives in modern digital transformation and enterprise delivery.
-</p>
+  </p>
 
         <div class="skill-container">
 
