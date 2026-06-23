@@ -55,11 +55,14 @@ out.classList.add("fade");
       <p>
         Enterprise digital modernization through structured delivery,
         applying proven practices and continuous learning.
-        Hands-on pilot initiatives in modern digital transformation,
-        workflow optimization, and applied learning in emerging technologies.
       </p>
 
       <br>
+
+      <p>
+        Hands-on pilot initiatives in modern digital transformation,
+        workflow optimization, and applied learning in emerging technologies.
+      </p>
 
         <div class="skill-container">
 
