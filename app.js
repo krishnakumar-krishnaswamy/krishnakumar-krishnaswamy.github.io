@@ -52,9 +52,7 @@ out.classList.add("fade");
   out.innerHTML = `
     <div class="card">
 
-  <p>
-  Learning, experimenting, and building pilot initiatives in modern digital transformation and enterprise delivery.
-  </p>
+  <p>Building Digital Modernization Pilot Tools.</p>
 
         <div class="skill-container">
 
@@ -76,11 +74,13 @@ out.classList.add("fade");
 
     <div class="skill-box">Systems Thinking</div>
 
-    <div class="skill-box">Software Release Governance</div>
-
     <div class="skill-box">Data Analysis</div>
 
-  </div>
+    <div class="skill-box">Decision Making</div>
+
+    <div class="skill-box">Software Release Governance</div>
+
+</div>
 
   <div class="skill-row">
 
