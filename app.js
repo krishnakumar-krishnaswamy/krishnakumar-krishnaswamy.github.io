@@ -52,17 +52,9 @@ out.classList.add("fade");
   out.innerHTML = `
     <div class="card">
 
-      <p>
-        Enterprise digital modernization through structured delivery,
-        applying proven practices and continuous learning.
-      </p>
-
-      <br>
-
-      <p>
-        Hands-on pilot initiatives in modern digital transformation,
-        workflow optimization, and applied learning in emerging technologies.
-      </p>
+   <p>
+  Learning, experimenting, and building pilot initiatives in modern digital transformation and enterprise delivery.
+</p>
 
         <div class="skill-container">
 
