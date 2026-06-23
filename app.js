@@ -66,33 +66,79 @@ out.classList.add("fade");
 
         <div class="skill-container">
 
-        <div class="skill-box">Technical Program Management</div>
+  <div class="skill-row">
 
-        <div class="skill-box">SDLC</div>
+    <div class="skill-box">Customer First</div>
 
-        <div class="skill-box">Agile Scrum</div>
+    <div class="skill-box">Navigate Ambiguity</div>
 
-        <div class="skill-box">Kanban</div>
+    <div class="skill-box">Problem Solving</div>
 
-        <div class="skill-box">ITSM</div>
+    <div class="skill-box">Continuous Learning</div>
 
-        <div class="skill-box">Software Release Governance</div>
+    <div class="skill-box">Adaptability Mindset</div>
 
-        <div class="skill-box">Cross-functional Leadership</div>
+  </div>
 
-        <div class="skill-box">Systems Thinking</div>
-        
-        <div class="skill-box">Problem Solving</div>
+  <div class="skill-row">
 
-        <div class="skill-box">Data Analysis</div>
-        
-        <div class="skill-box">Google Cloud</div>
+    <div class="skill-box">Systems Thinking</div>
 
-        <div class="skill-box">Gen AI</div>
+    <div class="skill-box">Software Release Governance</div>
 
-        <div class="skill-box">Python</div>
-        
-      </div>
+    <div class="skill-box">Data Analysis</div>
+
+  </div>
+
+  <div class="skill-row">
+
+    <div class="skill-box">Stakeholder Engagement</div>
+
+    <div class="skill-box">Tailored Communication</div>
+
+    <div class="skill-box">Risk Management</div>
+
+    <div class="skill-box">Executive Partnership</div>
+
+    <div class="skill-box">Cross-Functional Collaboration</div>
+
+    <div class="skill-box">Distributed Team Coordination</div>
+
+  </div>
+
+  <div class="skill-row">
+
+    <div class="skill-box">Technical Program Management</div>
+
+    <div class="skill-box">SDLC</div>
+
+    <div class="skill-box">Agile Scrum</div>
+
+    <div class="skill-box">Kanban</div>
+
+    <div class="skill-box">ITSM</div>
+
+    <div class="skill-box">ITIL</div>
+
+    <div class="skill-box">Hybrid Delivery</div>
+
+  </div>
+
+  <div class="skill-row">
+
+    <div class="skill-box">Google Cloud</div>
+
+    <div class="skill-box">Gen AI</div>
+
+    <div class="skill-box">Python</div>
+
+    <div class="skill-box">Salesforce CRM</div>
+
+    <div class="skill-box">Identity and Access Management IAM</div>
+
+  </div>
+
+</div>
 
     </div>
   `;
