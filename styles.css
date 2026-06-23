@@ -184,15 +184,15 @@ button {
 .skill-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   gap: 6px;
   margin-top: 12px;
 }
 
 .skill-row {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 8px;
+  gap: 4px;
   width: 100%;
 }
