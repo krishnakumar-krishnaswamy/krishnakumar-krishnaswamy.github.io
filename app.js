@@ -52,7 +52,7 @@ out.classList.add("fade");
   out.innerHTML = `
     <div class="card">
 
-  <p>Building Digital Modernization Pilot Tools.</p>
+  <p>Technologist, Researcher, and Digital Modernization Practitioner. Building Cost-Conscious Pilot Tools.</p>
 
         <div class="skill-container">
 
@@ -137,8 +137,45 @@ out.classList.add("fade");
 }
 
   else if (type === "project") {
-    out.innerHTML = `<div class="card">Project ${value}</div>`;
-  }
+
+  const projects = {
+
+    "1": `
+      <div class="card">
+
+        <h3>Project 1</h3>
+
+        <br>
+
+        <p>Pilot tool currently under development.</p>
+
+        <p>
+          <small>
+            Implementation updates will be published as development progresses.
+          </small>
+        </p>
+
+      </div>
+    `
+
+    /*
+    ,"2": `
+      <div class="card">
+        Future Project Placeholder
+      </div>
+    `
+
+    ,"3": `
+      <div class="card">
+        Future Project Placeholder
+      </div>
+    `
+    */
+
+  };
+
+  out.innerHTML = projects[value];
+}
 
     
 else if (type === "publication") {
