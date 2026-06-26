@@ -100,7 +100,7 @@ Avoid decorative colors.
 
 Use the browser system font stack.
 
-Typography should follow a modern enterprise appearance similar to ChatGPT.
+Typography should follow a modern enterprise appearance.
 
 Guidelines:
 
