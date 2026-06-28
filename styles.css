@@ -114,6 +114,19 @@ body {
 
 }
 
+.icon {
+
+  width: 18px;
+
+  font-size: 18px;
+
+  color: inherit;
+
+  flex-shrink: 0;
+
+  text-align: center;
+
+}
 .nav-group {
   display: flex;
   align-items: center;
