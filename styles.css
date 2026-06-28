@@ -15,11 +15,34 @@ body {
 }
 
 .top-header {
-  height: 60px;
+  height: 72px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background: #f7f7f8;
   border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.profile-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+  letter-spacing: 0;
 }
 
 /* MAIN LAYOUT FIX */
