@@ -115,18 +115,16 @@ body {
 }
 
 .icon {
-
-  width: 18px;
-
-  font-size: 18px;
-
-  color: inherit;
-
-  flex-shrink: 0;
-
-  text-align: center;
-
+    width: 18px;
+    height: 18px;
+    font-size: 18px;
+    color: inherit;
+    flex-shrink: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .nav-group {
   display: flex;
   align-items: center;
