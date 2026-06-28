@@ -34,13 +34,19 @@ body {
   height: 42px;
   border-radius: 50%;
   object-fit: cover;
-  border: 1px solid #e5e7eb;
   background: #ffffff;
+  border: 1px solid #cbd5e1;
+  flex-shrink: 0;
+}
+
+.profile-title {
+  display: flex;
+  flex-direction: column;
 }
 
 .profile-name {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 17px;
+  font-weight: 400;
   color: #111827;
   letter-spacing: 0;
 }
@@ -48,7 +54,7 @@ body {
 /* MAIN LAYOUT FIX */
 .layout {
   display: flex;
-  height: calc(100vh - 60px);
+  height: calc(100vh - 72px);
 }
 
 /* SIDEBAR */
