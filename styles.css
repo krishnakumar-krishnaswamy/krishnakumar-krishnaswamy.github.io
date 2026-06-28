@@ -18,7 +18,8 @@ body {
   height: 72px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 26px;
   background: #f7f7f8;
   border-bottom: 1px solid #e5e7eb;
 }
@@ -27,6 +28,7 @@ body {
   display: flex;
   align-items: center;
   gap: 14px;
+  width: 270px;      /* same width as sidebar */
 }
 
 .profile-avatar {
