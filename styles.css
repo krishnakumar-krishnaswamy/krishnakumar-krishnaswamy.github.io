@@ -74,67 +74,110 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px;
+  padding: 36px;
 }
 
 /* NAV */
 .nav-item {
-  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+  margin: 2px 0;
+
+  border-radius: 8px;
+
   cursor: pointer;
+
+  color: #374151;
+  font-size: 14px;
+  font-weight: 400;
+
+  transition: background .18s ease,
+              color .18s ease;
 }
 
 .nav-item:hover,
-.nav-sub:hover,
-.nav-group:hover {
-  background: #f3f4f6;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: all 0.15s ease;
+.nav-group:hover,
+.nav-sub:hover {
+
+  background: #eef2f7;
+
 }
 
 .nav-group {
-  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+  margin: 2px 0;
+
+  border-radius: 8px;
+
   cursor: pointer;
-  font-weight: 500;
-  margin-bottom: 16px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: #111827;
+
+  transition: background .18s ease,
+              color .18s ease;
 }
 
 .group {
+
   display: none;
-  margin-left: 6px;
-  padding-left: 12px;
-  padding-top: 8px;
+
+  margin-left: 0;
+
+  padding-left: 8px;
+
+  padding-top: 4px;
+
 }
 
 .nav-sub {
-  padding: 6px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 8px 14px 8px 34px;
+
+  margin: 2px 0;
+
+  border-radius: 8px;
+
   cursor: pointer;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  color: #4b5563;
+
+  transition: background .18s ease,
+              color .18s ease;
 }
 
 .nav-sub:hover {
-  background: #ececec;
-  border-radius: 6px;
-}
-
-.nav-item,
-.nav-sub,
-.nav-group {
-  transition: background 0.15s ease;
+  background:#eef2f7;
 }
 
 .nav-item.active,
-.nav-sub.active,
-.nav-group.active {
-  background: #e6f0ff;
-  border-radius: 6px;
-  font-weight: 600;
-  color: #1a73e8;
-  padding-left: 8px;
-  transition: all 0.2s ease;
+.nav-group.active,
+.nav-sub.active {
+
+  background: #dbeafe;
+
+  color: #2563eb;
+
+  font-weight: 500;
+
 }
 
 .space {
-  height: 18px;
+  height: 12px;
 }
 
 /* CARD */
