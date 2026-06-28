@@ -52,7 +52,16 @@ out.classList.add("fade");
   out.innerHTML = `
     <div class="card">
 
-  <p>Technologist, Researcher, and Digital Modernization Practitioner. Building Cost-Conscious Pilot Tools.</p>
+      <div class="card-title">
+        Welcome
+      </div>
+
+      <div class="card-body">
+
+        <p>
+          Technologist, Researcher, and Digital Modernization Practitioner.
+          Building Cost-Conscious Pilot Tools.
+        </p>
 
         <div class="skill-container">
 
@@ -131,6 +140,8 @@ out.classList.add("fade");
   </div>
 
 </div>
+
+      </div>
 
     </div>
   `;
