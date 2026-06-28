@@ -280,6 +280,26 @@ body {
 
 }
 
+.card-title {
+
+    font-size: 28px;
+
+    font-weight: 600;
+
+    color: #111827;
+
+    margin-bottom: 22px;
+
+}
+
+.card-body {
+
+    color: #4b5563;
+
+    line-height: 1.75;
+
+}
+
 /* CONTACT CENTER FIXED (TRUE CENTER) */
 .contact-center {
   width: 100%;
