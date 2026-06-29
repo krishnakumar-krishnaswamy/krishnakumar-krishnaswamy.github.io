@@ -350,8 +350,6 @@ else if (type === "cert") {
 
   <div class="card-body">
 
-      <br><br>
-
       <strong>Issued by</strong><br>
       Scrum Alliance, Inc.
 
