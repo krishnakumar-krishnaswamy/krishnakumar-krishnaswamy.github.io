@@ -441,8 +441,9 @@ button {
 }
 
 .section-title{
+    font-size:14px;
     font-weight:600;
+    color:#1e3a5f;
     margin-top:16px;
     margin-bottom:6px;
-    color:#1e3a5f;
 }
