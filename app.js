@@ -532,74 +532,54 @@ else if (type === "activity") {
   else if (value === "conference") {
 
   out.innerHTML = `
-    <div class="card">
+<div class="card">
 
-      Title:
+  <div class="card-title">
+    HENAAC Conference (Now Great Minds in STEM)
+  </div>
 
-      <br>
+  <div class="card-body">
 
-      HENAAC Conference (Now Great Minds in STEM)
-
-      <br><br>
-
-      Event:
-
-      <br>
-
+    <p>
+      <strong>Event</strong><br>
       College Bowl Competition
+    </p>
 
-      <br><br>
+    <p>
+      <strong>Participation</strong><br>
+      Participated in the HENAAC Conference in Los Angeles during graduate studies
+      and networked with representatives from multiple STEM organizations and
+      industry leaders.
 
-      Participation:
+      Based on discussions with Boeing representatives, I was selected to join
+      the Boeing-sponsored College Bowl team, where an industry mentor coached
+      the team throughout the competition.
+    </p>
 
-      <br>
+    <p>
+      <strong>About the Competition</strong><br>
+      The College Bowl is a team-based competition where students collaborate
+      with industry mentors to solve real-world challenges while demonstrating
+      teamwork, communication, and problem-solving skills.
+    </p>
 
-      Participated in the HENAAC Conference in Los Angeles, California
-      during graduate studies and actively engaged in networking with representatives
-      from multiple STEM organizations and companies participating in the conference.
+    <p>
+      <strong>Skills</strong><br>
+      Networking, Teamwork, Problem Solving,
+      Communication, Leadership, Collaboration
+    </p>
 
-      Through discussions with industry professionals, I was selected by Boeing
-      representatives to join their team in the College Bowl competition. A Boeing
-      mentor guided and coached the team throughout the event.
-
-      <br><br>
-
-      About the Competition:
-
-      <br>
-
-      The College Bowl (GMiS Conference – formerly HENAAC Conference) is a
-      team-based competition where students collaborate with industry mentors
-      to solve real-world challenges under time constraints while demonstrating
-      problem-solving, communication, and teamwork skills.
-
-      <br><br>
-
-      Significance:
-
-      <br>
-
-      Demonstrates active extracurricular participation during MS studies,
-      professional networking, and collaboration with industry leaders.
-
-      <br><br>
-
-      Skills:
-
-      <br>
-
-      Networking, Teamwork, Problem Solving, Communication,
-      Leadership, Collaboration
-
-      <br><br>
-
+    <p>
       <a href="https://greatmindsinstem.org/"
          target="_blank">
          Great Minds in STEM
       </a>
+    </p>
 
-    </div>
-  `;
+  </div>
+
+</div>
+`;
 }
 }
   
