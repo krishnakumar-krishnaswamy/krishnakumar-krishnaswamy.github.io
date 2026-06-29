@@ -381,9 +381,7 @@ January 2016
 
   <div class="card-body">
 
-      <br><br>
-
-      <strong>Issued by</strong><br>
+     <strong>Issued by</strong><br>
       Scaled Agile, Inc.
 
 <br><br>
