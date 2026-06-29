@@ -58,10 +58,14 @@ out.classList.add("fade");
 
       <div class="card-body">
 
-        <p>
-          Technologist, Researcher, and Digital Modernization Practitioner.
-          Building Cost-Conscious Pilot Tools.
-        </p>
+  <div class="info-field">
+    <div class="info-label">Professional Summary</div>
+
+    <div class="info-value">
+      Technologist, Researcher, and Digital Modernization Practitioner.
+      Building Cost-Conscious Pilot Tools.
+    </div>
+  </div>
 
         <div class="skill-container">
 
@@ -260,86 +264,54 @@ else if (type === "publication") {
 else if (type === "thesis") {
 
   out.innerHTML = `
-  <div class="card">
+<div class="card">
 
-    <div class="card-title">
-      MS CS Thesis
-    </div>
+  <div class="card-title">
+    MS CS Thesis
+  </div>
 
-    <div class="card-body">
+  <div class="card-body">
 
-      Title:
+    <p>
+      <strong>Title</strong><br>
+      Visualization of Protein Classification
+    </p>
 
-      <br>
+    <p>
+      <strong>Problem Statement</strong><br>
+      Researchers and professors navigating large hierarchical Structural Classification of Proteins (SCOP) datasets across Family, Superfamily, and Fold classifications often faced a time-consuming exploration process. Vertical scrolling through large semi-structured datasets added further complexity.
+    </p>
 
-      Visualization of protein classification
+    <p>
+      <strong>Solution</strong><br>
+      Prepared a data entity model and transformed the semi-structured hierarchy into an interactive visualization model that preserved parent-child-grandchild relationships. Developed a hyperbolic tree visualization model enabling researchers to interactively expand protein classification hierarchies within a browser without excessive scrolling.
+    </p>
 
-      <br><br>
+    <p>
+      <strong>Technology</strong><br>
+      Java, JavaScript
+    </p>
 
-      Problem Statement:
+    <p>
+      <strong>Result</strong><br>
+      Successfully demonstrated the solution before the MS CS Thesis Committee during the thesis defense for visualization and navigation of large-scale protein hierarchies.
+    </p>
 
-      <br>
+    <p>
+      <strong>Skills</strong><br>
+      Problem Solving, Data Modeling, Semi-Structured Data, Data Visualization, Interactive Exploration, Java, JavaScript
+    </p>
 
-      Researchers and Professors navigating large hierarchical
-      Structural Classification of Proteins (SCOP) datasets across
-      Family, Superfamily and Fold classifications often faced a
-      time-consuming exploration process. Vertical scrolling through
-      large semi-structured datasets added further complexity.
-
-      <br><br>
-
-      Solution:
-
-      <br>
-
-      Prepared a data entity model and transformed the
-      semi-structured hierarchy into an interactive visualization
-      model that preserved parent-child-grandchild relationships
-      within the dataset. Developed a hyperbolic tree visualization
-      model that enabled Researchers and Professors to click and
-      expand hierarchical relationships while exploring protein
-      classification datasets within a browser-based layout without
-      extensive vertical scrolling.
-
-      <br><br>
-
-      Technology:
-
-      <br>
-
-      Implemented the solution using Java and JavaScript to improve
-      interactive exploration of complex biological protein data structures.
-
-      <br><br>
-
-      Result:
-
-      <br>
-
-      Successfully demonstrated the approach to the MS CS Thesis
-      Committee during the thesis defense for visualization and
-      navigation of large-scale protein hierarchies.
-
-      <br><br>
-
-      Skills:
-
-      <br>
-
-      Problem Solving, Data Modeling, Semi-Structured Data,
-      Data Visualization, Interactive Exploration, Java,
-      JavaScript.
-
-      <br><br>
-
+    <p>
       <a href="https://utrgv.primo.exlibrisgroup.com/discovery/fulldisplay?context=L&vid=01UT_RGV_INST:UTRGV&search_scope=Search_All&tab=Search_All&lang=en&docid=alma991011372539704696"
          target="_blank">
          View Thesis Record
       </a>
-
-       </div>
+    </p>
 
   </div>
+
+</div>
 `;
 }
      
