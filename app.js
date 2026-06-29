@@ -409,18 +409,14 @@ else if (type === "activity") {
     out.innerHTML = `
       <div class="card">
 
-        Title:
+      <div class="card-title">
+      ACM International Collegiate Programming Contest (ICPC)
+      </div>
 
-        <br>
+     <div class="card-body">
 
-        ACM International Collegiate Programming Contest (ICPC)
-
-        <br><br>
-
-        About ICPC:
-
-        <br>
-
+        <p>  
+<strong>About ICPC</strong><br>
         The International Collegiate Programming Contest (ICPC)
         is the oldest, largest and most prestigious algorithmic
         programming competition for university students. Teams
@@ -430,24 +426,26 @@ else if (type === "activity") {
 
         <br><br>
 
-        Recognition:
+        </p>
 
-        <br>
-
+<p>
+<strong>Recognition</strong><br>
         Awarded Honorable Mention as a Contestant
         in the ACM International Collegiate Programming Contest.
 
         <br><br>
 
-        Skills:
+        </p>
 
-        <br>
-
+<p>
+<strong>Skills</strong><br>
         Problem Solving, Algorithms, Competitive Programming,
         Analytical Thinking, Team Collaboration.
 
         <br><br>
+</p>
 
+<p>
         <a href="https://icpc.global/"
            target="_blank">
            Visit ICPC Website
@@ -459,8 +457,10 @@ else if (type === "activity") {
            target="_blank">
            View My Certificate
         </a>
+</p>
+        </div>
 
-      </div>
+</div>
     `;
   }
 
