@@ -75,6 +75,9 @@ body {
   padding: 16px;
   overflow-y: auto;
   border-right: 1px solid #e5e7eb;
+
+  display: flex;
+  flex-direction: column;
 }
 
 /* MAIN PANEL FIX (IMPORTANT FOR CENTERING) */
@@ -490,11 +493,6 @@ button {
   font-size: 13px;
   font-weight: 500;
   color: #111827;
-}
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
 }
 
 /* Replace manual spacing system with consistent rhythm */
