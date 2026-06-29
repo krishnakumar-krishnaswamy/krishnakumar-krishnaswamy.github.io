@@ -467,65 +467,49 @@ else if (type === "activity") {
   else if (value === "mentorship") {
 
   out.innerHTML = `
-    <div class="card">
+<div class="card">
 
-      Title:
+  <div class="card-title">
+    Student STEM Mentorship
+  </div>
 
-      <br>
+  <div class="card-body">
 
-      Student STEM Mentorship
-
-      <br><br>
-
-      Program:
-
-      <br>
-
+    <p>
+      <strong>Program</strong><br>
       UTPA / Hidalgo ISD Early College High School (ECHS)
       Summer Science Academy – First Cohort Initiative
+    </p>
 
-      <br><br>
+    <p>
+      <strong>About</strong><br>
+      Selected as a mentor for the UTPA / Hidalgo ISD Early College High School
+      Summer Science Academy as part of its first cohort initiative.
 
-      About:
+      Supported high school students in learning foundational STEM concepts and
+      encouraged analytical thinking through guided instruction and interactive
+      learning activities.
 
-      <br>
+      Motivated and inspired students to pursue college and higher education
+      pathways.
 
-      Selected as a mentor for the UTPA / Hidalgo ISD Early College
-      High School (ECHS) Summer Science Academy as part of its
-      first cohort initiative.
+      The program prepares students for successful transition into higher
+      education while developing workforce-ready STEM skills.
+    </p>
 
-      Supported high school students in learning foundational STEM
-      concepts and encouraged analytical thinking through guided
-      instruction and interactive learning activities.
+    <p>
+      <strong>Recognition</strong><br>
+      Received a formal Certificate of Appreciation for mentoring and
+      instructional contributions.
+    </p>
 
-      Motivated and inspired students to pursue college and higher
-      education pathways.
-
-      The program is part of Hidalgo Independent School District’s
-      Early College High School initiative focused on preparing
-      students for successful transition to post-secondary education
-      and developing workforce-ready skills for a global economy.
-
-      <br><br>
-
-      Recognition:
-
-      <br>
-
-      Received a formal certificate of appreciation for contributing
-      to mentoring and instructional activities in the program.
-
-      <br><br>
-
-      Skills:
-
-      <br>
-
+    <p>
+      <strong>Skills</strong><br>
       Teaching, Mentorship, Communication,
       STEM Education, Leadership
+    </p>
 
-      <br><br>
-
+    <p>
       <a href="https://hechs.hidalgo-isd.org/apps/pages/index.jsp?uREC_ID=2629218&type=d&pREC_ID=2269669"
          target="_blank">
          Program Website
@@ -537,9 +521,12 @@ else if (type === "activity") {
          target="_blank">
          View My Certificate
       </a>
+    </p>
 
-    </div>
-  `;
+  </div>
+
+</div>
+`;
 }
 
   else if (value === "conference") {
