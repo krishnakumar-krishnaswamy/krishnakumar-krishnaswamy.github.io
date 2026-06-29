@@ -321,11 +321,9 @@ else if (type === "cert") {
   <div class="card-body">
 
     <strong>Issued by</strong><br>
-        <br>
-        <a href="https://www.axelos.com/" target="_blank">
-          Axelos
-        </a>
-
+<a href="https://www.axelos.com/" target="_blank">
+  Axelos
+</a>
         <br><br>
 
         <strong>Earned</strong><br> June 2014
@@ -355,14 +353,12 @@ else if (type === "cert") {
       <br><br>
 
       <strong>Issued by</strong><br>
-      <br>
       Scrum Alliance, Inc.
 
-      <br><br>
+<br><br>
 
-      <strong>Earned</strong><br>
-      <br>
-      January 2016
+<strong>Earned</strong><br>
+January 2016
 
       <br><br>
 
@@ -390,14 +386,12 @@ else if (type === "cert") {
       <br><br>
 
       <strong>Issued by</strong><br>
-      <br>
       Scaled Agile, Inc.
 
-      <br><br>
+<br><br>
 
-      <strong>Earned</strong><br>
-      <br>
-      September 2020
+<strong>Earned</strong><br>
+September 2020
 
       <br><br>
 
