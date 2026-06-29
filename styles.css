@@ -394,3 +394,21 @@ button {
   gap: 4px;
   width: 100%;
 }
+
+.info-field {
+  margin-bottom: 24px;
+}
+
+.info-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+}
+
+.info-value {
+  color: #4b5563;
+  line-height: 1.75;
+}
