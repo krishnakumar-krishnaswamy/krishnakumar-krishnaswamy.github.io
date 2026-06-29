@@ -206,8 +206,8 @@ else if (type === "publication") {
 
     <p>
       <strong>Title</strong><br>
-      SEARCH SIMILAR PROTEIN STRUCTURES WITH CLASSIFICATION,
-      SEQUENCE AND 3D ALIGNMENTS
+      Search Similar Protein Structures with Classification,
+      Sequence and 3D Alignments
     </p>
 
     <p>
