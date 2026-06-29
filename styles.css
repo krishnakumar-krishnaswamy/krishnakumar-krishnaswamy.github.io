@@ -491,3 +491,52 @@ button {
   font-weight: 500;
   color: #111827;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Replace manual spacing system with consistent rhythm */
+.nav-item,
+.nav-group {
+  margin: 2px 0;
+}
+
+/* tighten group container spacing */
+.group {
+  padding-left: 6px;
+  margin-top: 2px;
+  margin-bottom: 6px;
+}
+
+/* consistent child indentation (VERY IMPORTANT) */
+.nav-sub {
+  padding-left: 38px;
+}
+
+/* fix icon + text alignment consistency */
+.nav-item span,
+.nav-group span,
+.nav-sub span {
+  display: flex;
+  align-items: center;
+}
+
+/* unify hover behavior across all levels */
+.nav-item:hover,
+.nav-group:hover,
+.nav-sub:hover {
+  background: #eef2f7;
+  border-radius: 8px;
+}
+
+/* active state consistency */
+.nav-item.active,
+.nav-group.active,
+.nav-sub.active {
+  background: #dbeafe;
+  color: #2563eb;
+  font-weight: 500;
+  border-radius: 8px;
+}
