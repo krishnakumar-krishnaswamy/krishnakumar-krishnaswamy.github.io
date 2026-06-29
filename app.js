@@ -368,20 +368,36 @@ else if (type === "cert") {
 
   <div class="card-body">
 
-      <strong>Issued by</strong><br>
-      Scrum Alliance, Inc.
+      <div class="meta-section">
 
-<br><br>
+  <div class="meta-label">
+    Issued By
+  </div>
 
-<strong>Earned</strong><br>
-January 2016
+  <div class="meta-value">
+    Scrum Alliance, Inc.
+  </div>
 
-      <br><br>
+  <div class="meta-label">
+    Earned
+  </div>
 
-      <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
-         target="_blank">
-        View Credential Record
-      </a>
+  <div class="meta-value">
+    January 2016
+  </div>
+
+  <div class="meta-label">
+    Credential
+  </div>
+
+  <div class="meta-value">
+    <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
+       target="_blank">
+      View Credential Record
+    </a>
+  </div>
+
+</div>
       </div>
 
 </div>
@@ -399,20 +415,36 @@ January 2016
 
   <div class="card-body">
 
-     <strong>Issued by</strong><br>
-      Scaled Agile, Inc.
+     <div class="meta-section">
 
-<br><br>
+  <div class="meta-label">
+    Issued By
+  </div>
 
-<strong>Earned</strong><br>
-September 2020
+  <div class="meta-value">
+    Scaled Agile, Inc.
+  </div>
 
-      <br><br>
+  <div class="meta-label">
+    Earned
+  </div>
 
-      <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
-         target="_blank">
-        View Credential Record
-      </a>
+  <div class="meta-value">
+    September 2020
+  </div>
+
+  <div class="meta-label">
+    Credential
+  </div>
+
+  <div class="meta-value">
+    <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
+       target="_blank">
+      View Credential Record
+    </a>
+  </div>
+
+</div>
       </div>
 
 </div>
@@ -434,7 +466,7 @@ else if (type === "activity") {
      <div class="card-body">
 
         <p>  
-<strong>About ICPC</strong><br>
+<div class="section-title">About ICPC</div>
         The International Collegiate Programming Contest (ICPC)
         is the oldest, largest and most prestigious algorithmic
         programming competition for university students. Teams
@@ -447,7 +479,7 @@ else if (type === "activity") {
         </p>
 
 <p>
-<strong>Recognition</strong><br>
+<div class="section-title">Recognition</div>
         Awarded Honorable Mention as a Contestant
         in the ACM International Collegiate Programming Contest.
 
@@ -456,7 +488,7 @@ else if (type === "activity") {
         </p>
 
 <p>
-<strong>Skills</strong><br>
+<div class="section-title">Skills</div>
         Problem Solving, Algorithms, Competitive Programming,
         Analytical Thinking, Team Collaboration.
 
@@ -494,13 +526,13 @@ else if (type === "activity") {
   <div class="card-body">
 
     <p>
-      <strong>Program</strong><br>
+      <div class="section-title">Program</div>
       UTPA / Hidalgo ISD Early College High School (ECHS)
       Summer Science Academy – First Cohort Initiative
     </p>
 
     <p>
-      <strong>About</strong><br>
+      <div class="section-title">About</div>
       Selected as a mentor for the UTPA / Hidalgo ISD Early College High School
       Summer Science Academy as part of its first cohort initiative.
 
@@ -516,13 +548,13 @@ else if (type === "activity") {
     </p>
 
     <p>
-      <strong>Recognition</strong><br>
+      <div class="section-title">Recognition</div>
       Received a formal Certificate of Appreciation for mentoring and
       instructional contributions.
     </p>
 
     <p>
-      <strong>Skills</strong><br>
+      <div class="section-title">Skills</div>
       Teaching, Mentorship, Communication,
       STEM Education, Leadership
     </p>
@@ -559,12 +591,12 @@ else if (type === "activity") {
   <div class="card-body">
 
     <p>
-      <strong>Event</strong><br>
+      <div class="section-title">Event</div>
       College Bowl Competition
     </p>
 
     <p>
-      <strong>Participation</strong><br>
+      <div class="section-title">Participation</div>
       Participated in the HENAAC Conference in Los Angeles during graduate studies
       and networked with representatives from multiple STEM organizations and
       industry leaders.
@@ -575,14 +607,14 @@ else if (type === "activity") {
     </p>
 
     <p>
-      <strong>About the Competition</strong><br>
+      <div class="section-title">About the Competition</div>
       The College Bowl is a team-based competition where students collaborate
       with industry mentors to solve real-world challenges while demonstrating
       teamwork, communication, and problem-solving skills.
     </p>
 
     <p>
-      <strong>Skills</strong><br>
+      <div class="section-title">Skills</div>
       Networking, Teamwork, Problem Solving,
       Communication, Leadership, Collaboration
     </p>
