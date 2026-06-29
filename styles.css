@@ -460,3 +460,34 @@ button {
 .section-title:first-child{
     margin-top:0;
 }
+
+/* STEP 2B FIX: Sidebar Profile Alignment */
+.sidebar-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 12px;
+  margin-bottom: 6px;
+
+  border-radius: 8px;
+
+  background: transparent; /* remove header look */
+}
+
+.sidebar-profile:hover {
+  background: #eef2f7; /* match nav hover */
+}
+
+/* shrink avatar slightly for sidebar consistency */
+.sidebar-profile .profile-avatar {
+  width: 30px;
+  height: 30px;
+}
+
+/* make name lighter like nav items */
+.sidebar-profile .profile-name {
+  font-size: 13px;
+  font-weight: 500;
+  color: #111827;
+}
