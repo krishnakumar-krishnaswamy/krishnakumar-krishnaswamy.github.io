@@ -441,9 +441,13 @@ button {
 }
 
 .section-title{
-    font-size:14px;
     font-weight:600;
+    font-size:15px;
     color:#1e3a5f;
-    margin-top:16px;
+    margin-top:18px;
     margin-bottom:6px;
+}
+
+.section-title:first-child{
+    margin-top:0;
 }
