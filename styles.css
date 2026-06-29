@@ -27,30 +27,39 @@ body {
 .profile-header {
   display: flex;
   align-items: center;
-  gap: 14px;
-  width: 270px;      /* same width as sidebar */
+  gap: 10px;
+
+  padding: 12px;
+
+  /* CRITICAL FIX */
+  max-width: 100%;
+  overflow: hidden;
 }
 
 .profile-avatar {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
-  object-fit: cover;
-  background: #ffffff;
-  border: 1px solid #cbd5e1;
   flex-shrink: 0;
 }
 
 .profile-title {
   display: flex;
   flex-direction: column;
+
+  /* CRITICAL FIX */
+  min-width: 0;
+  overflow: hidden;
 }
 
 .profile-name {
-  font-size: 17px;
-  font-weight: 400;
-  color: #111827;
-  letter-spacing: 0;
+  font-size: 14px;
+  font-weight: 600;
+
+  /* CRITICAL FIX */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* MAIN LAYOUT FIX */
