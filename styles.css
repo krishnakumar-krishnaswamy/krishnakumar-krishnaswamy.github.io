@@ -298,6 +298,12 @@ body {
 
     line-height: 1.75;
 
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+
 }
 
 /* CONTACT CENTER FIXED (TRUE CENTER) */
