@@ -320,20 +320,38 @@ else if (type === "cert") {
 
   <div class="card-body">
 
-    <strong>Issued by</strong><br>
-<a href="https://www.axelos.com/" target="_blank">
-  Axelos
-</a>
-        <br><br>
+    <div class="meta-section">
 
-        <strong>Earned</strong><br> June 2014
+  <div class="meta-label">
+    Issued By
+  </div>
 
-        <br><br>
+  <div class="meta-value">
+    <a href="https://www.axelos.com/" target="_blank">
+      Axelos
+    </a>
+  </div>
 
-        <a href="assets/documents/itil-v3-foundation-certificate.pdf"
-           target="_blank">
-          View Certificate
-        </a>
+  <div class="meta-label">
+    Earned
+  </div>
+
+  <div class="meta-value">
+    June 2014
+  </div>
+
+  <div class="meta-label">
+    Credential
+  </div>
+
+  <div class="meta-value">
+    <a href="assets/documents/itil-v3-foundation-certificate.pdf"
+       target="_blank">
+      View Certificate
+    </a>
+  </div>
+
+</div>
       </div>
       </div>
     `;
