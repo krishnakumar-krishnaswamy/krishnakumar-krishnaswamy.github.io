@@ -465,34 +465,32 @@ else if (type === "activity") {
 
      <div class="card-body">
 
-        <p>  
-<div class="section-title">About ICPC</div>
-        The International Collegiate Programming Contest (ICPC)
-        is the oldest, largest and most prestigious algorithmic
-        programming competition for university students. Teams
-        collaborate to solve complex real-world programming
-        challenges under time constraints, fostering problem
-        solving, creativity, innovation and teamwork.
-
-        <br><br>
-
-        </p>
+       <div class="section-title">About ICPC</div>
 
 <p>
+The International Collegiate Programming Contest (ICPC)
+is the oldest, largest and most prestigious algorithmic
+programming competition for university students. Teams
+collaborate to solve complex real-world programming
+challenges under time constraints, fostering problem
+solving, creativity, innovation and teamwork.
+</p>
+
 <div class="section-title">Recognition</div>
-        Awarded Honorable Mention as a Contestant
-        in the ACM International Collegiate Programming Contest.
-
-        <br><br>
-
-        </p>
 
 <p>
-<div class="section-title">Skills</div>
-        Problem Solving, Algorithms, Competitive Programming,
-        Analytical Thinking, Team Collaboration.
+Awarded Honorable Mention as a Contestant
+in the ACM International Collegiate Programming Contest.
+</p>
 
-        <br><br>
+<div class="section-title">Skills</div>
+
+<p>
+Problem Solving,
+Algorithms,
+Competitive Programming,
+Analytical Thinking,
+Team Collaboration.
 </p>
 
 <p>
@@ -525,14 +523,15 @@ else if (type === "activity") {
 
   <div class="card-body">
 
-    <p>
-      <div class="section-title">Program</div>
-      UTPA / Hidalgo ISD Early College High School (ECHS)
-      Summer Science Academy – First Cohort Initiative
-    </p>
+    <div class="section-title">Program</div>
 
-    <p>
-      <div class="section-title">About</div>
+<p>
+UTPA / Hidalgo ISD Early College High School (ECHS)
+Summer Science Academy – First Cohort Initiative
+</p>
+
+     <div class="section-title">About</div>
+     <p>
       Selected as a mentor for the UTPA / Hidalgo ISD Early College High School
       Summer Science Academy as part of its first cohort initiative.
 
@@ -547,14 +546,14 @@ else if (type === "activity") {
       education while developing workforce-ready STEM skills.
     </p>
 
-    <p>
       <div class="section-title">Recognition</div>
+      <p>
       Received a formal Certificate of Appreciation for mentoring and
       instructional contributions.
     </p>
 
-    <p>
       <div class="section-title">Skills</div>
+      <p>
       Teaching, Mentorship, Communication,
       STEM Education, Leadership
     </p>
@@ -590,13 +589,13 @@ else if (type === "activity") {
 
   <div class="card-body">
 
-    <p>
-      <div class="section-title">Event</div>
+     <div class="section-title">Event</div>
+      <p>
       College Bowl Competition
     </p>
 
-    <p>
-      <div class="section-title">Participation</div>
+     <div class="section-title">Participation</div>
+      <p>
       Participated in the HENAAC Conference in Los Angeles during graduate studies
       and networked with representatives from multiple STEM organizations and
       industry leaders.
@@ -606,15 +605,15 @@ else if (type === "activity") {
       the team throughout the competition.
     </p>
 
-    <p>
       <div class="section-title">About the Competition</div>
+      <p>
       The College Bowl is a team-based competition where students collaborate
       with industry mentors to solve real-world challenges while demonstrating
       teamwork, communication, and problem-solving skills.
     </p>
 
-    <p>
       <div class="section-title">Skills</div>
+      <p>
       Networking, Teamwork, Problem Solving,
       Communication, Leadership, Collaboration
     </p>
@@ -627,7 +626,6 @@ else if (type === "activity") {
     </p>
 
   </div>
-
 </div>
 `;
 }
