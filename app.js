@@ -151,23 +151,29 @@ out.classList.add("fade");
 
   const projects = {
 
-    "1": `
-      <div class="card">
+   "1": `
+  <div class="card">
 
-        <h3>Project 1</h3>
+    <div class="card-title">
+      Project 1
+    </div>
 
-        <br>
+    <div class="card-body">
 
-        <p>Pilot tool currently under development.</p>
+      <p>
+        Pilot tool currently under development.
+      </p>
 
-        <p>
-          <small>
-            Implementation updates will be published as development progresses.
-          </small>
-        </p>
+      <p>
+        <small>
+          Implementation updates will be published as development progresses.
+        </small>
+      </p>
 
-      </div>
-    `
+    </div>
+
+  </div>
+`
 
     /*
     ,"2": `
@@ -194,22 +200,45 @@ else if (type === "publication") {
   const publications = {
 
     "1": `
-      <div class="card">
+<div class="card">
 
-    Title: SEARCH SIMILAR PROTEIN STRUCTURES WITH CLASSIFICATION, SEQUENCE AND 3D ALIGNMENTS <br><br>
+  <div class="card-title">
+    Publication
+  </div>
 
-    Authors: ZAIXIN LU, ZHIYU ZHAO, SERGIO GARCIA, KRISHNAKUMAR KRISHNASWAMY, and BIN FU<br><br>
+  <div class="card-body">
 
-    Venue: World Scientific - Journal of Bioinformatics and Computational Biology <br><br>
+    <p>
+      <strong>Title</strong><br>
+      SEARCH SIMILAR PROTEIN STRUCTURES WITH CLASSIFICATION,
+      SEQUENCE AND 3D ALIGNMENTS
+    </p>
 
-    <a href="https://www.worldscientific.com/doi/abs/10.1142/S021972000900431X"
-       target="_blank">
-       View Publication
-    </a>
-    
-      </div>
-    `,
+    <p>
+      <strong>Authors</strong><br>
+      ZAIXIN LU,
+      ZHIYU ZHAO,
+      SERGIO GARCIA,
+      KRISHNAKUMAR KRISHNASWAMY,
+      and BIN FU
+    </p>
 
+    <p>
+      <strong>Venue</strong><br>
+      World Scientific – Journal of Bioinformatics and Computational Biology
+    </p>
+
+    <p>
+      <a href="https://www.worldscientific.com/doi/abs/10.1142/S021972000900431X"
+         target="_blank">
+         View Publication
+      </a>
+    </p>
+
+  </div>
+
+</div>
+`,
     /*
     "2": `
       <div class="card">
@@ -231,7 +260,13 @@ else if (type === "publication") {
 else if (type === "thesis") {
 
   out.innerHTML = `
-    <div class="card">
+  <div class="card">
+
+    <div class="card-title">
+      MS CS Thesis
+    </div>
+
+    <div class="card-body">
 
       Title:
 
@@ -302,8 +337,10 @@ else if (type === "thesis") {
          View Thesis Record
       </a>
 
-    </div>
-  `;
+       </div>
+
+  </div>
+`;
 }
      
 else if (type === "cert") {
@@ -312,11 +349,14 @@ else if (type === "cert") {
 
     out.innerHTML = `
       <div class="card">
-        ITIL v3 Foundation
 
-        <br><br>
+  <div class="card-title">
+    ITIL v3 Foundation
+  </div>
 
-        Issued by:
+  <div class="card-body">
+
+    <strong>Issued by</strong><br>
         <br>
         <a href="https://www.axelos.com/" target="_blank">
           Axelos
@@ -324,7 +364,7 @@ else if (type === "cert") {
 
         <br><br>
 
-        Earned: June 2014
+        <strong>Earned</strong><br> June 2014
 
         <br><br>
 
@@ -333,6 +373,7 @@ else if (type === "cert") {
           View Certificate
         </a>
       </div>
+      </div>
     `;
   }
 
@@ -340,17 +381,22 @@ else if (type === "cert") {
 
   out.innerHTML = `
     <div class="card">
-      Certified ScrumMaster® (CSM)
+
+  <div class="card-title">
+    Certified ScrumMaster® (CSM)
+  </div>
+
+  <div class="card-body">
 
       <br><br>
 
-      Issued by:
+      <strong>Issued by</strong><br>
       <br>
       Scrum Alliance, Inc.
 
       <br><br>
 
-      Earned:
+      <strong>Earned</strong><br>
       <br>
       January 2016
 
@@ -360,7 +406,9 @@ else if (type === "cert") {
          target="_blank">
         View Credential Record
       </a>
-    </div>
+      </div>
+
+</div>
   `;
 }
 
@@ -368,17 +416,22 @@ else if (type === "cert") {
 
   out.innerHTML = `
     <div class="card">
-      Certified SAFe® 5 Product Owner/Product Manager
+
+  <div class="card-title">
+    Certified SAFe® 5 Product Owner/Product Manager
+  </div>
+
+  <div class="card-body">
 
       <br><br>
 
-      Issued by:
+      <strong>Issued by</strong><br>
       <br>
       Scaled Agile, Inc.
 
       <br><br>
 
-      Earned:
+      <strong>Earned</strong><br>
       <br>
       September 2020
 
@@ -388,7 +441,9 @@ else if (type === "cert") {
          target="_blank">
         View Credential Record
       </a>
-    </div>
+      </div>
+
+</div>
   `;
 }
 }
