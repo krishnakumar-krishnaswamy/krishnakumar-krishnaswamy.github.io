@@ -51,17 +51,10 @@ out.classList.add("fade");
 
   out.innerHTML = `
     <div class="card">
-
-      <div class="card-title">
-        Welcome
-      </div>
-
+    
       <div class="card-body">
 
-  <div class="info-field">
-    <div class="info-label">Professional Summary</div>
-
-    <div class="info-value">
+   <div class="info-value">
       Technologist, Researcher, and Digital Modernization Practitioner.
       Building Cost-Conscious Pilot Tools.
     </div>
