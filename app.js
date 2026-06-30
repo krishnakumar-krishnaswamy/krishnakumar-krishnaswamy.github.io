@@ -458,7 +458,58 @@ else if (value === "Google Gen AI Leader") {
 </div>
 `;
 }
-    
+
+else if (value === "Google Cloud Digital Leader") {
+
+  out.innerHTML = `
+<div class="card">
+
+  <div class="card-title">
+    Google Cloud Digital Leader
+  </div>
+
+  <div class="card-body">
+
+    <div class="meta-section">
+
+      <div class="meta-label">
+        Issued By
+      </div>
+
+      <div class="meta-value">
+        <a href="https://cloud.google.com/"
+           target="_blank">
+          Google Cloud
+        </a>
+      </div>
+
+      <div class="meta-label">
+        Earned
+      </div>
+
+      <div class="meta-value">
+        May 27, 2025
+      </div>
+
+      <div class="meta-label">
+        Credential
+      </div>
+
+      <div class="meta-value">
+        <a href="https://www.credly.com/badges/2e7769af-3a2d-470e-a654-6ae253bd8995"
+           target="_blank">
+          View Certificate
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+`;
+}
+  
 else if (value === "SAFe POPM") {
 
   out.innerHTML = `
