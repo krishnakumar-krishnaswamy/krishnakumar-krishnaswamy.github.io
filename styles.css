@@ -426,13 +426,16 @@ button {
 /* STEP 2B FIX: Sidebar Profile Alignment */
 .sidebar-profile {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
 
-  padding: 10px 12px;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 16px 12px;
 
   margin-bottom: 12px;
-
   padding-bottom: 12px;
 
   border-bottom: 1px solid #e5e7eb;
@@ -445,15 +448,27 @@ button {
 
 /* shrink avatar slightly for sidebar consistency */
 .sidebar-profile .profile-avatar {
-  width: 30px;
-  height: 30px;
+  width: 64px;
+  height: 64px;
+
+  border-radius: 50%;
+  object-fit: cover;
+
+  margin-bottom: 8px;
 }
 
 /* make name lighter like nav items */
 .sidebar-profile .profile-name {
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 500;
+
   color: #111827;
+
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  width: 100%;
 }
 
 /* Replace manual spacing system with consistent rhythm */
