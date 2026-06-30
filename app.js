@@ -433,7 +433,7 @@ else if (value === "SAFe POPM") {
       </div>
 
       <div class="meta-value">
-        September 2020
+        October 06, 2020
       </div>
 
       <div class="meta-label">
