@@ -38,6 +38,32 @@
     <div class="space"></div>
 
   <div class="nav-group"
+     onclick="handleGroupClick(this, 'profiles')">
+
+  <i class="icon lucide-user"></i>
+  <span>▾ Profiles</span>
+
+</div>
+    <div id="profiles" class="group">
+
+      <div class="nav-sub"
+     onclick="openTab(LINKS.github)">
+
+ <i class="icon lucide-github"></i>
+ <span>GitHub</span>
+
+</div>
+
+      <div class="nav-sub"
+     onclick="window.open(LINKS.linkedin,'_blank','noopener,noreferrer')">
+
+  <i class="icon lucide-linkedin"></i>
+  <span>LinkedIn</span>
+
+</div>
+
+    </div>  
+  <div class="nav-group"
      onclick="handleGroupClick(this, 'projects')">
 
   <i class="icon lucide-folder"></i>
@@ -109,33 +135,6 @@
 </div>
 
     <div class="space"></div>
-
-    <div class="nav-group"
-     onclick="handleGroupClick(this, 'profiles')">
-
-  <i class="icon lucide-user"></i>
-  <span>▾ Profiles</span>
-
-</div>
-    <div id="profiles" class="group">
-
-      <div class="nav-sub"
-     onclick="openTab(LINKS.github)">
-
- <i class="icon lucide-github"></i>
- <span>GitHub</span>
-
-</div>
-
-      <div class="nav-sub"
-     onclick="window.open(LINKS.linkedin,'_blank','noopener,noreferrer')">
-
-  <i class="icon lucide-linkedin"></i>
-  <span>LinkedIn</span>
-
-</div>
-
-    </div>
 
     <div class="space"></div>
 
