@@ -408,6 +408,57 @@ else if (type === "cert") {
 `;
 }
 
+else if (value === "Google Gen AI Leader") {
+
+  out.innerHTML = `
+<div class="card">
+
+  <div class="card-title">
+    Google Generative AI Leader
+  </div>
+
+  <div class="card-body">
+
+    <div class="meta-section">
+
+      <div class="meta-label">
+        Issued By
+      </div>
+
+      <div class="meta-value">
+        <a href="https://cloud.google.com/"
+           target="_blank">
+          Google Cloud
+        </a>
+      </div>
+
+      <div class="meta-label">
+        Earned
+      </div>
+
+      <div class="meta-value">
+        November 17, 2025
+      </div>
+
+      <div class="meta-label">
+        Credential
+      </div>
+
+      <div class="meta-value">
+        <a href="https://www.credly.com/badges/62852854-99dd-49ab-b46e-e9a1fc9221e8"
+           target="_blank">
+          View Certificate
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+`;
+}
+    
 else if (value === "SAFe POPM") {
 
   out.innerHTML = `
