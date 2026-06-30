@@ -509,6 +509,57 @@ else if (value === "Google Cloud Digital Leader") {
 </div>
 `;
 }
+
+else if (value === "PMP") {
+
+  out.innerHTML = `
+<div class="card">
+
+  <div class="card-title">
+    Project Management Professional (PMP®)
+  </div>
+
+  <div class="card-body">
+
+    <div class="meta-section">
+
+      <div class="meta-label">
+        Issued By
+      </div>
+
+      <div class="meta-value">
+        <a href="https://www.pmi.org/"
+           target="_blank">
+          Project Management Institute (PMI)
+        </a>
+      </div>
+
+      <div class="meta-label">
+        Earned
+      </div>
+
+      <div class="meta-value">
+        February 25, 2025
+      </div>
+
+      <div class="meta-label">
+        Credential
+      </div>
+
+      <div class="meta-value">
+        <a href="https://www.credly.com/badges/3e0ab8f2-7109-4b7f-86af-7a2e6f063cb2"
+           target="_blank">
+          View Certificate
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+`;
+}
   
 else if (value === "SAFe POPM") {
 
