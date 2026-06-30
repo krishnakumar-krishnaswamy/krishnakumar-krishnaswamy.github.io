@@ -21,29 +21,10 @@ body {
   flex-shrink: 0;
 }
 
-.profile-title {
-  display: flex;
-  flex-direction: column;
-
-  /* CRITICAL FIX */
-  min-width: 0;
-  overflow: hidden;
-}
-
-.profile-name {
-  font-size: 14px;
-  font-weight: 600;
-
-  /* CRITICAL FIX */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 /* MAIN LAYOUT FIX */
 .layout {
   display: flex;
-  height: calc(100vh - 72px);
+  height: 100vh;
 }
 
 /* SIDEBAR */
