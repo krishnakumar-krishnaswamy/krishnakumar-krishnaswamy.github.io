@@ -14,28 +14,6 @@ body {
   flex-direction: column;
 }
 
-.top-header {
-  height: 72px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding-left: 26px;
-  background: #f7f7f8;
-  border-bottom: 1px solid #e5e7eb;
-}
-
-.profile-header {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-
-  padding: 12px;
-
-  /* CRITICAL FIX */
-  max-width: 100%;
-  overflow: hidden;
-}
-
 .profile-avatar {
   width: 36px;
   height: 36px;
@@ -471,13 +449,15 @@ button {
   gap: 10px;
 
   padding: 10px 12px;
-  margin-bottom: 6px;
 
-  border-radius: 8px;
+  margin-bottom: 12px;
 
-  background: transparent; /* remove header look */
+  padding-bottom: 12px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  background: transparent;
 }
-
 .sidebar-profile:hover {
   background: #eef2f7; /* match nav hover */
 }
