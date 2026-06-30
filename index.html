@@ -71,6 +71,9 @@
 </div>
       
     </div>  
+    
+    <div class="space"></div>
+    
   <div class="nav-group"
      onclick="handleGroupClick(this, 'projects')">
 
@@ -91,6 +94,58 @@
 
 </div>
 
+ <div class="space"></div> 
+    
+ <div class="nav-group"
+     onclick="handleGroupClick(this, 'certs')">
+
+  <i class="icon lucide-badge-check"></i>
+  <span>▾ Certifications</span>
+
+</div>
+    <div id="certs" class="group">
+
+<div class="nav-sub"
+     onclick="openTab(LINKS.credly)">
+
+  <i class="icon lucide-file-text"></i>
+  <span>PMP</span>
+
+</div>
+
+<div class="nav-sub"
+     onclick="openTab(LINKS.credly)">
+
+  <i class="icon lucide-file-text"></i>
+  <span>Google Cloud & AI Leader</span>
+</div>
+
+<div class="nav-sub"
+     onclick="setActive(this); renderCard('cert','ITIL v3')">
+
+  <i class="icon lucide-file-text"></i>
+  <span>ITIL v3</span>
+
+</div>
+
+<div class="nav-sub"
+     onclick="setActive(this); renderCard('cert','CSM')">
+
+  <i class="icon lucide-file-text"></i>
+  <span>CSM</span>
+
+</div>
+
+<div class="nav-sub"
+     onclick="setActive(this); renderCard('cert','SAFe POPM')">
+
+  <i class="icon lucide-file-text"></i>
+  <span>SAFe POPM</span>
+
+</div>
+                
+    </div>
+         
     <div class="space"></div>
 
     <div class="nav-group"
@@ -141,61 +196,6 @@
   <span>MS CS Thesis</span>
 
 </div>
-
-    <div class="space"></div>
-
-    <div class="space"></div>
-
-    <div class="nav-group"
-     onclick="handleGroupClick(this, 'certs')">
-
-  <i class="icon lucide-badge-check"></i>
-  <span>▾ Certifications</span>
-
-</div>
-    <div id="certs" class="group">
-
-<div class="nav-sub"
-     onclick="openTab(LINKS.credly)">
-
-  <i class="icon lucide-file-text"></i>
-  <span>PMP</span>
-
-</div>
-
-<div class="nav-sub"
-     onclick="openTab(LINKS.credly)">
-
-  <i class="icon lucide-file-text"></i>
-  <span>Google Cloud & AI Leader</span>
-</div>
-
-<div class="nav-sub"
-     onclick="setActive(this); renderCard('cert','ITIL v3')">
-
-  <i class="icon lucide-file-text"></i>
-  <span>ITIL v3</span>
-
-</div>
-
-<div class="nav-sub"
-     onclick="setActive(this); renderCard('cert','CSM')">
-
-  <i class="icon lucide-file-text"></i>
-  <span>CSM</span>
-
-</div>
-
-<div class="nav-sub"
-     onclick="setActive(this); renderCard('cert','SAFe POPM')">
-
-  <i class="icon lucide-file-text"></i>
-  <span>SAFe POPM</span>
-
-</div>
-                
-    </div>
-      
 
     <div class="space"></div>
 
