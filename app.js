@@ -404,52 +404,56 @@ else if (type === "cert") {
   `;
 }
 
-  else if (value === "SAFe POPM") {
+else if (value === "SAFe POPM") {
 
   out.innerHTML = `
-    <div class="card">
+<div class="card">
 
   <div class="card-title">
-    Certified SAFe® 5 Product Owner/Product Manager
+    Certified SAFe® 5 Product Owner / Product Manager
   </div>
 
   <div class="card-body">
 
-     <div class="meta-section">
+    <div class="meta-section">
 
-  <div class="meta-label">
-    Issued By
-  </div>
-
-  <div class="meta-value">
-    Scaled Agile, Inc.
-  </div>
-
-  <div class="meta-label">
-    Earned
-  </div>
-
-  <div class="meta-value">
-    September 2020
-  </div>
-
-  <div class="meta-label">
-    Credential
-  </div>
-
-  <div class="meta-value">
-    <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
-       target="_blank">
-      View Credential Record
-    </a>
-  </div>
-
-</div>
+      <div class="meta-label">
+        Issued By
       </div>
 
+      <div class="meta-value">
+        <a href="https://scaledagile.com/"
+           target="_blank">
+          Scaled Agile, Inc.
+        </a>
+      </div>
+
+      <div class="meta-label">
+        Earned
+      </div>
+
+      <div class="meta-value">
+        September 2020
+      </div>
+
+      <div class="meta-label">
+        Credential
+      </div>
+
+      <div class="meta-value">
+        <a href="https://www.credly.com/badges/3a4f123e-d666-47b0-9d40-5ea470affc74"
+           target="_blank">
+          View Certificate
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
-  `;
-}
+`;
+}  
 }
     
 else if (type === "activity") {
