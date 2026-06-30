@@ -337,7 +337,7 @@ else if (type === "cert") {
   </div>
 
   <div class="meta-value">
-    June 2014
+    June 27, 2014
   </div>
 
   <div class="meta-label">
@@ -386,7 +386,7 @@ else if (type === "cert") {
       </div>
 
       <div class="meta-value">
-        January 2016
+        January 10, 2016
       </div>
 
       <div class="meta-label">
@@ -394,7 +394,7 @@ else if (type === "cert") {
       </div>
 
       <div class="meta-value">
-        <a href="assets/documents/csm-certificate.pdf"
+        <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
            target="_blank">
           View Certificate
         </a>
