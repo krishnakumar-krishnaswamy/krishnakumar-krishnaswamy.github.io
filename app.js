@@ -360,7 +360,7 @@ else if (type === "cert") {
   else if (value === "CSM") {
 
   out.innerHTML = `
-    <div class="card">
+<div class="card">
 
   <div class="card-title">
     Certified ScrumMaster® (CSM)
@@ -368,40 +368,44 @@ else if (type === "cert") {
 
   <div class="card-body">
 
-      <div class="meta-section">
+    <div class="meta-section">
 
-  <div class="meta-label">
-    Issued By
-  </div>
-
-  <div class="meta-value">
-    Scrum Alliance, Inc.
-  </div>
-
-  <div class="meta-label">
-    Earned
-  </div>
-
-  <div class="meta-value">
-    January 2016
-  </div>
-
-  <div class="meta-label">
-    Credential
-  </div>
-
-  <div class="meta-value">
-    <a href="https://bcert.me/bc/html/show-badge.html?b=xwjtqipd"
-       target="_blank">
-      View Credential Record
-    </a>
-  </div>
-
-</div>
+      <div class="meta-label">
+        Issued By
       </div>
 
+      <div class="meta-value">
+        <a href="https://www.scrumalliance.org/"
+           target="_blank">
+          Scrum Alliance, Inc.
+        </a>
+      </div>
+
+      <div class="meta-label">
+        Earned
+      </div>
+
+      <div class="meta-value">
+        January 2016
+      </div>
+
+      <div class="meta-label">
+        Credential
+      </div>
+
+      <div class="meta-value">
+        <a href="assets/documents/csm-certificate.pdf"
+           target="_blank">
+          View Certificate
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
 </div>
-  `;
+`;
 }
 
 else if (value === "SAFe POPM") {
