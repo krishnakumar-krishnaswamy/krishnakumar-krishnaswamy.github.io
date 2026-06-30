@@ -408,7 +408,7 @@ else if (type === "cert") {
 `;
 }
 
-else if (value === "Google Gen AI Leader") {
+else if (value === "Google Generative AI Leader") {
 
   out.innerHTML = `
 <div class="card">
