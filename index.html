@@ -47,23 +47,23 @@
     <div id="profiles" class="group">
 
       <div class="nav-sub"
-     onclick="window.open(LINKS.github,'_blank','noopener,noreferrer')">
+     onclick="setActive(this); renderCard('profile','github')">
 
  <img src="assets/icons/github.svg" class="icon">
  <span>GitHub</span>
 
 </div>
 
-      <div class="nav-sub"
-     onclick="window.open(LINKS.linkedin,'_blank','noopener,noreferrer')">
+     <div class="nav-sub"
+     onclick="setActive(this); renderCard('profile','linkedin')">
 
   <img src="assets/icons/linkedin.svg" class="icon">
   <span>LinkedIn</span>
 
 </div>
 
-<div class="nav-sub"
-     onclick="window.open(LINKS.credly,'_blank','noopener,noreferrer')">
+    <div class="nav-sub"
+     onclick="setActive(this); renderCard('profile','credly')">
 
   <img src="assets/icons/credly.svg" class="icon">
   <span>Credly</span>
