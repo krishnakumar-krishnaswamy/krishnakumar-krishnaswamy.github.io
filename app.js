@@ -143,6 +143,39 @@ out.classList.add("fade");
   `;
 }
 
+else if (type === "parent") {
+
+  const parents = {
+
+    profiles: `
+<div class="card">
+
+  <div class="card-title">
+    Professional Profiles
+  </div>
+
+  <div class="card-body">
+
+    <p>
+      Centralized access to my professional profiles, public portfolio,
+      certifications, and career information across trusted platforms.
+    </p>
+
+    <ul>
+      <li><strong>GitHub</strong> — Source code, portfolio, and technical projects.</li>
+      <li><strong>LinkedIn</strong> — Enterprise delivery, trusted professional relationships, and peer recommendations.</li>
+      <li><strong>Credly</strong> — Verified professional certifications and digital credentials.</li>
+    </ul>
+
+  </div>
+
+</div>
+`
+  };
+
+  out.innerHTML = parents[value];
+}
+    
   else if (type === "project") {
 
   const projects = {
