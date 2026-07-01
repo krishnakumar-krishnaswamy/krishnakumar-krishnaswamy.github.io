@@ -1,1 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
 
+  <!-- document -->
+  <path d="M7 3h7l5 5v13H7z"></path>
+  <path d="M14 3v5h5"></path>
+
+  <!-- badge -->
+  <circle cx="12" cy="15" r="2.5"></circle>
+
+  <!-- ribbon -->
+  <path d="M10.7 17.2L10 20l2-1 2 1-.7-2.8"></path>
+
+</svg>
