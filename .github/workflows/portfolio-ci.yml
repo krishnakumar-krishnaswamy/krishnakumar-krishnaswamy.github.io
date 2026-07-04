@@ -1,3 +1,23 @@
+# -----------------------------------------------------------------------------
+# Portfolio Git Quality Check
+#
+# Version: V1
+#
+# Purpose:
+# Continuous Integration (CI) workflow that validates the portfolio repository
+# after every commit to the main branch.
+#
+# Current Validation:
+# - Repository checkout
+# - Required file existence verification
+#
+# Planned Enhancements:
+# V2 - HTML validation
+# V3 - CSS validation
+# V4 - JavaScript validation
+# V5 - Broken link detection
+# -----------------------------------------------------------------------------
+
 name: Portfolio Git Quality Check
 
 on:
