@@ -38,57 +38,29 @@ jobs:
 
     steps:
 
-      # -------------------------------------------------
-      # Step 1: Checkout repo
-      # -------------------------------------------------
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      # -------------------------------------------------
-      # Step 2: Setup Node (IMPORTANT FIX)
-      # -------------------------------------------------
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
 
-      # -------------------------------------------------
-      # Step 3: V1 - Required file validation
-      # -------------------------------------------------
       - name: Verify Required Files (V1)
         run: |
           test -f index.html
           test -f styles.css
           test -f app.js
 
-      # -------------------------------------------------
-      # Step 4: V2 - HTML Validation
-      # -------------------------------------------------
-    #  - name: Validate HTML (V2)
-    #    run: |
-    #      npm install -g htmlhint
-    #      htmlhint index.html
-
-      - name: Validate HTML (V2 - debug mode)
+      - name: Validate HTML (V2)
         run: |
-         npm install -g htmlhint
-         htmlhint index.html || true
+          npm install -g htmlhint
+          htmlhint index.html
 
-      # -------------------------------------------------
-      # Step 5: V5 - Broken link detection (IMPROVED)
-      # -------------------------------------------------
- #     - name: Broken Link Detection (V5)
- #       run: |
- #         npm install -g broken-link-checker
- #         blc file://$(pwd)/index.html -ro
-
-      - name: Broken Link Detection (V5 - debug mode)
+      - name: Broken Link Detection (V5)
         run: |
-         npm install -g broken-link-checker
-         blc file://$(pwd)/index.html -ro || true
+          npm install -g broken-link-checker
+          blc file://$(pwd)/index.html -ro
 
-      # -------------------------------------------------
-      # Step 6: Success
-      # -------------------------------------------------
       - name: Success
         run: echo "Portfolio validation completed successfully."
