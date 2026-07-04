@@ -39,5 +39,10 @@ jobs:
           test -f styles.css
           test -f app.js
 
+          - name: Validate HTML (V2)
+          run: |
+          npm install -g htmlhint
+          htmlhint index.html 
+       
       - name: Success
         run: echo "Portfolio validation completed successfully."
