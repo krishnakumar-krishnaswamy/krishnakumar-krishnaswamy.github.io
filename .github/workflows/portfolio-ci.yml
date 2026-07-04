@@ -11,11 +11,18 @@
 # - Repository checkout
 # - Required file existence verification
 #
+# - V2 - HTML validation
+#
+# Purpose:
+# Detect malformed HTML before deployment.
+#
+# - V5 - Broken link detection
+#
+# Purpose: Ensure portfolio navigation and external references remain functional.
+#
 # Planned Enhancements:
-# V2 - HTML validation
 # V3 - CSS validation
 # V4 - JavaScript validation
-# V5 - Broken link detection
 # -----------------------------------------------------------------------------
 
 name: Portfolio Git Quality Check
@@ -30,24 +37,48 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
+      # -------------------------------------------------
+      # Step 1: Checkout repo
+      # -------------------------------------------------
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Verify Required Files
+      # -------------------------------------------------
+      # Step 2: Setup Node (IMPORTANT FIX)
+      # -------------------------------------------------
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      # -------------------------------------------------
+      # Step 3: V1 - Required file validation
+      # -------------------------------------------------
+      - name: Verify Required Files (V1)
         run: |
           test -f index.html
           test -f styles.css
           test -f app.js
 
+      # -------------------------------------------------
+      # Step 4: V2 - HTML Validation
+      # -------------------------------------------------
       - name: Validate HTML (V2)
         run: |
-            npm install -g htmlhint
-            htmlhint index.html 
+          npm install -g htmlhint
+          htmlhint index.html
 
+      # -------------------------------------------------
+      # Step 5: V5 - Broken link detection (IMPROVED)
+      # -------------------------------------------------
       - name: Broken Link Detection (V5)
         run: |
           npm install -g broken-link-checker
-          blc https://krishnakumar-krishnaswamy.github.io -ro
-       
+          blc file://$(pwd)/index.html -ro
+
+      # -------------------------------------------------
+      # Step 6: Success
+      # -------------------------------------------------
       - name: Success
         run: echo "Portfolio validation completed successfully."
