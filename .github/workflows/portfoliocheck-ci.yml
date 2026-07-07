@@ -24,6 +24,7 @@ jobs:
           test -f index.html
           test -f styles.css
           test -f app.js
+          test -f check.js
 
       - name: Success
         run: echo "V1 completed successfully."
