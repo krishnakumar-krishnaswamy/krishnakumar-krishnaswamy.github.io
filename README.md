@@ -19,7 +19,26 @@ Uses plain JavaScript without frameworks to handle navigation, dynamic rendering
 
 ---
 
-## GitHub Pages
+## Quality Assurance & Automation
+
+### GitHub Actions (Continuous Integration)
+
+Implemented an automated Continuous Integration (CI) workflow using GitHub Actions to validate portfolio quality after every commit.
+
+Current automated validations include:
+
+- Repository Integrity Validation
+- HTML Validation
+- CSS Integrity Validation
+- JavaScript Syntax Validation
+- Live Website Link Validation
+
+---
+
+## Deployment
+
+### GitHub Pages
+
 This project is deployed using GitHub Pages for public access and live portfolio hosting.
 
 🔗 Live Site: https://krishnakumar-krishnaswamy.github.io
