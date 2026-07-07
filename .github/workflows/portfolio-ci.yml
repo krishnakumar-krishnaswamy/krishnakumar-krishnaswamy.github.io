@@ -142,6 +142,32 @@ jobs:
           grep -q ".sidebar" styles.css
           grep -q ".card" styles.css
 
+      # -----------------------------------------------------------------------
+      # V4 – JavaScript Syntax Validation
+      #
+      # Tool
+      #   Node.js JavaScript Parser
+      #
+      # Command
+      #   node --check app.js
+      #
+      # Purpose
+      #
+      # Verifies that the JavaScript source file contains valid syntax.
+      #
+      # Detects errors such as
+      #
+      #   • Missing brackets
+      #   • Missing parentheses
+      #   • Missing braces
+      #   • Invalid JavaScript syntax
+      #
+      # Does not execute the program or enforce formatting rules.
+      # -----------------------------------------------------------------------
+
+      - name: Validate JavaScript Syntax (V4)
+        run: |
+          node --check app.js
 
       # -----------------------------------------------------------------------
       # V5 – Live Website Link Validation
