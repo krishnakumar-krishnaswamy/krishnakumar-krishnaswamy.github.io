@@ -67,17 +67,11 @@ Purpose: Performs lightweight validation without enforcing formatting rules. Hel
 
 ---
 
-## Version 4
+## Version 4 (Current)
 
-JavaScript Validation
+JavaScript Syntax Validation
 
-Additional capability:
-
-* Validate JavaScript using ESLint
-
-Purpose:
-
-Detect JavaScript syntax and coding issues.
+Purpose: Verifies that the JavaScript source file contains valid syntax.
 
 ---
 
