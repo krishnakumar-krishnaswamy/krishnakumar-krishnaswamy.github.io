@@ -60,6 +60,21 @@ jobs:
           htmlhint index.html
 
       # -------------------------------------------------
+      # V3 - CSS Validation
+      # -------------------------------------------------
+      - name: Validate CSS (V3)
+        run: |
+          npm install -g stylelint stylelint-config-standard
+
+          cat <<EOF > .stylelintrc.json
+          {
+            "extends": "stylelint-config-standard"
+          }
+          EOF
+
+          stylelint styles.css
+
+      # -------------------------------------------------
       # V5 - Broken Link Detection
       # -------------------------------------------------
       - name: Broken Link Detection (V5)
