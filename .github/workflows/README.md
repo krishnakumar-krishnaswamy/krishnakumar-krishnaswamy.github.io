@@ -37,7 +37,7 @@ Checks:
 
 Purpose:
 
-Ensures the minimum required website files exist before continuing.
+Verifies that the portfolio's three primary application files exist. Prevents accidental deletion or incomplete commits.
 
 ---
 
@@ -49,23 +49,21 @@ Additional capability:
 
 * Validate HTML structure using HTMLHint
 
-Purpose:
+Purpose: Ensures the portfolio homepage conforms to valid HTML.
 
-Detect malformed HTML before deployment.
+Detects malformed HTML such as 
+
+* missing closing tags
+* invalid nesting
+* structural HTML errors
 
 ---
 
-## Version 3
+## Version 3 (Current) 
 
-CSS Validation
+CSS Integrity Validation
 
-Additional capability:
-
-* Validate CSS using Stylelint
-
-Purpose:
-
-Maintain stylesheet quality and consistency.
+Purpose: Performs lightweight validation without enforcing formatting rules. Helps detect accidental overwrites or removal of core UI components.
 
 ---
 
@@ -85,15 +83,9 @@ Detect JavaScript syntax and coding issues.
 
 ## Version 5 (Current)
 
-Broken Link Detection
+Live Website Link Validation
 
-Additional capability:
-
-* Verify internal and external hyperlinks
-
-Purpose:
-
-Ensure portfolio navigation and external references remain functional.
+Purpose: Ensure portfolio navigation and external references remain functional. Validates hyperlinks on the LIVE GitHub Pages website.
 
 ---
 
