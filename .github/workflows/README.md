@@ -41,7 +41,7 @@ Ensures the minimum required website files exist before continuing.
 
 ---
 
-## Version 2
+## Version 2 (Current)
 
 HTML Validation
 
@@ -83,7 +83,7 @@ Detect JavaScript syntax and coding issues.
 
 ---
 
-## Version 5
+## Version 5 (Current)
 
 Broken Link Detection
 
